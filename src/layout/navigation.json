@@ -1,0 +1,245 @@
+{
+  "brand": {
+    "name": "NATUREX",
+    "subTitle": "Climate & Nature Impact",
+    "version": "Admin"
+  },
+  "modules": [
+    {
+      "key": "dashboard",
+      "label": "Dashboard",
+      "icon": "LayoutDashboard",
+      "description": "Executive platform KPIs, real-time alerts, and operational trends"
+    },
+    {
+      "key": "users",
+      "label": "User Management",
+      "icon": "Users",
+      "description": "Directory of registered platform actors with role-based access control",
+      "children": [
+        {
+          "key": "all-users",
+          "label": "Master User Directory",
+          "description": "Comprehensive search and status management for all platform actors"
+        },
+        {
+          "key": "create-user",
+          "label": "+ Create Role & User",
+          "description": "Provision new actor roles, generate login PIN, and dispatch invitation emails",
+          "badge": "New"
+        },
+        {
+          "key": "farmers",
+          "label": "Farmers & Landowners",
+          "description": "Individual landholders and beneficiary profiles"
+        },
+        {
+          "key": "organizations",
+          "label": "Organizations",
+          "description": "FPO, NGO, and project developer organizational teams"
+        },
+        {
+          "key": "field-agents",
+          "label": "Field Agents",
+          "description": "On-ground agents assigned for field data collection"
+        },
+        {
+          "key": "reviewers",
+          "label": "Reviewers & Verifiers",
+          "description": "MRV specialists and independent audit partners"
+        },
+        {
+          "key": "roles-rbac",
+          "label": "Roles & Permissions",
+          "description": "RBAC policy matrices and security scopes"
+        }
+      ]
+    },
+    {
+      "key": "kyc",
+      "label": "KYC & Compliance",
+      "icon": "FileBadge",
+      "description": "Identity verification, consent records, and document screening",
+      "children": [
+        {
+          "key": "kyc-queue",
+          "label": "Pending Verification",
+          "badge": "Active",
+          "description": "Submitted KYC documents awaiting admin decision"
+        },
+        {
+          "key": "kyc-action",
+          "label": "Action Required",
+          "description": "Rejected documents requiring user corrections"
+        },
+        {
+          "key": "kyc-approved",
+          "label": "Approved Records",
+          "description": "Fully verified and compliant user identities"
+        }
+      ]
+    },
+    {
+      "key": "land-gis",
+      "label": "Land & GIS",
+      "icon": "Map",
+      "description": "Spatial land boundaries, PostGIS polygons, and dispute detection",
+      "children": [
+        {
+          "key": "land-registry",
+          "label": "Land Registry",
+          "description": "Master registry of mapped plots and computed acreage"
+        },
+        {
+          "key": "boundary-conflicts",
+          "label": "Boundary Conflicts",
+          "badge": "Alert",
+          "description": "Overlapping polygons and duplicate parcel claims"
+        },
+        {
+          "key": "land-documents",
+          "label": "Land Documents",
+          "description": "Ownership proofs, lease agreements, and survey records"
+        }
+      ]
+    },
+    {
+      "key": "projects",
+      "label": "Projects",
+      "icon": "FolderKanban",
+      "description": "Environmental project lifecycle, methodologies, and interventions",
+      "children": [
+        {
+          "key": "project-queue",
+          "label": "Project Lifecycle",
+          "description": "Draft to Approved state transitions and screening"
+        },
+        {
+          "key": "carbon",
+          "label": "Carbon Projects",
+          "description": "Carbon reduction/removal methodologies and baselines"
+        },
+        {
+          "key": "water",
+          "label": "Water Impact",
+          "description": "Water conservation baselines and measured impacts"
+        },
+        {
+          "key": "biodiversity",
+          "label": "Biodiversity",
+          "description": "Flora, fauna restoration, and native habitat registry"
+        }
+      ]
+    },
+    {
+      "key": "evidence-mrv",
+      "label": "Evidence & MRV",
+      "icon": "FileCheck2",
+      "description": "Field evidence verification, photo metadata checks, and MRV workflows",
+      "children": [
+        {
+          "key": "evidence-review",
+          "label": "Evidence Review",
+          "description": "Photo/video viewer with GPS, timestamp, and hash validation"
+        },
+        {
+          "key": "mrv-control",
+          "label": "MRV Control",
+          "description": "Monitoring tasks, evidence completeness, and reviewer review"
+        }
+      ]
+    },
+    {
+      "key": "field-ops",
+      "label": "Field Operations",
+      "icon": "Compass",
+      "description": "Agent visit assignments, route coordination, and sync tracking",
+      "children": [
+        {
+          "key": "field-visits",
+          "label": "Site Visit Dispatch",
+          "description": "Assigned visits, scheduled dates, and overdue alerts"
+        },
+        {
+          "key": "offline-sync",
+          "label": "Offline Sync Monitor",
+          "description": "Device sync queue, pending uploads, and retry logs"
+        }
+      ]
+    },
+    {
+      "key": "verification-funding",
+      "label": "Verification & Funding",
+      "icon": "Award",
+      "description": "Third-party accredited verification and corporate ESG programs",
+      "children": [
+        {
+          "key": "acva-verification",
+          "label": "ACVA Verification",
+          "description": "BEE-accredited verification agency cases and findings"
+        },
+        {
+          "key": "funding-programs",
+          "label": "Corporate Programs",
+          "description": "Corporate ESG funding eligibility and project matching"
+        }
+      ]
+    },
+    {
+      "key": "finance",
+      "label": "Finance & Benefits",
+      "icon": "Receipt",
+      "description": "Benefit obligation ledgers, payouts, and bank reconciliations",
+      "children": [
+        {
+          "key": "benefit-ledger",
+          "label": "Obligations Ledger",
+          "description": "Farmer benefit entitlements and approval status"
+        },
+        {
+          "key": "payouts",
+          "label": "Payouts & Settlements",
+          "description": "Bank transfer execution, pending, and settled batches"
+        }
+      ]
+    },
+    {
+      "key": "system-settings",
+      "label": "System & Governance",
+      "icon": "Settings",
+      "description": "Dynamic forms engine, audit logs, and platform configurations",
+      "children": [
+        {
+          "key": "notifications",
+          "label": "Notifications Center",
+          "description": "Push alerts, SMS, and WhatsApp templates"
+        },
+        {
+          "key": "support",
+          "label": "Support & Disputes",
+          "description": "Farmer and partner helpdesk tickets and SLA resolution"
+        },
+        {
+          "key": "reports",
+          "label": "Reports & Analytics",
+          "description": "Operational, project impact, and financial aggregations"
+        },
+        {
+          "key": "audit-logs",
+          "label": "Audit Logs",
+          "description": "Immutable audit trails for compliance and state changes"
+        },
+        {
+          "key": "questionnaires",
+          "label": "Questionnaire Engine",
+          "description": "Dynamic form and conditional rule builder by project type"
+        },
+        {
+          "key": "settings",
+          "label": "System Settings",
+          "description": "Map keys, S3 storage buckets, and feature toggles"
+        }
+      ]
+    }
+  ]
+}

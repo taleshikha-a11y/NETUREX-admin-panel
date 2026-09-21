@@ -1,0 +1,889 @@
+{
+  "summaryStats": {
+    "totalUsers": {
+      "count": "3,544",
+      "activeCount": "3,480",
+      "suspendedCount": 6,
+      "growthThisMonth": "+12.4%"
+    },
+    "totalFarmers": {
+      "count": "3,420",
+      "verifiedCount": "2,890",
+      "verificationRate": "84.5%",
+      "pendingKyc": 34,
+      "clarificationRequired": 12,
+      "rejectedCount": 8,
+      "totalAcreage": "48,250 Acres"
+    },
+    "totalOrganizations": {
+      "count": "42",
+      "fpoCount": 26,
+      "ngoCount": 11,
+      "corporateCount": 5,
+      "verifiedOrgs": 38,
+      "pendingVerification": 4
+    },
+    "totalFieldAgents": {
+      "count": "68",
+      "activeToday": 54,
+      "offlineSyncPending": 3,
+      "visitsCompletedMonth": "1,420"
+    },
+    "totalReviewers": {
+      "count": "14",
+      "mrvSpecialists": 9,
+      "acvaAuditors": 5,
+      "activeAudits": 16
+    }
+  },
+  "users": [
+    {
+      "id": "USR-FARM-0821",
+      "name": "Rameshwar Singh Patel",
+      "phone": "+91 98261 44521",
+      "role": "Farmer / Landowner",
+      "roleCode": "FARMER",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80",
+      "location": {
+        "village": "Ashta Khurd",
+        "city": "Ashta",
+        "district": "Sehore",
+        "state": "Madhya Pradesh",
+        "country": "India"
+      },
+      "dob": "14 Aug 1978",
+      "age": 47,
+      "registeredDate": "14 Jan 2026",
+      "universalStatus": "APPROVED",
+      "organization": {
+        "id": "ORG-FPO-0101",
+        "name": "Narmada Valley Farmer Producer Co.",
+        "type": "FPO",
+        "roleInOrg": "Member Shareholder"
+      },
+      "kyc": {
+        "status": "APPROVED",
+        "documentType": "Aadhaar + Land Passbook (B1)",
+        "documentNumber": "•••• •••• 8824",
+        "frontUpload": "aadhaar_front_0821.jpg",
+        "backUpload": "aadhaar_back_0821.jpg",
+        "consentChecked": true,
+        "consentVersion": "DPDP-Act-2025-v1.2",
+        "consentTimestamp": "2026-01-14T11:24:00Z",
+        "adminDecisionNote": "Aadhaar verified against revenue records. Name and father's name matches Khasra.",
+        "clarificationQuestion": null,
+        "rejectionReason": null
+      },
+      "payoutProfile": {
+        "status": "VERIFIED",
+        "accountHolder": "Rameshwar S. Patel",
+        "accountNumber": "•••• •••• •••• 4821",
+        "ifsc": "SBIN0001234",
+        "bankName": "State Bank of India",
+        "branch": "Sehore Main Branch"
+      },
+      "lands": [
+        {
+          "landId": "LND-091",
+          "name": "Narmada Parcal North",
+          "surveyNumber": "Khasra 142/1, 142/2",
+          "gisCalculatedArea": 14.5,
+          "unit": "Acres",
+          "ownershipType": "Ancestral Freehold",
+          "currentCrop": "Soybean + Wheat",
+          "irrigationSource": "Tube well + Canal",
+          "approvalStatus": "LAND_APPROVED"
+        }
+      ],
+      "projects": [
+        {
+          "projectId": "PRJ-CRB-101",
+          "name": "Sehore Agroforestry Carbon Sequestration",
+          "type": "CARBON",
+          "typeLabel": "Carbon Projects",
+          "stage": "Approved / Eligible",
+          "targetImpact": "42 tCO2e/yr"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2026-01-14 11:24",
+          "action": "VIEW",
+          "performedBy": "System",
+          "note": "User registered via OTP + consent recorded"
+        },
+        {
+          "timestamp": "2026-01-15 09:40",
+          "action": "APPROVE",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "KYC Approved. F08 Payout and F10 Land registration unlocked."
+        }
+      ]
+    },
+    {
+      "id": "USR-FARM-0822",
+      "name": "Savitri Devi Kurmi",
+      "phone": "+91 94152 77812",
+      "role": "Farmer / Landowner",
+      "roleCode": "FARMER",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&auto=format&fit=crop&q=80",
+      "location": {
+        "village": "Chunar Dehat",
+        "city": "Chunar",
+        "district": "Mirzapur",
+        "state": "Uttar Pradesh",
+        "country": "India"
+      },
+      "dob": "22 May 1984",
+      "age": 41,
+      "registeredDate": "02 Feb 2026",
+      "universalStatus": "SUBMITTED",
+      "organization": {
+        "id": "ORG-NGO-0102",
+        "name": "Vindhya Watershed Foundation",
+        "type": "NGO",
+        "roleInOrg": "Project Beneficiary"
+      },
+      "kyc": {
+        "status": "SUBMITTED",
+        "documentType": "Aadhaar Card",
+        "documentNumber": "•••• •••• 6190",
+        "frontUpload": "aadhaar_front_0822.jpg",
+        "backUpload": "aadhaar_back_0822.jpg",
+        "consentChecked": true,
+        "consentVersion": "DPDP-Act-2025-v1.2",
+        "consentTimestamp": "2026-02-02T14:10:00Z",
+        "adminDecisionNote": "Submitted in A05 KYC Queue. Awaiting document clarity check.",
+        "clarificationQuestion": null,
+        "rejectionReason": null
+      },
+      "payoutProfile": {
+        "status": "PENDING_REVIEW",
+        "accountHolder": "Savitri Devi",
+        "accountNumber": "•••• •••• •••• 9924",
+        "ifsc": "PUNB0124800",
+        "bankName": "Punjab National Bank",
+        "branch": "Chunar Branch"
+      },
+      "lands": [
+        {
+          "landId": "LND-092",
+          "name": "Vindhya Slope Plot 4",
+          "surveyNumber": "Khasra 89/4",
+          "gisCalculatedArea": 8.2,
+          "unit": "Acres",
+          "ownershipType": "Self Acquired",
+          "currentCrop": "Mustard + Pulses",
+          "irrigationSource": "Rainfed / Check dam",
+          "approvalStatus": "LAND_SUBMITTED"
+        }
+      ],
+      "projects": [
+        {
+          "projectId": "PRJ-WTR-204",
+          "name": "Mirzapur Rainwater Recharge Basins",
+          "type": "WATER_IMPACT",
+          "typeLabel": "Water Impact",
+          "stage": "Data Collection",
+          "targetImpact": "1.4 M Litres Restored"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2026-02-02 14:10",
+          "action": "VIEW",
+          "performedBy": "System",
+          "note": "KYC submitted by farmer. Placed in A05 review queue."
+        }
+      ]
+    },
+    {
+      "id": "USR-FARM-0823",
+      "name": "Anita Kumari Soren",
+      "phone": "+91 97712 34190",
+      "role": "Farmer / Landowner",
+      "roleCode": "FARMER",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80",
+      "location": {
+        "village": "Angara Basti",
+        "city": "Angara",
+        "district": "Ranchi",
+        "state": "Jharkhand",
+        "country": "India"
+      },
+      "dob": "10 Nov 1991",
+      "age": 34,
+      "registeredDate": "11 Feb 2026",
+      "universalStatus": "CLARIFICATION",
+      "organization": {
+        "id": "ORG-NGO-0104",
+        "name": "Chotanagpur Green Livelihood Trust",
+        "type": "NGO",
+        "roleInOrg": "Community Lead"
+      },
+      "kyc": {
+        "status": "CLARIFICATION",
+        "documentType": "Voter ID Card + Village Certificate",
+        "documentNumber": "JH/04/021/88741",
+        "frontUpload": "voter_card_front.jpg",
+        "backUpload": "voter_card_back.jpg",
+        "consentChecked": true,
+        "consentVersion": "DPDP-Act-2025-v1.2",
+        "consentTimestamp": "2026-02-11T16:05:00Z",
+        "adminDecisionNote": "Voter ID back side address is blurred. Please upload clear scan or Aadhaar card.",
+        "clarificationQuestion": "Please re-upload back side of Voter ID showing clear permanent address and Gram Panchayat stamp.",
+        "rejectionReason": null
+      },
+      "payoutProfile": {
+        "status": "PENDING_REVIEW",
+        "accountHolder": "Anita Kumari",
+        "accountNumber": "•••• •••• •••• 1102",
+        "ifsc": "BARB0ANGARA",
+        "bankName": "Bank of Baroda",
+        "branch": "Angara Branch"
+      },
+      "lands": [
+        {
+          "landId": "LND-095",
+          "name": "Angara Community Plot",
+          "surveyNumber": "Plot 544, Thana 12",
+          "gisCalculatedArea": 6.4,
+          "unit": "Acres",
+          "ownershipType": "Tribal Land Patta",
+          "currentCrop": "Millet + Native Trees",
+          "irrigationSource": "Seasonal Nullah",
+          "approvalStatus": "LAND_DRAFT"
+        }
+      ],
+      "projects": [
+        {
+          "projectId": "PRJ-BIO-308",
+          "name": "Chotanagpur Native Flora Regeneration",
+          "type": "BIODIVERSITY",
+          "typeLabel": "Biodiversity",
+          "stage": "Draft",
+          "targetImpact": "18 Native Species"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2026-02-11 16:05",
+          "action": "VIEW",
+          "performedBy": "System",
+          "note": "KYC submitted"
+        },
+        {
+          "timestamp": "2026-02-12 11:30",
+          "action": "CLARIFY",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Question sent: Back side of Voter ID address blurred."
+        }
+      ]
+    },
+    {
+      "id": "USR-ORG-0101",
+      "name": "Digvijay Deshmukh",
+      "phone": "+91 94250 11990",
+      "role": "Organization Admin",
+      "roleCode": "ORG_ADMIN",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&auto=format&fit=crop&q=80",
+      "location": {
+        "village": "Rasulia",
+        "city": "Narmadapuram",
+        "district": "Hoshangabad",
+        "state": "Madhya Pradesh",
+        "country": "India"
+      },
+      "dob": "18 Mar 1974",
+      "age": 51,
+      "registeredDate": "12 Oct 2025",
+      "universalStatus": "APPROVED",
+      "organization": {
+        "id": "ORG-FPO-0101",
+        "name": "Narmada Valley Farmer Producer Co.",
+        "type": "FPO",
+        "roleInOrg": "Chief Executive Officer (CEO)"
+      },
+      "kyc": {
+        "status": "APPROVED",
+        "documentType": "PAN + Certificate of Incorporation + Board Resolution",
+        "documentNumber": "U01409MP2021PTC056789",
+        "frontUpload": "cin_certificate.pdf",
+        "backUpload": "board_resolution.pdf",
+        "consentChecked": true,
+        "consentVersion": "DPDP-Act-2025-v1.2",
+        "consentTimestamp": "2025-10-12T10:00:00Z",
+        "adminDecisionNote": "MCA registry and CIN number verified against ROC Gwalior portal.",
+        "clarificationQuestion": null,
+        "rejectionReason": null
+      },
+      "payoutProfile": {
+        "status": "VERIFIED",
+        "accountHolder": "Narmada Valley Farmer Producer Co. Ltd",
+        "accountNumber": "•••• •••• •••• 5002",
+        "ifsc": "HDFC0001928",
+        "bankName": "HDFC Bank",
+        "branch": "Hoshangabad Main Branch"
+      },
+      "lands": [],
+      "projects": [
+        {
+          "projectId": "PRJ-CRB-101",
+          "name": "Sehore Agroforestry Carbon Sequestration",
+          "type": "CARBON",
+          "typeLabel": "Carbon Projects",
+          "stage": "Approved / Eligible",
+          "targetImpact": "142,500 tCO2e Estimated"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2025-10-12 10:00",
+          "action": "VIEW",
+          "performedBy": "System",
+          "note": "Organization created"
+        },
+        {
+          "timestamp": "2025-10-14 15:20",
+          "action": "APPROVE",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Organization legal verification approved. Onboarding farmers unlocked."
+        }
+      ]
+    },
+    {
+      "id": "USR-AGT-0041",
+      "name": "Sanjay Mandloi",
+      "phone": "+91 97520 88310",
+      "role": "Field Agent",
+      "roleCode": "FIELD_AGENT",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=120&auto=format&fit=crop&q=80",
+      "location": {
+        "village": "Bhopal Road",
+        "city": "Sehore",
+        "district": "Sehore",
+        "state": "Madhya Pradesh",
+        "country": "India"
+      },
+      "dob": "05 Jun 1996",
+      "age": 29,
+      "registeredDate": "15 Nov 2025",
+      "universalStatus": "APPROVED",
+      "organization": {
+        "id": "ORG-FPO-0101",
+        "name": "Narmada Valley Farmer Producer Co.",
+        "type": "FPO",
+        "roleInOrg": "Senior Field Coordinator"
+      },
+      "kyc": {
+        "status": "APPROVED",
+        "documentType": "Aadhaar Card + Police Verification",
+        "documentNumber": "•••• •••• 4122",
+        "frontUpload": "aadhaar_mandloi.jpg",
+        "backUpload": "police_cert.pdf",
+        "consentChecked": true,
+        "consentVersion": "DPDP-Act-2025-v1.2",
+        "consentTimestamp": "2025-11-15T09:12:00Z",
+        "adminDecisionNote": "Field agent background check verified. Device IMEI registered.",
+        "clarificationQuestion": null,
+        "rejectionReason": null
+      },
+      "payoutProfile": {
+        "status": "VERIFIED",
+        "accountHolder": "Sanjay Mandloi",
+        "accountNumber": "•••• •••• •••• 8109",
+        "ifsc": "SBIN0004123",
+        "bankName": "State Bank of India",
+        "branch": "Sehore Town"
+      },
+      "lands": [],
+      "projects": [],
+      "auditTrail": [
+        {
+          "timestamp": "2025-11-15 09:12",
+          "action": "APPROVE",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Field Agent onboarding verified. Device assigned."
+        }
+      ]
+    },
+    {
+      "id": "USR-REV-0001",
+      "name": "Dr. Ananya Sen",
+      "phone": "+91 98300 44211",
+      "role": "MRV Specialist / Reviewer",
+      "roleCode": "MRV_SPECIALIST",
+      "avatar": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=120&auto=format&fit=crop&q=80",
+      "location": {
+        "village": "Salt Lake Sector V",
+        "city": "Kolkata",
+        "district": "North 24 Parganas",
+        "state": "West Bengal",
+        "country": "India"
+      },
+      "dob": "12 Jul 1982",
+      "age": 43,
+      "registeredDate": "01 Sep 2025",
+      "universalStatus": "APPROVED",
+      "organization": {
+        "id": "ORG-NAT-0001",
+        "name": "NATUREX Climate Tech Team",
+        "type": "Internal",
+        "roleInOrg": "Lead Soil Agronomist & GHG Verifier"
+      },
+      "kyc": {
+        "status": "APPROVED",
+        "documentType": "Doctorate Agronomy + GHG Protocol Auditor ID",
+        "documentNumber": "GHG-PROT-2018-8841",
+        "frontUpload": "degree_cert.pdf",
+        "backUpload": "auditor_badge.pdf",
+        "consentChecked": true,
+        "consentVersion": "DPDP-Act-2025-v1.2",
+        "consentTimestamp": "2025-09-01T08:00:00Z",
+        "adminDecisionNote": "Credentials verified against Indian Council of Agricultural Research (ICAR).",
+        "clarificationQuestion": null,
+        "rejectionReason": null
+      },
+      "payoutProfile": {
+        "status": "VERIFIED",
+        "accountHolder": "Dr. Ananya Sen",
+        "accountNumber": "•••• •••• •••• 3341",
+        "ifsc": "ICIC0000024",
+        "bankName": "ICICI Bank",
+        "branch": "Salt Lake Sector V"
+      },
+      "lands": [],
+      "projects": [],
+      "auditTrail": [
+        {
+          "timestamp": "2025-09-01 08:00",
+          "action": "APPROVE",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Reviewer scope assigned: Carbon soil baselines."
+        }
+      ]
+    },
+    {
+      "id": "USR-AUD-0001",
+      "name": "Bureau Veritas India (ACVA)",
+      "phone": "+91 22 6274 2000",
+      "role": "Accredited Verifier (ACVA)",
+      "roleCode": "ACVA_VERIFIER",
+      "avatar": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=120&auto=format&fit=crop&q=80",
+      "location": {
+        "village": "Marol, Andheri East",
+        "city": "Mumbai",
+        "district": "Mumbai Suburban",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      "dob": "01 Jan 2000",
+      "age": 26,
+      "registeredDate": "10 Aug 2025",
+      "universalStatus": "APPROVED",
+      "organization": {
+        "id": "ORG-ACVA-0004",
+        "name": "Bureau Veritas Certification India Pvt Ltd",
+        "type": "ACVA",
+        "roleInOrg": "Accredited Carbon Verification Agency"
+      },
+      "kyc": {
+        "status": "APPROVED",
+        "documentType": "BEE / CCTS Accreditation Certificate #ACVA-004",
+        "documentNumber": "BEE-CCTS-ACVA-2024-004",
+        "frontUpload": "bee_acva_license.pdf",
+        "backUpload": "nabcb_iso_14065.pdf",
+        "consentChecked": true,
+        "consentVersion": "DPDP-Act-2025-v1.2",
+        "consentTimestamp": "2025-08-10T11:00:00Z",
+        "adminDecisionNote": "BEE registry verified. ISO 14065 accreditation confirmed by NABCB.",
+        "clarificationQuestion": null,
+        "rejectionReason": null
+      },
+      "payoutProfile": {
+        "status": "VERIFIED",
+        "accountHolder": "Bureau Veritas Certification India",
+        "accountNumber": "•••• •••• •••• 9001",
+        "ifsc": "CITI0000003",
+        "bankName": "Citibank N.A.",
+        "branch": "BKC Mumbai"
+      },
+      "lands": [],
+      "projects": [],
+      "auditTrail": [
+        {
+          "timestamp": "2025-08-10 11:00",
+          "action": "APPROVE",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "ACVA Independent Verifier tenant activated."
+        }
+      ]
+    },
+    {
+      "id": "USR-FARM-0826",
+      "name": "Jivram Bhai Rabari",
+      "phone": "+91 98250 33419",
+      "role": "Farmer / Landowner",
+      "roleCode": "FARMER",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&auto=format&fit=crop&q=80",
+      "location": {
+        "village": "Tharad Rural",
+        "city": "Tharad",
+        "district": "Banaskantha",
+        "state": "Gujarat",
+        "country": "India"
+      },
+      "dob": "08 Sep 1970",
+      "age": 55,
+      "registeredDate": "28 Dec 2025",
+      "universalStatus": "APPROVED",
+      "organization": {
+        "id": "ORG-FPO-0105",
+        "name": "Gir Agro Producer Organization",
+        "type": "FPO",
+        "roleInOrg": "Farmer Member"
+      },
+      "kyc": {
+        "status": "APPROVED",
+        "documentType": "Aadhaar Card + 7/12 Gujarat Land Record",
+        "documentNumber": "•••• •••• 9012",
+        "frontUpload": "aadhaar_jivram.jpg",
+        "backUpload": "anyror_gujarat_712.pdf",
+        "consentChecked": true,
+        "consentVersion": "DPDP-Act-2025-v1.2",
+        "consentTimestamp": "2025-12-28T14:30:00Z",
+        "adminDecisionNote": "AnyRoR portal 7/12 record verified. Farmer holding matches survey 308/P.",
+        "clarificationQuestion": null,
+        "rejectionReason": null
+      },
+      "payoutProfile": {
+        "status": "VERIFIED",
+        "accountHolder": "Jivram B. Rabari",
+        "accountNumber": "•••• •••• •••• 6612",
+        "ifsc": "BKDN0210089",
+        "bankName": "Bank of Baroda",
+        "branch": "Tharad"
+      },
+      "lands": [
+        {
+          "landId": "LND-098",
+          "name": "Banaskantha Pasture & Crop Land",
+          "surveyNumber": "Survey 308/P",
+          "gisCalculatedArea": 24.0,
+          "unit": "Acres",
+          "ownershipType": "Self Acquired Freehold",
+          "currentCrop": "Castor + Fodder Grass",
+          "irrigationSource": "Narmada Canal Siphon",
+          "approvalStatus": "LAND_APPROVED"
+        }
+      ],
+      "projects": [
+        {
+          "projectId": "PRJ-WTR-210",
+          "name": "North Gujarat Micro-irrigation Water Saving",
+          "type": "WATER_IMPACT",
+          "typeLabel": "Water Impact",
+          "stage": "Approved / Eligible",
+          "targetImpact": "3.8 M Litres Saved"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2025-12-28 14:30",
+          "action": "APPROVE",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "KYC and Land 7/12 verified."
+        }
+      ]
+    },
+    {
+      "id": "USR-FARM-0827",
+      "name": "Harbhajan Singh Gill",
+      "phone": "+91 98140 55198",
+      "role": "Farmer / Landowner",
+      "roleCode": "FARMER",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80",
+      "location": {
+        "village": "Bhawanigarh",
+        "city": "Sangrur",
+        "district": "Sangrur",
+        "state": "Punjab",
+        "country": "India"
+      },
+      "dob": "19 Dec 1968",
+      "age": 57,
+      "registeredDate": "15 Jan 2026",
+      "universalStatus": "REJECTED",
+      "organization": {
+        "id": "ORG-DEV-0103",
+        "name": "TerraCarbon Agro Initiatives Pvt Ltd",
+        "type": "Project Developer",
+        "roleInOrg": "Direct Farmer Partner"
+      },
+      "kyc": {
+        "status": "REJECTED",
+        "documentType": "Old Ration Card",
+        "documentNumber": "PB/SNG/1998/12",
+        "frontUpload": "old_ration_card.jpg",
+        "backUpload": "old_ration_card_b.jpg",
+        "consentChecked": true,
+        "consentVersion": "DPDP-Act-2025-v1.2",
+        "consentTimestamp": "2026-01-15T12:00:00Z",
+        "adminDecisionNote": "Ration card is not accepted as primary identity under DPDP 2025 rules. Aadhaar or Voter ID mandatory.",
+        "clarificationQuestion": null,
+        "rejectionReason": "Invalid document type: Ration card cannot be accepted. Please submit Aadhaar Card or Voter ID along with Jamabandi land record."
+      },
+      "payoutProfile": {
+        "status": "PENDING_REVIEW",
+        "accountHolder": "Harbhajan Singh",
+        "accountNumber": "•••• •••• •••• 1009",
+        "ifsc": "PSIB0000182",
+        "bankName": "Punjab & Sind Bank",
+        "branch": "Bhawanigarh"
+      },
+      "lands": [
+        {
+          "landId": "LND-099",
+          "name": "Sangrur North Killa 12-16",
+          "surveyNumber": "Murabba 34, Killa 12-16",
+          "gisCalculatedArea": 32.0,
+          "unit": "Acres",
+          "ownershipType": "Jamabandi Freehold",
+          "currentCrop": "Direct Seeded Rice + Wheat",
+          "irrigationSource": "Solar Tube well",
+          "approvalStatus": "LAND_REJECTED"
+        }
+      ],
+      "projects": [],
+      "auditTrail": [
+        {
+          "timestamp": "2026-01-15 12:00",
+          "action": "VIEW",
+          "performedBy": "System",
+          "note": "KYC submitted with ration card"
+        },
+        {
+          "timestamp": "2026-01-16 10:15",
+          "action": "REJECT",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Rejected: Invalid document type. User can edit & resubmit."
+        }
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "ORG-FPO-0101",
+      "name": "Narmada Valley Farmer Producer Co.",
+      "type": "FPO",
+      "registrationNo": "U01409MP2021PTC056789",
+      "headquarters": "Hoshangabad, MP",
+      "status": "APPROVED",
+      "farmersCount": 640,
+      "managedAcreage": "8,450 Acres",
+      "projectsCount": 12,
+      "contactPerson": "Digvijay Deshmukh (CEO)",
+      "onboardedDate": "Nov 2025"
+    },
+    {
+      "id": "ORG-NGO-0102",
+      "name": "Vindhya Watershed Foundation",
+      "type": "NGO",
+      "registrationNo": "NGO-DARPAN-UP/2019/023145",
+      "headquarters": "Varanasi, UP",
+      "status": "APPROVED",
+      "farmersCount": 380,
+      "managedAcreage": "4,120 Acres",
+      "projectsCount": 6,
+      "contactPerson": "Dr. Aparna Shastri",
+      "onboardedDate": "Dec 2025"
+    },
+    {
+      "id": "ORG-DEV-0103",
+      "name": "TerraCarbon Agro Initiatives Pvt Ltd",
+      "type": "Project Developer",
+      "registrationNo": "U74999DL2022PTC398124",
+      "headquarters": "New Delhi",
+      "status": "APPROVED",
+      "farmersCount": 1120,
+      "managedAcreage": "18,900 Acres",
+      "projectsCount": 24,
+      "contactPerson": "Vikramaditya Roy",
+      "onboardedDate": "Oct 2025"
+    },
+    {
+      "id": "ORG-FPO-0104",
+      "name": "Cauvery Delta Organic Producers Co.",
+      "type": "FPO",
+      "registrationNo": "U01112TN2020PTC044192",
+      "headquarters": "Thanjavur, TN",
+      "status": "SUBMITTED",
+      "farmersCount": 290,
+      "managedAcreage": "3,400 Acres",
+      "projectsCount": 4,
+      "contactPerson": "S. Selvaraj",
+      "onboardedDate": "Jan 2026"
+    }
+  ],
+  "fieldAgents": [
+    {
+      "id": "AGT-041",
+      "name": "Sanjay Mandloi",
+      "phone": "+91 97520 •••••",
+      "assignedRegion": "Sehore & Dewas, MP",
+      "organization": "Narmada Valley FPO",
+      "activeVisits": 4,
+      "completedVisits": 148,
+      "syncStatus": "Synced (4 min ago)",
+      "syncState": "success",
+      "appVersion": "v1.4.2-offline",
+      "lastActive": "Active now"
+    },
+    {
+      "id": "AGT-042",
+      "name": "Pooja Chaurasia",
+      "phone": "+91 96160 •••••",
+      "assignedRegion": "Mirzapur & Sonbhadra, UP",
+      "organization": "Vindhya Watershed NGO",
+      "activeVisits": 2,
+      "completedVisits": 92,
+      "syncStatus": "3 Pending Uploads",
+      "syncState": "warning",
+      "appVersion": "v1.4.2-offline",
+      "lastActive": "18 min ago"
+    },
+    {
+      "id": "AGT-043",
+      "name": "Harpreet Singh Dhillon",
+      "phone": "+91 98880 •••••",
+      "assignedRegion": "Sangrur & Patiala, Punjab",
+      "organization": "TerraCarbon Pvt Ltd",
+      "activeVisits": 6,
+      "completedVisits": 210,
+      "syncStatus": "Synced (1 hr ago)",
+      "syncState": "success",
+      "appVersion": "v1.4.2-offline",
+      "lastActive": "Active now"
+    },
+    {
+      "id": "AGT-044",
+      "name": "Karthik Subramanian",
+      "phone": "+91 94440 •••••",
+      "assignedRegion": "Thanjavur Delta, TN",
+      "organization": "Cauvery Delta FPO",
+      "activeVisits": 1,
+      "completedVisits": 74,
+      "syncStatus": "Network Timeout (Retry queued)",
+      "syncState": "danger",
+      "appVersion": "v1.4.1-offline",
+      "lastActive": "42 min ago"
+    }
+  ],
+  "reviewers": [
+    {
+      "id": "REV-01",
+      "name": "Dr. Ananya Sen",
+      "role": "MRV Specialist (Soil Carbon)",
+      "organization": "Internal NATUREX Team",
+      "accreditation": "Ph.D. Soil Agronomy, GHG Protocol Cert.",
+      "assignedProjects": 28,
+      "pendingReviews": 5,
+      "status": "Active"
+    },
+    {
+      "id": "REV-02",
+      "name": "Kavitha Ranganathan",
+      "role": "MRV Specialist (Water & Bio)",
+      "organization": "Internal NATUREX Team",
+      "accreditation": "Hydrological Modeling Specialist",
+      "assignedProjects": 18,
+      "pendingReviews": 3,
+      "status": "Active"
+    },
+    {
+      "id": "AUD-01",
+      "name": "Bureau Veritas India (ACVA)",
+      "role": "Accredited Carbon Verifier",
+      "organization": "Bureau Veritas Certification",
+      "accreditation": "BEE / CCTS Accredited Agency #ACVA-004",
+      "assignedProjects": 12,
+      "pendingReviews": 4,
+      "status": "Independent Auditor"
+    },
+    {
+      "id": "AUD-02",
+      "name": "TÜV SÜD South Asia (ACVA)",
+      "role": "Accredited Carbon Verifier",
+      "organization": "TÜV SÜD India",
+      "accreditation": "BEE / CCTS Accredited Agency #ACVA-007",
+      "assignedProjects": 9,
+      "pendingReviews": 2,
+      "status": "Independent Auditor"
+    }
+  ],
+  "rbacMatrix": [
+    {
+      "module": "Dashboard & Platform KPIs (A01)",
+      "superAdmin": "Full View & Export",
+      "orgAdmin": "Tenant Scoped",
+      "mrvSpecialist": "Project Scoped",
+      "acvaVerifier": "Audit Scoped"
+    },
+    {
+      "module": "Users & Scoped Directory (A02)",
+      "superAdmin": "Create / Edit / Suspend",
+      "orgAdmin": "Add / Manage Org Users",
+      "mrvSpecialist": "Read Only",
+      "acvaVerifier": "Read Sample Records"
+    },
+    {
+      "module": "Roles & Permission Policies (A03)",
+      "superAdmin": "Manage All RBAC Policies",
+      "orgAdmin": "Assign Org Member Roles",
+      "mrvSpecialist": "No Access",
+      "acvaVerifier": "No Access"
+    },
+    {
+      "module": "Organizations Verification (A04)",
+      "superAdmin": "Approve / Reject Legal Entity",
+      "orgAdmin": "Update Org Profile & Staff",
+      "mrvSpecialist": "No Access",
+      "acvaVerifier": "View Org Metadata"
+    },
+    {
+      "module": "KYC Review & Gate Decisions (A05)",
+      "superAdmin": "Approve / Reject / Clarify",
+      "orgAdmin": "View Status & Assisted Resubmit",
+      "mrvSpecialist": "View Identity Proofs",
+      "acvaVerifier": "Audit Verification Trail"
+    },
+    {
+      "module": "Land Registry & PostGIS Geometry (A06/A07)",
+      "superAdmin": "Adjudicate Overlaps & Approve",
+      "orgAdmin": "Upload KML / Polygon Mapping",
+      "mrvSpecialist": "Validate Polygon Baselines",
+      "acvaVerifier": "Cross-check Satellite Bounds"
+    },
+    {
+      "module": "Project State Machine (A08/A09)",
+      "superAdmin": "Screening & Final Eligibility",
+      "orgAdmin": "Draft to Submitted",
+      "mrvSpecialist": "Technical Signoff / Findings",
+      "acvaVerifier": "Accredited Verification Stamp"
+    },
+    {
+      "module": "Field Ops & Visit Dispatch (A14/A15)",
+      "superAdmin": "Global Dispatch & Re-route",
+      "orgAdmin": "Assign Org Field Agents",
+      "mrvSpecialist": "Request Ground Re-visit",
+      "acvaVerifier": "No Access"
+    },
+    {
+      "module": "Benefits & Finance Ledger (A18)",
+      "superAdmin": "Disbursement & Bank Reconcile",
+      "orgAdmin": "View Farmer Entitlements",
+      "mrvSpecialist": "No Access",
+      "acvaVerifier": "Review Audit Ledger"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "summaryKpis": [
+    {
+      "id": "kpi-land",
+      "label": "Total Registered Land",
+      "value": "48,250",
+      "unit": "Acres",
+      "secondaryValue": "19,526 Hectares",
+      "trend": "+14.2% this month",
+      "trendDirection": "up",
+      "icon": "MapPin",
+      "category": "Land & GIS"
+    },
+    {
+      "id": "kpi-farmers",
+      "label": "Registered Farmers",
+      "value": "3,420",
+      "unit": "Accounts",
+      "secondaryValue": "2,890 KYC Verified",
+      "trend": "84.5% verification rate",
+      "trendDirection": "up",
+      "icon": "Users",
+      "category": "Identity"
+    },
+    {
+      "id": "kpi-projects",
+      "label": "Active Impact Projects",
+      "value": "184",
+      "unit": "Projects",
+      "secondaryValue": "112 Carbon • 46 Water • 26 Bio",
+      "trend": "+9 submitted this week",
+      "trendDirection": "up",
+      "icon": "FolderKanban",
+      "category": "Projects"
+    },
+    {
+      "id": "kpi-benefits",
+      "label": "Benefits & Obligations",
+      "value": "₹ 1.84 Cr",
+      "unit": "Total Ledger",
+      "secondaryValue": "₹ 42.6 L Pending Settlement",
+      "trend": "100% bank reconciled",
+      "trendDirection": "neutral",
+      "icon": "Receipt",
+      "category": "Finance"
+    }
+  ],
+  "priorityAlertQueues": [
+    {
+      "id": "alert-kyc",
+      "title": "KYC Review Queue",
+      "count": 34,
+      "severity": "warning",
+      "badge": "Action Required",
+      "description": "Farmer & user identity documents awaiting admin approval or clarification",
+      "targetKey": "kyc-queue"
+    },
+    {
+      "id": "alert-conflicts",
+      "title": "Boundary Conflicts",
+      "count": 7,
+      "severity": "danger",
+      "badge": "GIS Alert",
+      "description": "Overlapping polygons detected via PostGIS spatial check requiring manual adjudication",
+      "targetKey": "boundary-conflicts"
+    },
+    {
+      "id": "alert-evidence",
+      "title": "Evidence Pending Review",
+      "count": 52,
+      "severity": "warning",
+      "badge": "MRV Review",
+      "description": "Field media uploads by agents awaiting GPS metadata and duplicate hash verification",
+      "targetKey": "evidence-review"
+    },
+    {
+      "id": "alert-visits",
+      "title": "Overdue Field Visits",
+      "count": 12,
+      "severity": "danger",
+      "badge": "Field Ops",
+      "description": "Scheduled ground monitoring visits past due date or requiring agent route reassignment",
+      "targetKey": "field-visits"
+    },
+    {
+      "id": "alert-verification",
+      "title": "ACVA Verification Queue",
+      "count": 5,
+      "severity": "info",
+      "badge": "3rd-Party",
+      "description": "Projects ready for independent carbon verification under BEE/CCTS accredited agencies",
+      "targetKey": "acva-verification"
+    },
+    {
+      "id": "alert-sync",
+      "title": "Offline Sync Failures",
+      "count": 3,
+      "severity": "danger",
+      "badge": "Sync Issue",
+      "description": "Field evidence uploads with network timeout or media checksum mismatch requiring retry",
+      "targetKey": "offline-sync"
+    }
+  ],
+  "lifecycleStages": [
+    { "stage": "Draft", "count": 28 },
+    { "stage": "Submitted", "count": 34 },
+    { "stage": "Screening", "count": 19 },
+    { "stage": "Data Collection", "count": 45 },
+    { "stage": "MRV Monitoring", "count": 31 },
+    { "stage": "Technical Review", "count": 16 },
+    { "stage": "Verification", "count": 11 },
+    { "stage": "Approved / Eligible", "count": 24 }
+  ],
+  "projectTypesBreakdown": [
+    {
+      "type": "Carbon Projects",
+      "count": 112,
+      "percentage": 61,
+      "acreage": "31,400 Acres",
+      "impactMetric": "142,500 tCO2e Estimated",
+      "tone": "mint"
+    },
+    {
+      "type": "Water Impact",
+      "count": 46,
+      "percentage": 25,
+      "acreage": "11,250 Acres",
+      "impactMetric": "480 M Litres Restored",
+      "tone": "sky"
+    },
+    {
+      "type": "Biodiversity",
+      "count": 26,
+      "percentage": 14,
+      "acreage": "5,600 Acres",
+      "impactMetric": "85 Native Flora Species",
+      "tone": "sage"
+    }
+  ],
+  "complianceBanner": {
+    "title": "Document Compliance Boundary (MVP v1.0)",
+    "description": "Under Indian Carbon Market (CCTS) rules, validation is conducted by Accredited Carbon Verification Agencies (ACVAs) with BEE registry oversight. Claim discipline enforced: estimates are never labelled as verified."
+  }
+}

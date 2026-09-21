@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Exact "Soft Harmony" Palette with High Contrast & Clarity */
+    --color-mint-green: #EAF4F2;
+    --color-sky-blue: #CFE7F1;
+    --color-soft-blue: #D0EFE8;
+    --color-cream: #F8F3EC;
+    --color-blush-pink: #F7E6E6;
+    --color-sand: #EADDD1;
+    --color-sage-green: #A7C9B8;
+    --color-warm-grey: #D6D0C8;
+
+    /* High Visibility Primary Text & Accents */
+    --color-primary-cta: #2D6A4F;
+    --color-primary-hover: #20503B;
+    --text-primary: #0F172A;
+    --text-secondary: #334155;
+    --text-muted: #64748B;
+
+    /* Base Surfaces */
+    --bg-page: #F8F3EC;
+    --surface-card: #FFFFFF;
+    --border-soft: #DDD4C7;
+  }
+
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Soft Harmony High-Contrast Card & Surface Styling */
+.harmony-card {
+  background-color: #FFFFFF;
+  border: 1px solid #DDD4C7;
+  box-shadow: 0 4px 20px -2px rgba(185, 175, 160, 0.28), 0 2px 6px -1px rgba(185, 175, 160, 0.16);
+  border-radius: 1.5rem;
+}
+
+.harmony-card-subtle {
+  background-color: #FAF7F2;
+  border: 1px solid #DDD4C7;
+  border-radius: 1.25rem;
+}
+
+/* Soft Radiant Sea Green Boundary Flash around entire viewport (Requested by User) */
+@keyframes seaGreenBoundaryFlash {
+  0% {
+    border-color: rgba(58, 168, 142, 0.25);
+    box-shadow: 
+      inset 0 0 25px 2px rgba(58, 168, 142, 0.18),
+      inset 0 0 12px 1px rgba(45, 212, 191, 0.20);
+  }
+  50% {
+    border-color: rgba(58, 168, 142, 0.65);
+    box-shadow: 
+      inset 0 0 45px 4px rgba(58, 168, 142, 0.35),
+      inset 0 0 22px 2px rgba(45, 212, 191, 0.40);
+  }
+  100% {
+    border-color: rgba(58, 168, 142, 0.25);
+    box-shadow: 
+      inset 0 0 25px 2px rgba(58, 168, 142, 0.18),
+      inset 0 0 12px 1px rgba(45, 212, 191, 0.20);
+  }
+}
+
+.page-boundary-flash {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 30;
+  border: 2px solid rgba(58, 168, 142, 0.45);
+  box-shadow: 
+    inset 0 0 35px 2px rgba(58, 168, 142, 0.22),
+    inset 0 0 16px 1px rgba(45, 212, 191, 0.25);
+  border-radius: 0;
+  animation: seaGreenBoundaryFlash 3.5s ease-in-out infinite;
+}
+
+/* Sidebar clean smooth scrollbar */
+.sidebar-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #DDD4C7 transparent;
+}
+.sidebar-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.sidebar-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar-scrollbar::-webkit-scrollbar-thumb {
+  background: #DDD4C7;
+  border-radius: 9999px;
+}
+.sidebar-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #B8ADA0;
+}
+
+/* Sea Green Tinted KPI Card requested by user */
+.harmony-kpi-card {
+  background: linear-gradient(140deg, #FFFFFF 40%, #EAF4F2 100%);
+  border: 1px solid #C0DFD3;
+  box-shadow: 0 4px 18px -2px rgba(167, 201, 184, 0.35), 0 2px 6px -1px rgba(167, 201, 184, 0.15);
+  border-radius: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.harmony-kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -2px rgba(167, 201, 184, 0.45);
+  border-color: #7EC8B5;
+}
+
+/* Ultra-light, clean soft pastel badges (No dark or heavy colors) */
+.badge-mint-tint {
+  background-color: #F0FDF4 !important;
+  border: 1px solid #DCFCE7 !important;
+  color: #15803D !important;
+  font-weight: 700 !important;
+}
+
+.badge-sky-tint {
+  background-color: #F0F9FF !important;
+  border: 1px solid #E0F2FE !important;
+  color: #0369A1 !important;
+  font-weight: 700 !important;
+}
+
+.badge-alert-tint {
+  background-color: #FEF2F2 !important;
+  border: 1px solid #FEE2E2 !important;
+  color: #B91C1C !important;
+  font-weight: 700 !important;
+}
+
+.badge-warning-tint {
+  background-color: #FFFBEB !important;
+  border: 1px solid #FEF3C7 !important;
+  color: #B45309 !important;
+  font-weight: 700 !important;
+}
+
+/* Active Nav Pill: Light Sky White */
+.harmony-pill-active {
+  background-color: #F0F9FF !important;
+  border: 1px solid #BAE6FD !important;
+  color: #0369A1 !important;
+  font-weight: 700 !important;
+  border-radius: 0.75rem;
+}
+
+/* Active Sub-item: Light Mint White */
+.harmony-subitem-active {
+  background-color: #F0FDF4 !important;
+  border: 1px solid #BBF7D0 !important;
+  color: #15803D !important;
+  font-weight: 700 !important;
+  border-radius: 0.75rem;
+}
+
+/* Primary CTA Button */
+.harmony-btn-primary {
+  background-color: #2D6A4F;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+.harmony-btn-primary:hover {
+  background-color: #1F4F39;
+  box-shadow: 0 4px 14px rgba(45, 106, 79, 0.35);
+}
+
+/* Search input with crisp border and clear contrast */
+.harmony-input {
+  background-color: #F8F5F0;
+  border: 1px solid #DDD4C7;
+  color: #0F172A;
+}
+.harmony-input:focus-within {
+  border-color: #2D6A4F;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 2px rgba(45, 106, 79, 0.15);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D2C7B8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B4A795;
+}

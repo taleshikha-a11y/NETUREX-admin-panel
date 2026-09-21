@@ -1,0 +1,362 @@
+{
+  "summaryStats": {
+    "totalAcreage": {
+      "value": "4,826.4",
+      "unit": "Acres",
+      "growth": "+340 this month",
+      "gisVerified": "4,210.8 Acres"
+    },
+    "totalParcels": {
+      "count": 342,
+      "verifiedCount": 298,
+      "pendingSurvey": 39,
+      "flagged": 5
+    },
+    "boundaryConflicts": {
+      "count": 5,
+      "overlapArea": "42.8 Acres",
+      "highSeverity": 2,
+      "actionPending": 5
+    },
+    "satelliteCoverage": {
+      "percentage": "96.4%",
+      "source": "Sentinel-2 / PlanetScope",
+      "lastSync": "Today 04:30 AM",
+      "ndviMean": "0.68"
+    }
+  },
+  "parcels": [
+    {
+      "id": "PARCEL-MP-0891",
+      "farmerId": "USR-FARM-5262",
+      "farmerName": "Rahul Sharma",
+      "farmerPhone": "+91 98261 78900",
+      "surveyNumber": "Khasra 142/2, 143/1",
+      "location": {
+        "state": "Madhya Pradesh",
+        "district": "Sehore",
+        "tehsil": "Ashta",
+        "village": "Bhonrasa",
+        "patwariHalka": "PH-18"
+      },
+      "declaredArea": 12.5,
+      "gisArea": 12.38,
+      "status": "VERIFIED",
+      "soilType": "Black Cotton Soil (Vertisol)",
+      "cropPattern": "Soybean - Wheat - Chickpea",
+      "polygonCoordinates": [
+        [22.9821, 76.5412],
+        [22.9845, 76.5438],
+        [22.9818, 76.5471],
+        [22.9792, 76.5442]
+      ],
+      "ndviScore": 0.72,
+      "canopyDensity": "Medium-High",
+      "surveyDate": "14 Aug 2026",
+      "fieldAgent": "Sanjay Mandloi (FA-0041)",
+      "documentStatus": "VERIFIED",
+      "conflictDetails": null
+    },
+    {
+      "id": "PARCEL-UP-0412",
+      "farmerId": "USR-FARM-0822",
+      "farmerName": "Savitri Devi Kurmi",
+      "farmerPhone": "+91 94152 77812",
+      "surveyNumber": "Khasra 89/1, 90/3",
+      "location": {
+        "state": "Uttar Pradesh",
+        "district": "Mirzapur",
+        "tehsil": "Chunar",
+        "village": "Adalhat Dehat",
+        "patwariHalka": "PH-04"
+      },
+      "declaredArea": 8.0,
+      "gisArea": 7.92,
+      "status": "VERIFIED",
+      "soilType": "Alluvial Loam",
+      "cropPattern": "Paddy - Mustard - Pulses",
+      "polygonCoordinates": [
+        [25.1245, 82.8912],
+        [25.1278, 82.8935],
+        [25.1261, 82.8974],
+        [25.1232, 82.8948]
+      ],
+      "ndviScore": 0.69,
+      "canopyDensity": "High Agroforestry",
+      "surveyDate": "02 Feb 2026",
+      "fieldAgent": "Pankaj Tiwari (FA-0062)",
+      "documentStatus": "VERIFIED",
+      "conflictDetails": null
+    },
+    {
+      "id": "PARCEL-MP-0914",
+      "farmerId": "USR-FARM-1104",
+      "farmerName": "Rameshwar Patel",
+      "farmerPhone": "+91 97520 11984",
+      "surveyNumber": "Khasra 210/4, 211",
+      "location": {
+        "state": "Madhya Pradesh",
+        "district": "Dewas",
+        "tehsil": "Sonkatch",
+        "village": "Pipalrawan",
+        "patwariHalka": "PH-09"
+      },
+      "declaredArea": 16.0,
+      "gisArea": 15.82,
+      "status": "CONFLICT",
+      "soilType": "Medium Black Soil",
+      "cropPattern": "Cotton - Wheat",
+      "polygonCoordinates": [
+        [22.9512, 76.3812],
+        [22.9548, 76.3845],
+        [22.9525, 76.3892],
+        [22.9491, 76.3854]
+      ],
+      "ndviScore": 0.64,
+      "canopyDensity": "Medium",
+      "surveyDate": "19 Sept 2026",
+      "fieldAgent": "Sanjay Mandloi (FA-0041)",
+      "documentStatus": "DOCUMENT_FLAGGED",
+      "conflictDetails": {
+        "conflictId": "CONF-081",
+        "overlappingParcelId": "PARCEL-MP-0915",
+        "overlappingFarmer": "Jagdish Chandra Patel",
+        "overlapAcreage": 2.4,
+        "overlapPercentage": "15.2%",
+        "reason": "Survey boundary overlaps adjacent parcel on northern boundary",
+        "severity": "HIGH",
+        "status": "PENDING_RESOLUTION"
+      }
+    },
+    {
+      "id": "PARCEL-MH-0288",
+      "farmerId": "USR-FARM-9012",
+      "farmerName": "Balasaheb Jadhav",
+      "farmerPhone": "+91 98220 54129",
+      "surveyNumber": "Gat No. 344/2",
+      "location": {
+        "state": "Maharashtra",
+        "district": "Yavatmal",
+        "tehsil": "Ralegaon",
+        "village": "Wadki",
+        "patwariHalka": "PH-22"
+      },
+      "declaredArea": 24.5,
+      "gisArea": 24.18,
+      "status": "VERIFIED",
+      "soilType": "Deep Vertisol Clay",
+      "cropPattern": "Cotton - Soybean - Pigeonpea",
+      "polygonCoordinates": [
+        [20.4125, 78.4512],
+        [20.4168, 78.4555],
+        [20.4132, 78.4612],
+        [20.4095, 78.4568]
+      ],
+      "ndviScore": 0.74,
+      "canopyDensity": "Agroforestry Mixed",
+      "surveyDate": "10 Aug 2026",
+      "fieldAgent": "Vilasrao Deshmukh (FA-0019)",
+      "documentStatus": "VERIFIED",
+      "conflictDetails": null
+    },
+    {
+      "id": "PARCEL-RJ-0518",
+      "farmerId": "USR-FARM-7721",
+      "farmerName": "Hanuman Singh Shekhawat",
+      "farmerPhone": "+91 94140 33201",
+      "surveyNumber": "Khasra 412/1",
+      "location": {
+        "state": "Rajasthan",
+        "district": "Sikar",
+        "tehsil": "Danta Ramgarh",
+        "village": "Khatushyamji Rural",
+        "patwariHalka": "PH-12"
+      },
+      "declaredArea": 18.0,
+      "gisArea": 17.65,
+      "status": "PENDING_SURVEY",
+      "soilType": "Sandy Aridisol",
+      "cropPattern": "Bajra - Guar - Mustard",
+      "polygonCoordinates": [
+        [27.4215, 75.3125],
+        [27.4258, 75.3168],
+        [27.4221, 75.3215],
+        [27.4185, 75.3172]
+      ],
+      "ndviScore": 0.48,
+      "canopyDensity": "Sparse / Silvopasture",
+      "surveyDate": "Pending Field Visit",
+      "fieldAgent": "Not Assigned",
+      "documentStatus": "SUBMITTED",
+      "conflictDetails": null
+    },
+    {
+      "id": "PARCEL-AP-0331",
+      "farmerId": "USR-FARM-6140",
+      "farmerName": "K. Venkateswarlu",
+      "farmerPhone": "+91 98480 22190",
+      "surveyNumber": "Sy No. 518/A, 519",
+      "location": {
+        "state": "Andhra Pradesh",
+        "district": "Anantapur",
+        "tehsil": "Kalyandurg",
+        "village": "Garudapuram",
+        "patwariHalka": "Village Revenue Circle 3"
+      },
+      "declaredArea": 14.2,
+      "gisArea": 13.95,
+      "status": "CONFLICT",
+      "soilType": "Red Sandy Loam (Alfisols)",
+      "cropPattern": "Groundnut - Redgram - Horticulture",
+      "polygonCoordinates": [
+        [14.5125, 77.1245],
+        [14.5168, 77.1292],
+        [14.5135, 77.1345],
+        [14.5098, 77.1298]
+      ],
+      "ndviScore": 0.58,
+      "canopyDensity": "Dryland Horticulture",
+      "surveyDate": "12 Sept 2026",
+      "fieldAgent": "B. Ramanjaneyulu (FA-0084)",
+      "documentStatus": "DOCUMENT_FLAGGED",
+      "conflictDetails": {
+        "conflictId": "CONF-082",
+        "overlappingParcelId": "PARCEL-AP-0332",
+        "overlappingFarmer": "K. Narayana Rao",
+        "overlapAcreage": 1.8,
+        "overlapPercentage": "12.7%",
+        "reason": "Sub-division boundary line disputed between shared inheritance survey numbers",
+        "severity": "HIGH",
+        "status": "PENDING_RESOLUTION"
+      }
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "CONF-081",
+      "parcelA": {
+        "id": "PARCEL-MP-0914",
+        "farmerName": "Rameshwar Patel",
+        "khasra": "Khasra 210/4",
+        "declaredArea": 16.0
+      },
+      "parcelB": {
+        "id": "PARCEL-MP-0915",
+        "farmerName": "Jagdish Chandra Patel",
+        "khasra": "Khasra 210/5",
+        "declaredArea": 14.5
+      },
+      "location": "Pipalrawan, Sonkatch, Dewas (MP)",
+      "overlapAcreage": 2.4,
+      "overlapPercentage": "15.2%",
+      "detectedAt": "19 Sept 2026",
+      "severity": "HIGH",
+      "status": "ACTION_REQUIRED",
+      "reason": "PostGIS spatial polygon intersection detected 2.4 acres overlapping along Northern ridge.",
+      "assignedAgent": "Sanjay Mandloi",
+      "recommendedAction": "Re-survey with RTK-GPS drone or physical patwari demarcation"
+    },
+    {
+      "id": "CONF-082",
+      "parcelA": {
+        "id": "PARCEL-AP-0331",
+        "farmerName": "K. Venkateswarlu",
+        "khasra": "Sy No. 518/A",
+        "declaredArea": 14.2
+      },
+      "parcelB": {
+        "id": "PARCEL-AP-0332",
+        "farmerName": "K. Narayana Rao",
+        "khasra": "Sy No. 518/B",
+        "declaredArea": 11.0
+      },
+      "location": "Garudapuram, Kalyandurg, Anantapur (AP)",
+      "overlapAcreage": 1.8,
+      "overlapPercentage": "12.7%",
+      "detectedAt": "12 Sept 2026",
+      "severity": "HIGH",
+      "status": "ACTION_REQUIRED",
+      "reason": "Inheritance partition boundary overlapping on canal irrigation access strip.",
+      "assignedAgent": "B. Ramanjaneyulu",
+      "recommendedAction": "Require updated Revenue Sub-division sketch (FMB copy)"
+    },
+    {
+      "id": "CONF-083",
+      "parcelA": {
+        "id": "PARCEL-KA-0120",
+        "farmerName": "Basavaraj Gowda",
+        "khasra": "Survey 72/1",
+        "declaredArea": 9.5
+      },
+      "parcelB": {
+        "id": "PARCEL-KA-0121",
+        "farmerName": "Sharanappa Patil",
+        "khasra": "Survey 72/3",
+        "declaredArea": 8.0
+      },
+      "location": "Hunagund, Bagalkot (Karnataka)",
+      "overlapAcreage": 0.6,
+      "overlapPercentage": "6.3%",
+      "detectedAt": "08 Sept 2026",
+      "severity": "MEDIUM",
+      "status": "ACTION_REQUIRED",
+      "reason": "Minor GPS jitter drift along bund corner points (0.6 acres).",
+      "assignedAgent": "M. Suresh",
+      "recommendedAction": "Snap boundary vertices to nearest revenue road boundary"
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC-LAND-8901",
+      "parcelId": "PARCEL-MP-0891",
+      "farmerName": "Rahul Sharma",
+      "docType": "B-1 / Khasra-Khatauni Record",
+      "issuingAuthority": "Tehsildar Ashta, Dist. Sehore (MP)",
+      "documentNumber": "MP-REV-2026-98124",
+      "uploadDate": "14 Aug 2026",
+      "fileSize": "2.4 MB",
+      "status": "VERIFIED",
+      "verifiedBy": "Super Admin (admin@naturex.io)",
+      "verifiedDate": "16 Aug 2026"
+    },
+    {
+      "id": "DOC-LAND-8902",
+      "parcelId": "PARCEL-UP-0412",
+      "farmerName": "Savitri Devi Kurmi",
+      "docType": "Uttar Pradesh Khatauni Copy",
+      "issuingAuthority": "Sub-Divisional Magistrate Chunar, Mirzapur",
+      "documentNumber": "UP-BHULEKH-410291",
+      "uploadDate": "02 Feb 2026",
+      "fileSize": "1.8 MB",
+      "status": "VERIFIED",
+      "verifiedBy": "Reviewer Team (MRV-01)",
+      "verifiedDate": "04 Feb 2026"
+    },
+    {
+      "id": "DOC-LAND-8903",
+      "parcelId": "PARCEL-MP-0914",
+      "farmerName": "Rameshwar Patel",
+      "docType": "Khasra Map (Naksha Trace)",
+      "issuingAuthority": "Patwari Halka 09, Dewas",
+      "documentNumber": "MP-MAP-TRACE-119",
+      "uploadDate": "19 Sept 2026",
+      "fileSize": "3.1 MB",
+      "status": "DOCUMENT_FLAGGED",
+      "verifiedBy": "Pending Verification",
+      "verifiedDate": "-"
+    },
+    {
+      "id": "DOC-LAND-8904",
+      "parcelId": "PARCEL-MH-0288",
+      "farmerName": "Balasaheb Jadhav",
+      "docType": "Maharashtra 7/12 Extract (Satbara)",
+      "issuingAuthority": "Revenue Dept, Ralegaon, Yavatmal",
+      "documentNumber": "MAHA-712-992144",
+      "uploadDate": "10 Aug 2026",
+      "fileSize": "2.1 MB",
+      "status": "VERIFIED",
+      "verifiedBy": "Super Admin (admin@naturex.io)",
+      "verifiedDate": "12 Aug 2026"
+    }
+  ]
+}

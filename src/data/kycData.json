@@ -1,0 +1,282 @@
+{
+  "summary": {
+    "totalSubmissions": 142,
+    "pendingReview": 18,
+    "actionRequired": 9,
+    "approved": 115,
+    "dpdpConsentedCount": 142,
+    "avgVerificationHours": 4.2
+  },
+  "records": [
+    {
+      "id": "KYC-2026-0901",
+      "userId": "USR-FARM-0822",
+      "userName": "Savitri Devi Kurmi",
+      "userPhone": "+91 94152 77812",
+      "userRole": "Farmer / Landowner",
+      "roleCode": "FARMER",
+      "organization": "Narmada Valley Farmer Producer Co.",
+      "location": "Chunar Dehat, Mirzapur, Uttar Pradesh",
+      "submittedAt": "21 Sep 2026, 14:15",
+      "status": "SUBMITTED",
+      "documentType": "Aadhaar Card (UIDAI)",
+      "documentNumber": "•••• •••• 4419",
+      "frontUpload": "aadhaar_front_savitri.jpg",
+      "backUpload": "aadhaar_back_savitri.jpg",
+      "dpdpConsent": {
+        "consented": true,
+        "version": "DPDP-Act-2025-v1.2",
+        "timestamp": "2026-09-21 14:15:02 UTC",
+        "jurisdiction": "Republic of India",
+        "purpose": "Universal Identity Verification & Carbon Payout Eligibility"
+      },
+      "ocrVerification": {
+        "confidence": "98.4%",
+        "nameMatch": "Exact Match (Savitri Devi Kurmi)",
+        "addressVerified": true,
+        "tamperingRisk": "LOW"
+      },
+      "clarificationQuestion": null,
+      "rejectionReason": null,
+      "adminDecisionNote": null,
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-21 14:15",
+          "action": "KYC_SUBMITTED",
+          "performedBy": "Savitri Devi Kurmi (Self via Naturex App)",
+          "note": "Document uploaded with explicit DPDP 2025 consent."
+        }
+      ]
+    },
+    {
+      "id": "KYC-2026-0895",
+      "userId": "USR-FARM-0823",
+      "userName": "Anita Kumari Soren",
+      "userPhone": "+91 97712 34190",
+      "userRole": "Farmer / Landowner",
+      "roleCode": "FARMER",
+      "organization": "Jharkhand Forest Honey & Agro Producer Co.",
+      "location": "Angara Basti, Ranchi, Jharkhand",
+      "submittedAt": "21 Sep 2026, 12:40",
+      "status": "CLARIFICATION",
+      "documentType": "Kisan Credit Card / Revenue Passbook",
+      "documentNumber": "•••• •••• 9921",
+      "frontUpload": "kcc_passbook_front.jpg",
+      "backUpload": "kcc_passbook_back.jpg",
+      "dpdpConsent": {
+        "consented": true,
+        "version": "DPDP-Act-2025-v1.2",
+        "timestamp": "2026-09-21 12:40:18 UTC",
+        "jurisdiction": "Republic of India",
+        "purpose": "Universal Identity Verification & Carbon Payout Eligibility"
+      },
+      "ocrVerification": {
+        "confidence": "76.2%",
+        "nameMatch": "Partial Match (Anita Soren)",
+        "addressVerified": false,
+        "tamperingRisk": "MEDIUM"
+      },
+      "clarificationQuestion": "Document image is slightly blurred. Please re-upload clear front page with visible photo and bank seal.",
+      "rejectionReason": null,
+      "adminDecisionNote": "Clarification sent to user via SMS notification under Section 2 Universal Gate.",
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-21 12:40",
+          "action": "KYC_SUBMITTED",
+          "performedBy": "Anita Kumari Soren (Self)",
+          "note": "Initial submission received."
+        },
+        {
+          "timestamp": "2026-09-21 13:10",
+          "action": "KYC_CLARIFICATION_REQUESTED",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Flagged blurred seal. Sent clarification prompt to user."
+        }
+      ]
+    },
+    {
+      "id": "KYC-2026-0888",
+      "userId": "USR-FARM-0827",
+      "userName": "Harbhajan Singh Gill",
+      "userPhone": "+91 98140 55198",
+      "userRole": "Farmer / Landowner",
+      "roleCode": "FARMER",
+      "organization": "Malwa Precision Farmers Producer Co.",
+      "location": "Bhawanigarh, Sangrur, Punjab",
+      "submittedAt": "20 Sep 2026, 17:05",
+      "status": "REJECTED",
+      "documentType": "PAN Card",
+      "documentNumber": "•••• •••• 3310",
+      "frontUpload": "pan_card_harbhajan.jpg",
+      "backUpload": null,
+      "dpdpConsent": {
+        "consented": true,
+        "version": "DPDP-Act-2025-v1.2",
+        "timestamp": "2026-09-20 17:05:44 UTC",
+        "jurisdiction": "Republic of India",
+        "purpose": "Universal Identity Verification"
+      },
+      "ocrVerification": {
+        "confidence": "64.1%",
+        "nameMatch": "Mismatch (Name mismatch with revenue khata record)",
+        "addressVerified": false,
+        "tamperingRisk": "HIGH"
+      },
+      "clarificationQuestion": null,
+      "rejectionReason": "Name on uploaded PAN does not match revenue record name 'Harbhajan Singh s/o Gurmukh Singh'. Mandatory resubmission required.",
+      "adminDecisionNote": "Rejected under Section 2 mandate. Resubmission allowed upon upload of corrected document.",
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-20 17:05",
+          "action": "KYC_SUBMITTED",
+          "performedBy": "Harbhajan Singh Gill",
+          "note": "Submission received."
+        },
+        {
+          "timestamp": "2026-09-20 18:20",
+          "action": "KYC_REJECTED",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Reason recorded: Name mismatch with revenue khata record."
+        }
+      ]
+    },
+    {
+      "id": "KYC-2026-0870",
+      "userId": "USR-FARM-0821",
+      "userName": "Rameshwar Singh Patel",
+      "userPhone": "+91 98261 44521",
+      "userRole": "Farmer / Landowner",
+      "roleCode": "FARMER",
+      "organization": "Narmada Valley Farmer Producer Co.",
+      "location": "Ashta Khurd, Sehore, Madhya Pradesh",
+      "submittedAt": "19 Sep 2026, 10:15",
+      "status": "APPROVED",
+      "documentType": "Aadhaar Card (UIDAI)",
+      "documentNumber": "•••• •••• 9821",
+      "frontUpload": "aadhaar_front_rameshwar.jpg",
+      "backUpload": "aadhaar_back_rameshwar.jpg",
+      "dpdpConsent": {
+        "consented": true,
+        "version": "DPDP-Act-2025-v1.2",
+        "timestamp": "2026-09-19 10:15:30 UTC",
+        "jurisdiction": "Republic of India",
+        "purpose": "Universal Identity Verification & Carbon Payout Eligibility"
+      },
+      "ocrVerification": {
+        "confidence": "99.2%",
+        "nameMatch": "Exact Match",
+        "addressVerified": true,
+        "tamperingRisk": "LOW"
+      },
+      "clarificationQuestion": null,
+      "rejectionReason": null,
+      "adminDecisionNote": "Full Aadhaar OTP biometric authentication confirmed. F08 Bank Payout and F10 Land registration unlocked.",
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-19 10:15",
+          "action": "KYC_SUBMITTED",
+          "performedBy": "Rameshwar Singh Patel",
+          "note": "Initial submission."
+        },
+        {
+          "timestamp": "2026-09-19 11:30",
+          "action": "KYC_APPROVED",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Gate passed. Stage unlocked: F08 Bank / Payout & F10 Land."
+        }
+      ]
+    },
+    {
+      "id": "KYC-2026-0865",
+      "userId": "USR-ORG-0101",
+      "userName": "Kavita Verma",
+      "userPhone": "+91 98261 44520",
+      "userRole": "Organization Admin (FPO)",
+      "roleCode": "ORG_ADMIN",
+      "organization": "Narmada Valley Farmer Producer Co.",
+      "location": "Sehore, Madhya Pradesh",
+      "submittedAt": "18 Sep 2026, 09:30",
+      "status": "APPROVED",
+      "documentType": "FPO Certificate of Incorporation & MCA RoC Filings",
+      "documentNumber": "CIN U01111MP2021PTC056214",
+      "frontUpload": "mca_coi_narmada.pdf",
+      "backUpload": "moa_aoa_extract.pdf",
+      "dpdpConsent": {
+        "consented": true,
+        "version": "DPDP-Act-2025-v1.2",
+        "timestamp": "2026-09-18 09:30:10 UTC",
+        "jurisdiction": "Republic of India",
+        "purpose": "FPO Entity Verification & Multi-Farmer Project Aggregation Authority"
+      },
+      "ocrVerification": {
+        "confidence": "99.8%",
+        "nameMatch": "Exact Match with MCA V3 Portal",
+        "addressVerified": true,
+        "tamperingRisk": "LOW"
+      },
+      "clarificationQuestion": null,
+      "rejectionReason": null,
+      "adminDecisionNote": "Verified against MCA V3 RoC database. Organization authorized to aggregate up to 5,000 farmers.",
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-18 09:30",
+          "action": "KYC_SUBMITTED",
+          "performedBy": "Kavita Verma (FPO Director)",
+          "note": "Corporate RoC incorporation docs uploaded."
+        },
+        {
+          "timestamp": "2026-09-18 10:45",
+          "action": "KYC_APPROVED",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Approved under PRD §13 A04 Org Gate."
+        }
+      ]
+    },
+    {
+      "id": "KYC-2026-0850",
+      "userId": "USR-FA-0201",
+      "userName": "Deepak Kumar Shrivas",
+      "userPhone": "+91 98261 99182",
+      "userRole": "Field Agent (Ops)",
+      "roleCode": "FIELD_AGENT",
+      "organization": "Naturex Ground Operations Cluster Central",
+      "location": "Ashta, Sehore, Madhya Pradesh",
+      "submittedAt": "17 Sep 2026, 16:00",
+      "status": "APPROVED",
+      "documentType": "Driving License & Field Identity Card",
+      "documentNumber": "MP04-2019-009182",
+      "frontUpload": "dl_deepak.jpg",
+      "backUpload": "dl_deepak_back.jpg",
+      "dpdpConsent": {
+        "consented": true,
+        "version": "DPDP-Act-2025-v1.2",
+        "timestamp": "2026-09-17 16:00:15 UTC",
+        "jurisdiction": "Republic of India",
+        "purpose": "Field Operations & Geotagged Evidence Collection Authority"
+      },
+      "ocrVerification": {
+        "confidence": "96.5%",
+        "nameMatch": "Exact Match with Sarathi Parivahan Database",
+        "addressVerified": true,
+        "tamperingRisk": "LOW"
+      },
+      "clarificationQuestion": null,
+      "rejectionReason": null,
+      "adminDecisionNote": "Field agent mobile authorization granted for GPS tracking & offline polygon syncing.",
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-17 16:00",
+          "action": "KYC_SUBMITTED",
+          "performedBy": "Deepak Kumar Shrivas",
+          "note": "Identity submitted for field ops access."
+        },
+        {
+          "timestamp": "2026-09-17 16:30",
+          "action": "KYC_APPROVED",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Field operations scope authorized."
+        }
+      ]
+    }
+  ]
+}

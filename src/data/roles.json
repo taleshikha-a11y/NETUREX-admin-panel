@@ -1,0 +1,58 @@
+{
+  "roles": [
+    {
+      "id": "farmer",
+      "code": "FARMER",
+      "name": "Farmer / Landowner",
+      "badge": "Beneficiary Scope",
+      "scope": "Own Land & Direct Projects",
+      "icon": "UserCheck",
+      "description": "Register land parcels, submit KYC identity, review carbon/water interventions, and receive direct benefit disbursements."
+    },
+    {
+      "id": "org-admin",
+      "code": "ORG_ADMIN",
+      "name": "Organization Admin (FPO / NGO)",
+      "badge": "Organization Scope",
+      "scope": "FPO / NGO / Developer Tenant",
+      "icon": "Building2",
+      "description": "Manage assigned farmers, submit land boundaries, track project milestones, and coordinate on-ground field agent visits."
+    },
+    {
+      "id": "field-agent",
+      "code": "FIELD_AGENT",
+      "name": "Field Agent / Ground Surveyor",
+      "badge": "Field Ops Scope",
+      "scope": "Assigned Geographic Region",
+      "icon": "Smartphone",
+      "description": "Execute scheduled field visits, capture offline geotagged photos/measurements, and sync evidence package."
+    },
+    {
+      "id": "mrv-specialist",
+      "code": "MRV_SPECIALIST",
+      "name": "MRV Specialist / Reviewer",
+      "badge": "Technical MRV",
+      "scope": "Assigned Impact Projects",
+      "icon": "FileCheck2",
+      "description": "Review field evidence, validate baseline measurements, flag discrepancies, and manage MRV clarification workflows."
+    },
+    {
+      "id": "acva-verifier",
+      "code": "ACVA_VERIFIER",
+      "name": "Accredited Verifier (ACVA)",
+      "badge": "Third-Party Audit",
+      "scope": "Independent Verification Cases",
+      "icon": "Award",
+      "description": "BEE-accredited independent verification agency portal to review verified claims, generate audit findings, and record formal decisions."
+    },
+    {
+      "id": "super-admin",
+      "code": "SUPER_ADMIN",
+      "name": "Super Admin",
+      "badge": "Global Governance",
+      "scope": "All Platform Modules & Controls",
+      "icon": "ShieldCheck",
+      "description": "Full access to platform administration, user management, KYC queue, GIS conflict resolution, MRV, finance, and system configurations."
+    }
+  ]
+}
