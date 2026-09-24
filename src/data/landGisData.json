@@ -55,7 +55,15 @@
       "surveyDate": "14 Aug 2026",
       "fieldAgent": "Sanjay Mandloi (FA-0041)",
       "documentStatus": "VERIFIED",
-      "conflictDetails": null
+      "conflictDetails": null,
+      "satelliteImageUrl": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&auto=format&fit=crop&q=80",
+      "locationPhotoUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&auto=format&fit=crop&q=80",
+      "photoCaption": "Ground baseline survey of soybean-wheat parcel with SOC soil sampling peg #01",
+      "photoTimestamp": "14 Aug 2026, 10:15:32 IST",
+      "photoAccuracy": "±1.5 m (DGPS)",
+      "photoElevation": "492 m MSL",
+      "photoDevice": "Samsung Galaxy M34 (NatureX FieldApp v2.4.1)",
+      "geofenceStatus": "INSIDE_PARCEL"
     },
     {
       "id": "PARCEL-UP-0412",
@@ -86,7 +94,15 @@
       "surveyDate": "02 Feb 2026",
       "fieldAgent": "Pankaj Tiwari (FA-0062)",
       "documentStatus": "VERIFIED",
-      "conflictDetails": null
+      "conflictDetails": null,
+      "satelliteImageUrl": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&auto=format&fit=crop&q=80",
+      "locationPhotoUrl": "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=800&auto=format&fit=crop&q=80",
+      "photoCaption": "On-ground geotagged survey of Khasra 89/1, 90/3 boundary corner & checkdam recharge canal",
+      "photoTimestamp": "02 Feb 2026, 11:24:18 IST",
+      "photoAccuracy": "±1.2 m (RTK-GNSS)",
+      "photoElevation": "188 m MSL",
+      "photoDevice": "Redmi Note 13 Pro (NatureX FieldApp v2.4.1)",
+      "geofenceStatus": "INSIDE_PARCEL"
     },
     {
       "id": "PARCEL-MP-0914",
@@ -126,7 +142,15 @@
         "reason": "Survey boundary overlaps adjacent parcel on northern boundary",
         "severity": "HIGH",
         "status": "PENDING_RESOLUTION"
-      }
+      },
+      "satelliteImageUrl": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&auto=format&fit=crop&q=80",
+      "locationPhotoUrl": "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&auto=format&fit=crop&q=80",
+      "photoCaption": "Northern boundary dispute line near Khasra 210/4 border trench",
+      "photoTimestamp": "19 Sept 2026, 09:50:11 IST",
+      "photoAccuracy": "±2.4 m (Mobile GNSS)",
+      "photoElevation": "512 m MSL",
+      "photoDevice": "Realme 11 Pro (NatureX FieldApp v2.4.1)",
+      "geofenceStatus": "BOUNDARY_OVERLAP"
     },
     {
       "id": "PARCEL-MH-0288",
@@ -157,7 +181,15 @@
       "surveyDate": "10 Aug 2026",
       "fieldAgent": "Vilasrao Deshmukh (FA-0019)",
       "documentStatus": "VERIFIED",
-      "conflictDetails": null
+      "conflictDetails": null,
+      "satelliteImageUrl": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=800&auto=format&fit=crop&q=80",
+      "locationPhotoUrl": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&auto=format&fit=crop&q=80",
+      "photoCaption": "Agroforestry biochar furrow application & border tree canopy verification",
+      "photoTimestamp": "10 Aug 2026, 16:42:05 IST",
+      "photoAccuracy": "±1.8 m (RTK)",
+      "photoElevation": "244 m MSL",
+      "photoDevice": "OnePlus Nord CE 3 (NatureX FieldApp v2.4.1)",
+      "geofenceStatus": "INSIDE_PARCEL"
     },
     {
       "id": "PARCEL-RJ-0518",
@@ -188,7 +220,15 @@
       "surveyDate": "Pending Field Visit",
       "fieldAgent": "Not Assigned",
       "documentStatus": "SUBMITTED",
-      "conflictDetails": null
+      "conflictDetails": null,
+      "satelliteImageUrl": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=800&auto=format&fit=crop&q=80",
+      "locationPhotoUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&auto=format&fit=crop&q=80",
+      "photoCaption": "Pre-survey remote sensing capture awaiting physical field agent visit",
+      "photoTimestamp": "05 Sept 2026, 12:00:00 IST",
+      "photoAccuracy": "Sentinel-2 10m Multi-spectral",
+      "photoElevation": "380 m MSL",
+      "photoDevice": "ESA Copernicus Hub v4.2",
+      "geofenceStatus": "PENDING_SURVEY"
     },
     {
       "id": "PARCEL-AP-0331",
@@ -228,7 +268,15 @@
         "reason": "Sub-division boundary line disputed between shared inheritance survey numbers",
         "severity": "HIGH",
         "status": "PENDING_RESOLUTION"
-      }
+      },
+      "satelliteImageUrl": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&auto=format&fit=crop&q=80",
+      "locationPhotoUrl": "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=800&auto=format&fit=crop&q=80",
+      "photoCaption": "Dryland groundnut horticulture perimeter survey & shared bund boundary",
+      "photoTimestamp": "12 Sept 2026, 14:10:45 IST",
+      "photoAccuracy": "±2.1 m (Mobile GNSS)",
+      "photoElevation": "335 m MSL",
+      "photoDevice": "Vivo V29 (NatureX FieldApp v2.4.1)",
+      "geofenceStatus": "BOUNDARY_OVERLAP"
     }
   ],
   "conflicts": [
@@ -303,6 +351,54 @@
       "reason": "Minor GPS jitter drift along bund corner points (0.6 acres).",
       "assignedAgent": "M. Suresh",
       "recommendedAction": "Snap boundary vertices to nearest revenue road boundary"
+    },
+    {
+      "id": "CONF-084",
+      "parcelA": {
+        "id": "PARCEL-MH-0288",
+        "farmerName": "Balasaheb Jadhav",
+        "khasra": "Gat No. 344/2",
+        "declaredArea": 24.5
+      },
+      "parcelB": {
+        "id": "PARCEL-MH-0289",
+        "farmerName": "Anand Rao Shinde",
+        "khasra": "Gat No. 344/3",
+        "declaredArea": 19.0
+      },
+      "location": "Wadki, Ralegaon, Yavatmal (Maharashtra)",
+      "overlapAcreage": 1.15,
+      "overlapPercentage": "4.7%",
+      "detectedAt": "14 Sept 2026",
+      "severity": "LOW",
+      "status": "ACTION_REQUIRED",
+      "reason": "Field bund realignment after heavy monsoon caused coordinate drift on southern boundary.",
+      "assignedAgent": "Vilasrao Deshmukh",
+      "recommendedAction": "Snap boundary vertices to surveyed taluka stone benchmark"
+    },
+    {
+      "id": "CONF-085",
+      "parcelA": {
+        "id": "PARCEL-PB-9104",
+        "farmerName": "Baldev Singh",
+        "khasra": "Killa 14//2, 15",
+        "declaredArea": 15.0
+      },
+      "parcelB": {
+        "id": "PARCEL-PB-9105",
+        "farmerName": "Gurmeet Singh Dhillon",
+        "khasra": "Killa 14//3",
+        "declaredArea": 12.0
+      },
+      "location": "Tapa, Barnala (Punjab)",
+      "overlapAcreage": 0.85,
+      "overlapPercentage": "5.6%",
+      "detectedAt": "16 Sept 2026",
+      "severity": "MEDIUM",
+      "status": "UNDER_REVIEW",
+      "reason": "Tree line shadow caused GNSS multipath error during mobile app survey.",
+      "assignedAgent": "Harpreet Singh",
+      "recommendedAction": "Deploy RTK-GPS rover for clear sky line survey"
     }
   ],
   "documents": [
@@ -314,10 +410,13 @@
       "issuingAuthority": "Tehsildar Ashta, Dist. Sehore (MP)",
       "documentNumber": "MP-REV-2026-98124",
       "uploadDate": "14 Aug 2026",
-      "fileSize": "2.4 MB",
+      "fileSize": "2.4 MB PDF",
       "status": "VERIFIED",
       "verifiedBy": "Super Admin (admin@naturex.io)",
-      "verifiedDate": "16 Aug 2026"
+      "verifiedDate": "16 Aug 2026",
+      "tehsil": "Ashta",
+      "district": "Sehore",
+      "state": "Madhya Pradesh"
     },
     {
       "id": "DOC-LAND-8902",
@@ -327,10 +426,13 @@
       "issuingAuthority": "Sub-Divisional Magistrate Chunar, Mirzapur",
       "documentNumber": "UP-BHULEKH-410291",
       "uploadDate": "02 Feb 2026",
-      "fileSize": "1.8 MB",
+      "fileSize": "1.8 MB PDF",
       "status": "VERIFIED",
       "verifiedBy": "Reviewer Team (MRV-01)",
-      "verifiedDate": "04 Feb 2026"
+      "verifiedDate": "04 Feb 2026",
+      "tehsil": "Chunar",
+      "district": "Mirzapur",
+      "state": "Uttar Pradesh"
     },
     {
       "id": "DOC-LAND-8903",
@@ -340,10 +442,13 @@
       "issuingAuthority": "Patwari Halka 09, Dewas",
       "documentNumber": "MP-MAP-TRACE-119",
       "uploadDate": "19 Sept 2026",
-      "fileSize": "3.1 MB",
+      "fileSize": "3.1 MB PDF",
       "status": "DOCUMENT_FLAGGED",
       "verifiedBy": "Pending Verification",
-      "verifiedDate": "-"
+      "verifiedDate": "-",
+      "tehsil": "Sonkatch",
+      "district": "Dewas",
+      "state": "Madhya Pradesh"
     },
     {
       "id": "DOC-LAND-8904",
@@ -353,10 +458,141 @@
       "issuingAuthority": "Revenue Dept, Ralegaon, Yavatmal",
       "documentNumber": "MAHA-712-992144",
       "uploadDate": "10 Aug 2026",
-      "fileSize": "2.1 MB",
+      "fileSize": "2.1 MB PDF",
       "status": "VERIFIED",
       "verifiedBy": "Super Admin (admin@naturex.io)",
-      "verifiedDate": "12 Aug 2026"
+      "verifiedDate": "12 Aug 2026",
+      "tehsil": "Ralegaon",
+      "district": "Yavatmal",
+      "state": "Maharashtra"
+    },
+    {
+      "id": "DOC-LAND-8905",
+      "parcelId": "PARCEL-PB-9104",
+      "farmerName": "Baldev Singh",
+      "docType": "Punjab Jamabandi Record of Rights",
+      "issuingAuthority": "Revenue Department, Barnala",
+      "documentNumber": "PB-JAM-2026-4412",
+      "uploadDate": "12 Sept 2026",
+      "fileSize": "2.9 MB PDF",
+      "status": "VERIFIED",
+      "verifiedBy": "Super Admin (admin@naturex.io)",
+      "verifiedDate": "15 Sept 2026",
+      "tehsil": "Tapa",
+      "district": "Barnala",
+      "state": "Punjab"
+    },
+    {
+      "id": "DOC-LAND-8906",
+      "parcelId": "PARCEL-RJ-4401",
+      "farmerName": "Mohan Lal Bishnoi",
+      "docType": "Rajasthan Jamabandi Nakal",
+      "issuingAuthority": "Tehsildar Lunkaransar, Bikaner",
+      "documentNumber": "RJ-APNA-KHATA-8801",
+      "uploadDate": "18 Sept 2026",
+      "fileSize": "1.5 MB PDF",
+      "status": "VERIFIED",
+      "verifiedBy": "MRV Specialist",
+      "verifiedDate": "20 Sept 2026",
+      "tehsil": "Lunkaransar",
+      "district": "Bikaner",
+      "state": "Rajasthan"
+    },
+    {
+      "id": "DOC-LAND-8907",
+      "parcelId": "PARCEL-TS-5510",
+      "farmerName": "G. Malleshwar Rao",
+      "docType": "Telangana Dharani E-Passbook (ROR-1B)",
+      "issuingAuthority": "Tahsildar Chivvemla, Suryapet",
+      "documentNumber": "TS-DHARANI-552019",
+      "uploadDate": "05 Sept 2026",
+      "fileSize": "3.4 MB PDF",
+      "status": "VERIFIED",
+      "verifiedBy": "Super Admin (admin@naturex.io)",
+      "verifiedDate": "07 Sept 2026",
+      "tehsil": "Chivvemla",
+      "district": "Suryapet",
+      "state": "Telangana"
+    },
+    {
+      "id": "DOC-LAND-8908",
+      "parcelId": "PARCEL-KA-0120",
+      "farmerName": "Basavaraj Gowda",
+      "docType": "Karnataka Bhoomi RTC (Record of Rights)",
+      "issuingAuthority": "Revenue Officer Hunagund, Bagalkot",
+      "documentNumber": "KA-BHOOMI-78201",
+      "uploadDate": "08 Sept 2026",
+      "fileSize": "2.2 MB PDF",
+      "status": "UNDER_REVIEW",
+      "verifiedBy": "Field Agent (M. Suresh)",
+      "verifiedDate": "-",
+      "tehsil": "Hunagund",
+      "district": "Bagalkot",
+      "state": "Karnataka"
+    },
+    {
+      "id": "DOC-LAND-8909",
+      "parcelId": "PARCEL-GJ-3109",
+      "farmerName": "Jigneshbhai Patel",
+      "docType": "Gujarat AnyROR (Village Form 7 & 8A)",
+      "issuingAuthority": "Mamlatdar Anand Rural, Anand",
+      "documentNumber": "GJ-ANYROR-90312",
+      "uploadDate": "15 Sept 2026",
+      "fileSize": "1.9 MB PDF",
+      "status": "VERIFIED",
+      "verifiedBy": "Super Admin (admin@naturex.io)",
+      "verifiedDate": "17 Sept 2026",
+      "tehsil": "Anand Rural",
+      "district": "Anand",
+      "state": "Gujarat"
+    },
+    {
+      "id": "DOC-LAND-8910",
+      "parcelId": "PARCEL-TN-8802",
+      "farmerName": "Muruganandham S.",
+      "docType": "Tamil Nadu Patta / Chitta Extract",
+      "issuingAuthority": "Tahsildar Kumbakonam, Thanjavur",
+      "documentNumber": "TN-ESERVICES-4410",
+      "uploadDate": "11 Sept 2026",
+      "fileSize": "2.6 MB PDF",
+      "status": "VERIFIED",
+      "verifiedBy": "MRV Lead",
+      "verifiedDate": "13 Sept 2026",
+      "tehsil": "Kumbakonam",
+      "district": "Thanjavur",
+      "state": "Tamil Nadu"
+    },
+    {
+      "id": "DOC-LAND-8911",
+      "parcelId": "PARCEL-MP-0891",
+      "farmerName": "Rahul Sharma",
+      "docType": "Cadastral Mutation Sanction Order (Namantaran)",
+      "issuingAuthority": "Naib Tehsildar Circle 2, Ashta (MP)",
+      "documentNumber": "MP-NAMANTARAN-2026-411",
+      "uploadDate": "20 Aug 2026",
+      "fileSize": "1.7 MB PDF",
+      "status": "VERIFIED",
+      "verifiedBy": "Super Admin (admin@naturex.io)",
+      "verifiedDate": "22 Aug 2026",
+      "tehsil": "Ashta",
+      "district": "Sehore",
+      "state": "Madhya Pradesh"
+    },
+    {
+      "id": "DOC-LAND-8912",
+      "parcelId": "PARCEL-AP-0331",
+      "farmerName": "K. Venkateswarlu",
+      "docType": "Meebhoomi 1-B Adangal Extract",
+      "issuingAuthority": "Tahsildar Kalyandurg, Anantapur",
+      "documentNumber": "AP-MEEBHOOMI-81204",
+      "uploadDate": "13 Sept 2026",
+      "fileSize": "2.8 MB PDF",
+      "status": "DOCUMENT_FLAGGED",
+      "verifiedBy": "Pending Demarcation",
+      "verifiedDate": "-",
+      "tehsil": "Kalyandurg",
+      "district": "Anantapur",
+      "state": "Andhra Pradesh"
     }
   ]
 }

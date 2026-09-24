@@ -24,9 +24,8 @@
         },
         {
           "key": "create-user",
-          "label": "+ Create Role & User",
-          "description": "Provision new actor roles, generate login PIN, and dispatch invitation emails",
-          "badge": "New"
+          "label": "Create Role & User",
+          "description": "Provision new actor roles, generate login PIN, and dispatch invitation emails"
         },
         {
           "key": "farmers",

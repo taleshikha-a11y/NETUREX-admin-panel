@@ -44,15 +44,6 @@
       "scope": "Independent Verification Cases",
       "icon": "Award",
       "description": "BEE-accredited independent verification agency portal to review verified claims, generate audit findings, and record formal decisions."
-    },
-    {
-      "id": "super-admin",
-      "code": "SUPER_ADMIN",
-      "name": "Super Admin",
-      "badge": "Global Governance",
-      "scope": "All Platform Modules & Controls",
-      "icon": "ShieldCheck",
-      "description": "Full access to platform administration, user management, KYC queue, GIS conflict resolution, MRV, finance, and system configurations."
     }
   ]
 }

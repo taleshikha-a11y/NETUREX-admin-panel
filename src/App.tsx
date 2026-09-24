@@ -6,8 +6,17 @@ import UserManagementView, { type UserRecord } from './components/UserManagement
 import CreateUserPage from './components/CreateUserPage'
 import KycComplianceView from './components/KycComplianceView'
 import LandGisView from './components/LandGisView'
+import ProjectsView from './components/ProjectsView'
+import EvidenceMrvView from './components/EvidenceMrvView'
+import FieldOpsView from './components/FieldOpsView'
+import VerificationFundingView from './components/VerificationFundingView'
+import FinanceView from './components/FinanceView'
+import SystemSettingsView from './components/SystemSettingsView'
+import AdminProfileView, {
+  type SuperAdminProfile,
+  defaultSuperAdminProfile,
+} from './components/AdminProfileView'
 import navData from './layout/navigation.json'
-import rolesData from './data/roles.json'
 import usersData from './data/usersData.json'
 import {
   CheckCircle2,
@@ -18,7 +27,6 @@ import {
   Building2,
   FileCheck2,
   Award,
-  LogOut,
 } from 'lucide-react'
 
 export default function App() {
@@ -44,16 +52,31 @@ export default function App() {
     return usersData.users as UserRecord[]
   })
 
-  // Default Super Admin Role Configuration
-  const superAdminRole: RoleConfig =
-    (rolesData.roles.find((r) => r.code === 'SUPER_ADMIN') as any) || {
-      id: 'role-super-admin',
-      name: 'Super Admin',
-      badge: 'All Permissions',
-      scope: 'Global System Control',
-      icon: 'ShieldCheck',
-      description: 'Universal platform administration and governance',
+  // Master Super Admin Profile State: Name, Role, Password, Address
+  const [superAdminProfile, setSuperAdminProfile] = useState<SuperAdminProfile>(() => {
+    const saved = sessionStorage.getItem('naturex_admin_profile')
+    if (saved) {
+      try {
+        return JSON.parse(saved)
+      } catch (e) {
+        // fallback
+      }
     }
+    return defaultSuperAdminProfile
+  })
+
+  // Dynamic Super Admin Role Configuration
+  const superAdminRole: RoleConfig = {
+    id: 'role-super-admin',
+    name: superAdminProfile.displayName || `${superAdminProfile.firstName} ${superAdminProfile.lastName}` || 'Super Admin',
+    badge: superAdminProfile.roleBadge || 'All Permissions',
+    scope: superAdminProfile.roleScope || 'Global System Control',
+    icon: 'ShieldCheck',
+    description: 'Universal platform administration and governance',
+  }
+
+  // Side Drawer state for Super Admin Profile Edit
+  const [isProfileDrawerOpen, setIsProfileDrawerOpen] = useState(false)
 
   useEffect(() => {
     sessionStorage.setItem('naturex_auth_step', authStep)
@@ -77,7 +100,7 @@ export default function App() {
     parentLabel = 'User Management'
     activeTitle = 'Create Role & User'
     activeDescription = 'Add new platform actor, assign RBAC role, generate login PIN, and dispatch invitation email'
-    activeBadge = 'Provisioning'
+    activeBadge = undefined
   } else {
     for (const mod of navData.modules) {
       if (mod.key === activeKey) {
@@ -106,15 +129,16 @@ export default function App() {
 
   // Step 2: Main Super Admin Console
   return (
-    <Layout
-      activeKey={activeKey}
-      onSelectKey={setActiveKey}
-      activeRole={superAdminRole}
-      onSwitchRole={() => setAuthStep('login')}
-    >
+    <>
+      <Layout
+        activeKey={activeKey}
+        onSelectKey={setActiveKey}
+        activeRole={superAdminRole}
+        onProfileClick={() => setIsProfileDrawerOpen(true)}
+      >
       <div className="space-y-6">
-        {/* Module Header Card with Clean Light Accents & Action Toolbar */}
-        <div className="harmony-card-subtle p-6 border border-[#E2DDD5] shadow-xs bg-white rounded-3xl">
+        {/* Module Header Card with NatureX Warm Styling & Action Toolbar */}
+        <div className="harmony-card-subtle p-6 border border-[#D19E77] shadow-xs bg-white rounded-3xl">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="space-y-2">
               <div className="flex items-center gap-2 flex-wrap">
@@ -123,7 +147,7 @@ export default function App() {
                     <span className="text-xs font-bold px-3 py-1 rounded-full badge-mint-tint shadow-2xs">
                       {parentLabel}
                     </span>
-                    <ChevronRight className="w-3.5 h-3.5 text-[#334155] stroke-[2.5]" />
+                    <ChevronRight className="w-3.5 h-3.5 text-[#526658] stroke-[2.5]" />
                   </>
                 )}
                 <span className="text-xs font-bold px-3 py-1 rounded-full badge-sky-tint shadow-2xs">
@@ -137,31 +161,27 @@ export default function App() {
                 )}
               </div>
 
-              <h2 className="text-2xl font-black text-[#0F172A] tracking-tight">
+              <h2 className="text-2xl font-black text-[#18221B] tracking-tight">
                 {activeTitle}
               </h2>
-              <p className="text-sm text-[#334155] font-semibold max-w-2xl">
+              <p className="text-sm text-[#4A5B50] font-semibold max-w-2xl">
                 {activeDescription}
               </p>
             </div>
 
-            {/* Quick Action Buttons: Super Admin Badge, Logout */}
+            {/* Quick Action Button: Super Admin Profile */}
             <div className="flex items-center gap-2 flex-wrap">
-              {/* Clean Light Super Admin Badge */}
-              <div className="px-3.5 py-2 rounded-2xl bg-[#F0FDF4] border border-[#DCFCE7] text-[#166534] text-xs font-bold flex items-center gap-2 shadow-2xs">
-                <ShieldCheck className="w-4 h-4 text-[#166534] stroke-[2.2]" />
-                <span>Super Admin</span>
-              </div>
-
-              {/* Logout Button */}
+              {/* NatureX Terracotta Super Admin Profile Button */}
               <button
                 type="button"
-                onClick={() => setAuthStep('login')}
-                className="px-3 py-2 rounded-2xl bg-[#FAF7F2] hover:bg-[#F3EDE3] border border-[#D6CBC0] text-[#64748B] hover:text-[#991B1B] text-xs font-medium flex items-center gap-1.5 cursor-pointer shadow-2xs transition-colors"
-                title="Log out of Super Admin Console"
+                onClick={() => setIsProfileDrawerOpen(true)}
+                className="px-3.5 py-2 rounded-2xl bg-[#F2DFC9] hover:bg-[#D8B293] border border-[#D19E77] text-[#8D4E22] text-xs font-bold flex items-center gap-2 shadow-2xs transition-all cursor-pointer group"
+                title="Super Admin Profile Settings (Edit Name, Role, Password, Address)"
               >
-                <LogOut className="w-3.5 h-3.5 stroke-[2]" />
-                <span>Logout</span>
+                <ShieldCheck className="w-4 h-4 text-[#8D4E22] stroke-[2.2]" />
+                <span className="group-hover:underline">
+                  {superAdminProfile.displayName || 'Super Admin'}
+                </span>
               </button>
             </div>
           </div>
@@ -214,58 +234,106 @@ export default function App() {
             initialSubTab={activeKey === 'land-gis' ? 'land-registry' : (activeKey as any)}
             onNavigateSubTab={(tabKey) => setActiveKey(tabKey)}
           />
+        ) : activeKey === 'projects' ||
+          activeKey === 'project-queue' ||
+          activeKey === 'carbon' ||
+          activeKey === 'water' ||
+          activeKey === 'biodiversity' ? (
+          <ProjectsView
+            initialSubTab={activeKey === 'projects' ? 'project-queue' : (activeKey as any)}
+            onNavigateSubTab={(tabKey) => setActiveKey(tabKey)}
+          />
+        ) : activeKey === 'evidence-mrv' ||
+          activeKey === 'evidence-review' ||
+          activeKey === 'mrv-control' ? (
+          <EvidenceMrvView
+            initialSubTab={activeKey === 'evidence-mrv' ? 'evidence-review' : (activeKey as any)}
+            onNavigateSubTab={(tabKey) => setActiveKey(tabKey)}
+          />
+        ) : activeKey === 'field-ops' ||
+          activeKey === 'field-visits' ||
+          activeKey === 'offline-sync' ? (
+          <FieldOpsView
+            initialSubTab={activeKey === 'field-ops' ? 'field-visits' : (activeKey as any)}
+            onNavigateSubTab={(tabKey) => setActiveKey(tabKey)}
+          />
+        ) : activeKey === 'verification-funding' ||
+          activeKey === 'acva-verification' ||
+          activeKey === 'funding-programs' ? (
+          <VerificationFundingView
+            initialSubTab={activeKey === 'verification-funding' ? 'acva-verification' : (activeKey as any)}
+            onNavigateSubTab={(tabKey) => setActiveKey(tabKey)}
+          />
+        ) : activeKey === 'finance' ||
+          activeKey === 'benefit-ledger' ||
+          activeKey === 'payouts' ? (
+          <FinanceView
+            initialSubTab={activeKey === 'finance' ? 'benefit-ledger' : (activeKey as any)}
+            onNavigateSubTab={(tabKey) => setActiveKey(tabKey)}
+          />
+        ) : activeKey === 'system-settings' ||
+          activeKey === 'notifications' ||
+          activeKey === 'support' ||
+          activeKey === 'reports' ||
+          activeKey === 'audit-logs' ||
+          activeKey === 'questionnaires' ||
+          activeKey === 'settings' ? (
+          <SystemSettingsView
+            initialSubTab={activeKey === 'system-settings' ? 'notifications' : (activeKey as any)}
+            onNavigateSubTab={(tabKey) => setActiveKey(tabKey)}
+          />
         ) : (
           /* Context Canvas for other modules */
           <div className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="harmony-kpi-card p-5 space-y-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#334155]">Active Scope</span>
-                  <div className="w-7 h-7 rounded-xl bg-[#F0FDF4] border border-[#DCFCE7] text-[#166534] flex items-center justify-center font-bold">
+                  <span className="text-xs font-bold text-[#4A5B50]">Active Scope</span>
+                  <div className="w-7 h-7 rounded-xl bg-[#E6EFE4] border border-[#C1D6BD] text-[#3E5F36] flex items-center justify-center font-bold">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
                 </div>
-                <div className="text-xl font-black text-[#0F172A]">Super Admin</div>
-                <p className="text-[11px] text-[#475569] font-medium leading-relaxed">
+                <div className="text-xl font-black text-[#18221B]">Super Admin</div>
+                <p className="text-[11px] text-[#4A5B50] font-medium leading-relaxed">
                   Full unrestricted platform governance &amp; security authority
                 </p>
               </div>
 
               <div className="harmony-kpi-card p-5 space-y-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#334155]">Operational Domain</span>
+                  <span className="text-xs font-bold text-[#4A5B50]">Operational Domain</span>
                   <div className="w-7 h-7 rounded-xl bg-[#F0F9FF] border border-[#E0F2FE] text-[#0369A1] flex items-center justify-center font-bold">
                     <Building2 className="w-4 h-4 text-[#0369A1]" />
                   </div>
                 </div>
-                <div className="text-xl font-black text-[#0F172A]">All Modules</div>
-                <p className="text-[11px] text-[#475569] font-medium leading-relaxed">
+                <div className="text-xl font-black text-[#18221B]">All Modules</div>
+                <p className="text-[11px] text-[#4A5B50] font-medium leading-relaxed">
                   Universal gate decisions, KYC approvals &amp; user provisioning
                 </p>
               </div>
 
               <div className="harmony-kpi-card p-5 space-y-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#334155]">Identity Verification</span>
-                  <div className="w-7 h-7 rounded-xl bg-[#F0FDF4] border border-[#DCFCE7] text-[#166534] flex items-center justify-center font-bold">
+                  <span className="text-xs font-bold text-[#4A5B50]">Identity Verification</span>
+                  <div className="w-7 h-7 rounded-xl bg-[#E6EFE4] border border-[#C1D6BD] text-[#3E5F36] flex items-center justify-center font-bold">
                     <FileCheck2 className="w-4 h-4" />
                   </div>
                 </div>
-                <div className="text-xl font-black text-[#0F172A]">Enforced</div>
-                <p className="text-[11px] text-[#475569] font-medium leading-relaxed">
+                <div className="text-xl font-black text-[#18221B]">Enforced</div>
+                <p className="text-[11px] text-[#4A5B50] font-medium leading-relaxed">
                   India DPDP 2025 compliant authentication session
                 </p>
               </div>
 
               <div className="harmony-kpi-card p-5 space-y-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#334155]">Framework Standard</span>
-                  <div className="w-7 h-7 rounded-xl bg-[#FEF2F2] border border-[#FEE2E2] text-[#B91C1C] flex items-center justify-center font-bold">
+                  <span className="text-xs font-bold text-[#4A5B50]">Framework Standard</span>
+                  <div className="w-7 h-7 rounded-xl bg-[#C49563] border border-[#8D4E22] text-[#2B1405] flex items-center justify-center font-bold">
                     <Award className="w-4 h-4" />
                   </div>
                 </div>
-                <div className="text-xl font-black text-[#0F172A]">BEE / CCTS</div>
-                <p className="text-[11px] text-[#475569] font-medium leading-relaxed">
+                <div className="text-xl font-black text-[#18221B]">BEE / CCTS</div>
+                <p className="text-[11px] text-[#4A5B50] font-medium leading-relaxed">
                   ACVA verification architecture ready
                 </p>
               </div>
@@ -273,12 +341,12 @@ export default function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div className="harmony-kpi-card p-6 space-y-3">
-                <div className="w-10 h-10 rounded-2xl bg-[#F0FDF4] border border-[#DCFCE7] text-[#166534] flex items-center justify-center font-bold shadow-2xs">
+                <div className="w-10 h-10 rounded-2xl bg-[#E6EFE4] border border-[#C1D6BD] text-[#3E5F36] flex items-center justify-center font-bold shadow-2xs">
                   <FolderTree className="w-5 h-5" />
                 </div>
-                <h3 className="text-sm font-bold text-[#0F172A]">Module Workspace</h3>
-                <p className="text-xs text-[#334155] leading-relaxed font-medium">
-                  Currently viewing <strong className="text-[#166534]">{activeTitle}</strong> under Super Admin access.
+                <h3 className="text-sm font-bold text-[#18221B]">Module Workspace</h3>
+                <p className="text-xs text-[#4A5B50] leading-relaxed font-medium">
+                  Currently viewing <strong className="text-[#3E5F36]">{activeTitle}</strong> under Super Admin access.
                 </p>
               </div>
 
@@ -286,18 +354,18 @@ export default function App() {
                 <div className="w-10 h-10 rounded-2xl bg-[#F0F9FF] border border-[#E0F2FE] text-[#0369A1] flex items-center justify-center font-bold shadow-2xs">
                   <CheckCircle2 className="w-5 h-5 text-[#0369A1]" />
                 </div>
-                <h3 className="text-sm font-bold text-[#0F172A]">Executive Minimalism</h3>
-                <p className="text-xs text-[#334155] leading-relaxed font-medium">
+                <h3 className="text-sm font-bold text-[#18221B]">Executive Minimalism</h3>
+                <p className="text-xs text-[#4A5B50] leading-relaxed font-medium">
                   Ultra-light pastel surfaces and refined borders for quiet, executive focus.
                 </p>
               </div>
 
               <div className="harmony-kpi-card p-6 space-y-3">
-                <div className="w-10 h-10 rounded-2xl bg-[#F0FDF4] border border-[#DCFCE7] text-[#166534] flex items-center justify-center font-bold shadow-2xs">
+                <div className="w-10 h-10 rounded-2xl bg-[#E6EFE4] border border-[#C1D6BD] text-[#3E5F36] flex items-center justify-center font-bold shadow-2xs">
                   <Sparkles className="w-5 h-5" />
                 </div>
-                <h3 className="text-sm font-bold text-[#0F172A]">PRD Aligned</h3>
-                <p className="text-xs text-[#334155] leading-relaxed font-medium">
+                <h3 className="text-sm font-bold text-[#18221B]">PRD Aligned</h3>
+                <p className="text-xs text-[#4A5B50] leading-relaxed font-medium">
                   All data nodes load dynamically from JSON configuration files without hardcoded strings.
                 </p>
               </div>
@@ -306,5 +374,21 @@ export default function App() {
         )}
       </div>
     </Layout>
+
+    {/* Super Admin Side Slide-Over Drawer */}
+    <AdminProfileView
+      isOpen={isProfileDrawerOpen}
+      onClose={() => setIsProfileDrawerOpen(false)}
+      profile={superAdminProfile}
+      onUpdateProfile={(updated) => {
+        setSuperAdminProfile(updated)
+        sessionStorage.setItem('naturex_admin_profile', JSON.stringify(updated))
+      }}
+      onLogout={() => {
+        setIsProfileDrawerOpen(false)
+        setAuthStep('login')
+      }}
+    />
+  </>
   )
 }

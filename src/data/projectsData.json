@@ -1,0 +1,767 @@
+{
+  "summaryStats": {
+    "totalProjects": {
+      "count": 28,
+      "approvedCount": 18,
+      "underScreening": 4,
+      "activeAcreage": 4250
+    },
+    "carbonPortfolio": {
+      "activeProjects": 12,
+      "estimatedCredits": "342,800 tCO₂e",
+      "methodologies": "VM0042, CDM AR-ACM0003, Gold Standard",
+      "bufferPoolWithheld": "51,420 tCO₂e (15%)",
+      "verifiedRemovals": "128,400 tCO₂e"
+    },
+    "waterPortfolio": {
+      "activeProjects": 9,
+      "totalVolumetricRecharge": "1,840,000 m³",
+      "methodologies": "VWBA v1.2, AWS v2.0",
+      "dripAcreage": "2,140 Acres",
+      "aquiferRecoveryAvg": "+1.95 meters"
+    },
+    "biodiversityPortfolio": {
+      "activeProjects": 7,
+      "hectaresRestored": "1,420 ha",
+      "speciesProtected": 48,
+      "nativeTreesCount": "184,000 Saplings",
+      "canopyIndexAvg": "+34.2%"
+    }
+  },
+  "lifecycleFunnel": [
+    { "stage": "DRAFT", "label": "Developer Draft", "count": 5, "description": "Form in progress by FPO/Developer" },
+    { "stage": "SCREENING", "label": "Super Admin Screening", "count": 4, "description": "PRD §15.3 Gate: Checklist & KYC validation" },
+    { "stage": "APPROVED_FOR_DATA_COLLECTION", "label": "Field Data Collection", "count": 8, "description": "Field visits active via assigned agents" },
+    { "stage": "MONITORING_MRV", "label": "MRV Monitoring Cycle", "count": 6, "description": "Quarterly sensor & photographic evidence review" },
+    { "stage": "VERIFIED_ELIGIBLE", "label": "Verified & Registry Listed", "count": 5, "description": "Issued on Climate Asset Registry" }
+  ],
+  "screeningChecklist": [
+    { "id": "CHK-01", "name": "Land Title & PostGIS Boundary Geometry", "rule": "Parcel status must be VERIFIED with zero active boundary disputes (PRD §5 & §10)" },
+    { "id": "CHK-02", "name": "Developer Organization KYC Gate", "rule": "FPO/Developer must have APPROVED status under Universal Gate (PRD §2)" },
+    { "id": "CHK-03", "name": "Baseline Evidence Completeness", "rule": "Lab tests, flow meters, or drone photogrammetry must contain valid SHA256 hashes" },
+    { "id": "CHK-04", "name": "Additionality & Permanence Risk", "rule": "Project must satisfy statutory additionality and specify minimum 10-year risk mitigation" }
+  ],
+  "carbonProjects": [
+    {
+      "id": "PRJ-CAR-2024-001",
+      "title": "Malwa Agroforestry & Soil Carbon Sinks Initiative",
+      "methodology": "Verra VM0042 (ARR & Regenerative Agroforestry)",
+      "developerOrg": "Narmada Valley Bio-Farmers FPO",
+      "leadFarmer": "Ramcharan Patidar (Dewas, MP)",
+      "landParcel": "PAR-MP-8401 (8.4 Acres)",
+      "creditingPeriod": "2024 - 2044 (20 Years)",
+      "annualRemoval": "1,260 tCO₂e / yr",
+      "totalEstimated20Yr": "25,200 tCO₂e",
+      "currentSocLevel": "0.82% SOC",
+      "targetSocGain": "2.25% SOC",
+      "bufferPool": "15% (189 tCO₂e/yr)",
+      "registryStandard": "Verra VCS",
+      "registrySerial": "VCS-IND-2024-88192",
+      "treesPlanted": "3,200 Native Teak & Neem",
+      "status": "APPROVED_FOR_DATA_COLLECTION",
+      "verificationCycle": "Annual MRV Audited",
+      "assignedAgent": "Vikram Solanki (AGT-MP-09)"
+    },
+    {
+      "id": "PRJ-CAR-2024-002",
+      "title": "Punjab In-Situ Biochar Soil Injection & Stubble Replacement",
+      "methodology": "Gold Standard / CDM AR-ACM0003 (Biochar Amendment)",
+      "developerOrg": "Punjab Eco Regeneration Trust",
+      "leadFarmer": "Baldev Singh (Barnala, Punjab)",
+      "landParcel": "PAR-PB-9104 (14.2 Acres)",
+      "creditingPeriod": "2024 - 2034 (10 Years)",
+      "annualRemoval": "2,840 tCO₂e / yr",
+      "totalEstimated20Yr": "28,400 tCO₂e",
+      "currentSocLevel": "1.10% Recalcitrant C",
+      "targetSocGain": "3.20% Stable Biochar C",
+      "bufferPool": "12% (340 tCO₂e/yr)",
+      "registryStandard": "Gold Standard",
+      "registrySerial": "GS-AGR-2024-0412",
+      "treesPlanted": "Zero-till Subsurface Injection",
+      "status": "SCREENING",
+      "verificationCycle": "Quarterly Feedstock Audit",
+      "assignedAgent": "Gurpreet Sandhu (AGT-PB-04)"
+    },
+    {
+      "id": "PRJ-CAR-2024-005",
+      "title": "Vidarbha Regenerative Cotton & Mycorrhizal Soil Enrichment",
+      "methodology": "Verra VM0042 (Regenerative Agriculture)",
+      "developerOrg": "Malwa Agro Producer Co.",
+      "leadFarmer": "Ganesh Mahadev Rao (Wardha, MH)",
+      "landParcel": "PAR-MH-1102 (6.8 Acres)",
+      "creditingPeriod": "2024 - 2039 (15 Years)",
+      "annualRemoval": "820 tCO₂e / yr",
+      "totalEstimated20Yr": "12,300 tCO₂e",
+      "currentSocLevel": "0.45% SOC in Black Soil",
+      "targetSocGain": "1.40% SOC via Bio-inputs",
+      "bufferPool": "20% (164 tCO₂e/yr)",
+      "registryStandard": "India CCTS Compliant",
+      "registrySerial": "CCTS-MH-PENDING",
+      "treesPlanted": "Interseeded Legume Cover",
+      "status": "CLARIFICATION",
+      "verificationCycle": "Biannual Soil Core Sampling",
+      "assignedAgent": "Pravin Patil (AGT-MH-05)"
+    },
+    {
+      "id": "PRJ-CAR-2024-008",
+      "title": "Chambal Ravine Bamboo Biomass Plantation & Carbon Sink",
+      "methodology": "Verra AR-ACM0003 (Large-Scale Afforestation)",
+      "developerOrg": "Narmada Valley Bio-Farmers FPO",
+      "leadFarmer": "Rajendra Sharma (Morena, MP)",
+      "landParcel": "PAR-MP-5120 (34.0 Acres)",
+      "creditingPeriod": "2024 - 2054 (30 Years)",
+      "annualRemoval": "6,400 tCO₂e / yr",
+      "totalEstimated20Yr": "192,000 tCO₂e",
+      "currentSocLevel": "0.30% Eroded Silt",
+      "targetSocGain": "2.80% Bamboo Root Carbon",
+      "bufferPool": "15% (960 tCO₂e/yr)",
+      "registryStandard": "Verra VCS + CCB Gold",
+      "registrySerial": "VCS-IND-2024-9921",
+      "treesPlanted": "14,500 Bamboo Clumps (Bambusa balcooa)",
+      "status": "VERIFIED_ELIGIBLE",
+      "verificationCycle": "Satellite LiDAR & Sentinel-2 Biomass",
+      "assignedAgent": "Vikram Solanki (AGT-MP-09)"
+    }
+  ],
+  "waterProjects": [
+    {
+      "id": "PRJ-WAT-2024-003",
+      "title": "Narmada Basin Volumetric Aquifer Recharge & Drip Transition",
+      "basin": "Narmada Sub-Basin Zone 4",
+      "developerOrg": "Narmada Valley Bio-Farmers FPO",
+      "leadFarmer": "Ramcharan Patidar (Dewas, MP)",
+      "landParcel": "PAR-MP-8401 (8.4 Acres)",
+      "methodology": "VWBA v1.2 (Volumetric Water Benefit Accounting)",
+      "interventionType": "Borewell Recharge Pits + Sand Filtration",
+      "baselineExtraction": "42,000 L/hr (Flood Irrigation)",
+      "annualRechargeM3": "285,000 m³ / yr",
+      "waterSavedPct": "42% Reduction in Ground Draw",
+      "dripCoverage": "8.4 Acres (100% Piped)",
+      "piezometerDepth": "14.2m BGL (Recovered +1.8m)",
+      "complianceStandard": "AWS v2.0 Gold",
+      "iotFlowMeters": "2 Ultrasonic Units Active",
+      "status": "MONITORING_MRV",
+      "assignedAgent": "Vikram Solanki (AGT-MP-09)"
+    },
+    {
+      "id": "PRJ-WAT-2024-006",
+      "title": "Thar Desert Subsurface Aquifer Barrier & Rainwater Capture",
+      "basin": "Luni-Thar Endorheic Basin",
+      "developerOrg": "Punjab Eco Regeneration Trust",
+      "leadFarmer": "Mohan Lal Bishnoi (Bikaner, RJ)",
+      "landParcel": "PAR-RJ-4401 (18.5 Acres)",
+      "methodology": "Alliance for Water Stewardship (AWS v2.0)",
+      "interventionType": "Traditional Kund Catchment + Bentonite Seal",
+      "baselineExtraction": "95,000 L/hr (Saline Overdraft)",
+      "annualRechargeM3": "420,000 m³ / yr",
+      "waterSavedPct": "65% Rain Runoff Harvested",
+      "dripCoverage": "12.0 Acres Micro-Sprinklers",
+      "piezometerDepth": "48.5m BGL (Baseline)",
+      "complianceStandard": "Central Ground Water Board (CGWB)",
+      "iotFlowMeters": "1 Solar Telemetry Station",
+      "status": "SUBMITTED",
+      "assignedAgent": "Rakesh Meena (AGT-RJ-01)"
+    },
+    {
+      "id": "PRJ-WAT-2024-009",
+      "title": "Godavari Watershed Checkdam Cascade & Silt Trap Restoration",
+      "basin": "Godavari Upper Catchment",
+      "developerOrg": "Malwa Agro Producer Co.",
+      "leadFarmer": "Tukaram Shinde (Nashik, MH)",
+      "landParcel": "PAR-MH-3304 (26.0 Acres)",
+      "methodology": "VWBA v1.2 & WRI Water Peace Index",
+      "interventionType": "Concrete Gravity Checkdam + Desilting",
+      "baselineExtraction": "68,000 L/hr Dry Bore",
+      "annualRechargeM3": "640,000 m³ / yr",
+      "waterSavedPct": "54% River Baseflow Boost",
+      "dripCoverage": "24.5 Acres Drip Network",
+      "piezometerDepth": "9.8m BGL (Recovered +3.4m)",
+      "complianceStandard": "AWS v2.0 Platinum",
+      "iotFlowMeters": "3 IoT Pressure Sensors",
+      "status": "VERIFIED_ELIGIBLE",
+      "assignedAgent": "Pravin Patil (AGT-MH-05)"
+    }
+  ],
+  "biodiversityProjects": [
+    {
+      "id": "PRJ-BIO-2024-004",
+      "title": "Bundelkhand Indigenous Canopy & Pollinator Corridor",
+      "ecologicalZone": "Central Indian Dry Deciduous Scrub",
+      "developerOrg": "Malwa Agro Producer Co.",
+      "leadFarmer": "Devendra Pratap Singh (Chhatarpur, MP)",
+      "landParcel": "PAR-MP-6209 (22.0 Acres)",
+      "methodology": "Plan Vivo Biodiversity Standard (T1.2)",
+      "restorationType": "Wildlife Corridor & Native Flora Reintroduction",
+      "hectaresProtected": "8.9 ha (22.0 Acres)",
+      "canopyCoverGain": "+38% Canopy Cover Index",
+      "nativeSpeciesList": "Mahua (Madhuca longifolia), Palash, Khair, Aonla, Neem",
+      "nativeSpeciesCount": 34,
+      "iucnTargetSpecies": "Indian Star Tortoise (VU), Sarus Crane (VU)",
+      "cameraTrapsInstalled": "4 Infrared Field Traps Active",
+      "verifierOrganization": "ACVA Ecological Auditor",
+      "status": "VERIFIED_ELIGIBLE",
+      "assignedAgent": "Suresh Rathore (AGT-MP-02)"
+    },
+    {
+      "id": "PRJ-BIO-2024-007",
+      "title": "Western Ghats Riparian Buffer Exotic Species Eradication",
+      "ecologicalZone": "Western Ghats High Biodiversity Hotspot",
+      "developerOrg": "Narmada Valley Bio-Farmers FPO",
+      "leadFarmer": "Subbanna Hegde (Sirsi, KA)",
+      "landParcel": "PAR-KA-9901 (5.0 Acres)",
+      "methodology": "Plan Vivo Biodiversity Standard",
+      "restorationType": "Lantana Camara Uprooting & Shola Nursery",
+      "hectaresProtected": "2.0 ha (5.0 Acres)",
+      "canopyCoverGain": "Failed Threshold (-8%)",
+      "nativeSpeciesList": "Monoculture Arecanut Cash Crop (Disqualified)",
+      "nativeSpeciesCount": 4,
+      "iucnTargetSpecies": "None Validated",
+      "cameraTrapsInstalled": "0 Units Active",
+      "verifierOrganization": "Independent Verifier",
+      "status": "REJECTED",
+      "assignedAgent": "Karthik Bhat (AGT-KA-03)"
+    },
+    {
+      "id": "PRJ-BIO-2024-010",
+      "title": "Gir National Park Buffer Grassland Revitalization & Maldhari Corridor",
+      "ecologicalZone": "Kathiawar-Gir Semi-Arid Shrubland",
+      "developerOrg": "Punjab Eco Regeneration Trust",
+      "leadFarmer": "Mansukhbhai Patel (Junagadh, GJ)",
+      "landParcel": "PAR-GJ-7712 (45.0 Acres)",
+      "methodology": "IUCN Global Ecosystem Typology T2.1",
+      "restorationType": "Native Sehima Grassland & Lion Prey Corridor",
+      "hectaresProtected": "18.2 ha (45.0 Acres)",
+      "canopyCoverGain": "+29% Herbaceous Ground Density",
+      "nativeSpeciesList": "Sehima nervosum, Dicanthium annulatum, Acacia senegal",
+      "nativeSpeciesCount": 28,
+      "iucnTargetSpecies": "Asiatic Lion (EN Buffer), Indian Leopard (VU)",
+      "cameraTrapsInstalled": "8 Camera Traps Monitored",
+      "verifierOrganization": "Gujarat Forest Research Institute",
+      "status": "MONITORING_MRV",
+      "assignedAgent": "Haresh Chavda (AGT-GJ-02)"
+    }
+  ],
+  "projects": [
+    {
+      "id": "PRJ-CAR-2024-001",
+      "title": "Malwa Agroforestry & Soil Carbon Sinks Initiative",
+      "type": "CARBON",
+      "status": "APPROVED_FOR_DATA_COLLECTION",
+      "developerOrg": {
+        "id": "ORG-2024-001",
+        "name": "Narmada Valley Bio-Farmers FPO",
+        "type": "Farmer Producer Organization"
+      },
+      "leadFarmer": {
+        "id": "FARM-MP-2024-001",
+        "name": "Ramcharan Patidar",
+        "phone": "+91 98260 11422",
+        "village": "Pipariya Kalan",
+        "district": "Dewas",
+        "state": "Madhya Pradesh"
+      },
+      "landParcel": {
+        "id": "PAR-MP-8401",
+        "surveyNumber": "Khasra 412/1",
+        "acreage": 8.4,
+        "coordinates": "22.9676° N, 76.0534° E"
+      },
+      "methodology": "Verra VM0042 (ARR & Regenerative Agroforestry)",
+      "creditingPeriod": "2024 - 2044 (20 Years)",
+      "submittedDate": "2026-09-10",
+      "assignedAgent": "Vikram Solanki (AGT-MP-09)",
+      "metrics": {
+        "carbonCreditsEstimated": "1,260 tCO₂e / yr",
+        "carbonBaseline": "0.82% Soil Organic Carbon (SOC)",
+        "projectedSocGain": "+1.45% SOC at Year 5",
+        "treesPlanted": "3,200 Native Teak & Neem"
+      },
+      "questionnaire": [
+        {
+          "question": "Pre-existing Land Use & 10-Year Tillage History",
+          "answer": "Continuous conventional soybean-wheat rotation with synthetic urea and flood irrigation. Soil heavily tilled twice annually.",
+          "category": "Baseline Assessment"
+        },
+        {
+          "question": "Planned Agroforestry Intervention & Species Matrix",
+          "answer": "Intercropping native multi-tier trees (Neem, Teak, Subabul) with zero-tillage legumes and mulching across 8.4 acres.",
+          "category": "Intervention Design"
+        },
+        {
+          "question": "Risk of Reversal & Grazing Mitigation Plan",
+          "answer": "Perimeter bio-fencing with thorny acacia and community watch agreement signed through Pipariya Gram Panchayat.",
+          "category": "Permanence & Risk"
+        }
+      ],
+      "evidenceList": [
+        {
+          "id": "EVD-C01-01",
+          "title": "Baseline Soil Organic Carbon Lab Report (Dewas Ag Lab)",
+          "type": "LAB_REPORT",
+          "verified": true,
+          "geoTag": "22.9676° N, 76.0534° E",
+          "date": "2026-09-08",
+          "hash": "sha256:8f4c...91a2"
+        },
+        {
+          "id": "EVD-C01-02",
+          "title": "Sapling Nursery Procurement Invoices & Geo-tagged Staging Photos",
+          "type": "PHOTO",
+          "verified": true,
+          "geoTag": "22.9678° N, 76.0532° E",
+          "date": "2026-09-09",
+          "hash": "sha256:3a1b...77e4"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-10 10:14",
+          "action": "PROJECT_SUBMITTED",
+          "performedBy": "Narmada Valley Bio-Farmers FPO (dev@narmadafpo.org)",
+          "note": "Carbon questionnaire C01-C08 and Dewas Ag Lab baseline submitted."
+        },
+        {
+          "timestamp": "2026-09-12 14:30",
+          "action": "SCREENING_APPROVED",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "PRD §15.3 screening passed. Approved for Field Data Collection. Agent assigned."
+        }
+      ],
+      "adminDecisionNote": "Approved for Data Collection under PRD §15.3. All baseline evidence and land boundary polygons validated against PostGIS."
+    },
+    {
+      "id": "PRJ-CAR-2024-002",
+      "title": "Punjab In-Situ Biochar Soil Injection & Stubble Replacement",
+      "type": "CARBON",
+      "status": "SCREENING",
+      "developerOrg": {
+        "id": "ORG-2024-003",
+        "name": "Punjab Eco Regeneration Trust",
+        "type": "Project Developer"
+      },
+      "leadFarmer": {
+        "id": "FARM-PB-2024-082",
+        "name": "Baldev Singh",
+        "phone": "+91 98141 88201",
+        "village": "Bhadaur",
+        "district": "Barnala",
+        "state": "Punjab"
+      },
+      "landParcel": {
+        "id": "PAR-PB-9104",
+        "surveyNumber": "Khasra 188/3",
+        "acreage": 14.2,
+        "coordinates": "30.4812° N, 75.3198° E"
+      },
+      "methodology": "Gold Standard / CDM AR-ACM0003 (Biochar Soil Amendment)",
+      "creditingPeriod": "2024 - 2034 (10 Years)",
+      "submittedDate": "2026-09-18",
+      "assignedAgent": "Gurpreet Sandhu (AGT-PB-04)",
+      "metrics": {
+        "carbonCreditsEstimated": "2,840 tCO₂e / yr",
+        "carbonBaseline": "100% Paddy Stubble Open-Field Pyrolysis/Burning",
+        "projectedSocGain": "+2.10% Refractory Carbon",
+        "treesPlanted": "Zero-till Biochar Injection"
+      },
+      "questionnaire": [
+        {
+          "question": "Annual Residue Mass & Stubble Burning Baseline",
+          "answer": "Approximately 48 metric tons of paddy residue combusted on-field annually over past 15 crop cycles.",
+          "category": "Baseline Assessment"
+        },
+        {
+          "question": "Pyrolysis Unit Specification & Biochar H:Corg Ratio",
+          "answer": "Mobile farm-gate continuous pyrolysis kiln yielding 32% biochar with certified H:Corg ratio < 0.4.",
+          "category": "Intervention Design"
+        }
+      ],
+      "evidenceList": [
+        {
+          "id": "EVD-C02-01",
+          "title": "Satellite Sentinel-2 Active Fire Baseline History (2021-2025)",
+          "type": "DOCUMENT",
+          "verified": true,
+          "geoTag": "30.4812° N, 75.3198° E",
+          "date": "2026-09-17",
+          "hash": "sha256:5b99...21c1"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-18 16:45",
+          "action": "PROJECT_SUBMITTED",
+          "performedBy": "Punjab Eco Regeneration Trust (punjab.trust@ecoverify.in)",
+          "note": "Biochar screening package submitted. Awaiting Super Admin screening decision."
+        }
+      ],
+      "adminDecisionNote": "Screening review in progress by Super Admin. Verifying pyrolyzer IBI standards."
+    },
+    {
+      "id": "PRJ-WAT-2024-003",
+      "title": "Narmada Basin Volumetric Aquifer Recharge & Drip Transition",
+      "type": "WATER",
+      "status": "MONITORING_MRV",
+      "developerOrg": {
+        "id": "ORG-2024-001",
+        "name": "Narmada Valley Bio-Farmers FPO",
+        "type": "Farmer Producer Organization"
+      },
+      "leadFarmer": {
+        "id": "FARM-MP-2024-001",
+        "name": "Ramcharan Patidar",
+        "phone": "+91 98260 11422",
+        "village": "Pipariya Kalan",
+        "district": "Dewas",
+        "state": "Madhya Pradesh"
+      },
+      "landParcel": {
+        "id": "PAR-MP-8401",
+        "surveyNumber": "Khasra 412/1",
+        "acreage": 8.4,
+        "coordinates": "22.9676° N, 76.0534° E"
+      },
+      "methodology": "Volumetric Water Benefit Accounting (VWBA v1.2)",
+      "creditingPeriod": "2024 - 2029 (5 Years)",
+      "submittedDate": "2026-08-20",
+      "assignedAgent": "Vikram Solanki (AGT-MP-09)",
+      "metrics": {
+        "waterRechargedM3": "285,000 m³ / yr",
+        "waterSavedPercentage": "42% Extraction Reduction",
+        "dripCoverage": "8.4 Acres Fully Piped",
+        "piezometerLevel": "14.2m Below Ground Level (Recovered +1.8m)"
+      },
+      "questionnaire": [
+        {
+          "question": "Baseline Water Extraction & Pump Capacity",
+          "answer": "Two 7.5 HP submersible borewells extracting ~42,000 liters/hour running 6 hours daily during Rabi season.",
+          "category": "Baseline Extraction"
+        },
+        {
+          "question": "Recharge Pit & Percolation Trench Engineering Specs",
+          "answer": "Constructed 2 deep bore-recharge injection wells with multi-layer sand-gravel filters and 320m contour bunds.",
+          "category": "Intervention Design"
+        }
+      ],
+      "evidenceList": [
+        {
+          "id": "EVD-W03-01",
+          "title": "Automated Ultrasonic Flow Meter Calibration Certificate",
+          "type": "DOCUMENT",
+          "verified": true,
+          "geoTag": "22.9675° N, 76.0530° E",
+          "date": "2026-08-18",
+          "hash": "sha256:7c88...14f2"
+        },
+        {
+          "id": "EVD-W03-02",
+          "title": "Site Geo-tagged Photo of Sand Filtration Pit & Inflow Channel",
+          "type": "PHOTO",
+          "verified": true,
+          "geoTag": "22.9676° N, 76.0534° E",
+          "date": "2026-08-19",
+          "hash": "sha256:11bb...99ee"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2026-08-20 09:30",
+          "action": "PROJECT_SUBMITTED",
+          "performedBy": "Narmada Valley Bio-Farmers FPO",
+          "note": "Water impact initial submission."
+        },
+        {
+          "timestamp": "2026-08-22 11:20",
+          "action": "APPROVED_FOR_DATA_COLLECTION",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Field Agent Vikram Solanki assigned for quarterly meter audits."
+        },
+        {
+          "timestamp": "2026-09-02 16:15",
+          "action": "MOVED_TO_MRV",
+          "performedBy": "MRV Specialist (Dr. Sunita Rao)",
+          "note": "Quarterly volumetric flow logs passed statistical anomaly test."
+        }
+      ],
+      "adminDecisionNote": "Active in Monitoring / MRV cycle. Piezometric water table rise validated by field audit."
+    },
+    {
+      "id": "PRJ-BIO-2024-004",
+      "title": "Bundelkhand Indigenous Canopy & Pollinator Corridor",
+      "type": "BIODIVERSITY",
+      "status": "VERIFIED_ELIGIBLE",
+      "developerOrg": {
+        "id": "ORG-2024-002",
+        "name": "Malwa Agro Producer Co.",
+        "type": "NGO / Developer"
+      },
+      "leadFarmer": {
+        "id": "FARM-MP-2024-045",
+        "name": "Devendra Pratap Singh",
+        "phone": "+91 94252 77109",
+        "village": "Khajuraho Rural",
+        "district": "Chhatarpur",
+        "state": "Madhya Pradesh"
+      },
+      "landParcel": {
+        "id": "PAR-MP-6209",
+        "surveyNumber": "Khasra 28/4",
+        "acreage": 22.0,
+        "coordinates": "24.8318° N, 79.9199° E"
+      },
+      "methodology": "Plan Vivo Biodiversity Standard / IUCN Typology T1.2",
+      "creditingPeriod": "2024 - 2054 (30 Years)",
+      "submittedDate": "2026-07-15",
+      "assignedAgent": "Suresh Rathore (AGT-MP-02)",
+      "metrics": {
+        "biodiversityHectares": "8.9 ha (22.0 Acres)",
+        "canopyIndexGain": "+38% Canopy Cover Index",
+        "nativeSpeciesCount": 34,
+        "iucnRedListSpecies": "Indian Star Tortoise, Sarus Crane Habitat"
+      },
+      "questionnaire": [
+        {
+          "question": "Native Floral Inventory & Succession Plan",
+          "answer": "Planted 34 native dry deciduous species including Mahua (Madhuca longifolia), Palash, Khair, and Aonla with zero exotic eucalyptus.",
+          "category": "Flora Assessment"
+        },
+        {
+          "question": "Wildlife Connectivity to Panna National Park Buffer",
+          "answer": "Parcel forms a direct contiguous green bridge connecting fragmented scrubland to the Panna tiger corridor zone.",
+          "category": "Corridor Impact"
+        }
+      ],
+      "evidenceList": [
+        {
+          "id": "EVD-B04-01",
+          "title": "Third-party ACVA Verifier Ecological Audit & Camera Trap Footage",
+          "type": "DOCUMENT",
+          "verified": true,
+          "geoTag": "24.8320° N, 79.9201° E",
+          "date": "2026-09-01",
+          "hash": "sha256:990a...442b"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2026-07-15 11:00",
+          "action": "PROJECT_SUBMITTED",
+          "performedBy": "Malwa Agro Producer Co.",
+          "note": "Biodiversity filing submitted."
+        },
+        {
+          "timestamp": "2026-08-10 15:40",
+          "action": "TECHNICAL_REVIEW_PASSED",
+          "performedBy": "MRV Specialist (Dr. Sunita Rao)",
+          "note": "Floristic canopy density corroborated via drone photogrammetry."
+        },
+        {
+          "timestamp": "2026-09-05 17:20",
+          "action": "VERIFIED_ELIGIBLE",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Verified Eligible for Nature Impact Credits. Issued to platform registry."
+        }
+      ],
+      "adminDecisionNote": "Eligible & Verified. Universal Gate passed. Listed on biodiversity registry."
+    },
+    {
+      "id": "PRJ-CAR-2024-005",
+      "title": "Vidarbha Regenerative Cotton & Mycorrhizal Soil Enrichment",
+      "type": "CARBON",
+      "status": "CLARIFICATION",
+      "developerOrg": {
+        "id": "ORG-2024-002",
+        "name": "Malwa Agro Producer Co.",
+        "type": "Project Developer"
+      },
+      "leadFarmer": {
+        "id": "FARM-MH-2024-023",
+        "name": "Ganesh Mahadev Rao",
+        "phone": "+91 97654 33190",
+        "village": "Ashti",
+        "district": "Wardha",
+        "state": "Maharashtra"
+      },
+      "landParcel": {
+        "id": "PAR-MH-1102",
+        "surveyNumber": "Khasra 94/2",
+        "acreage": 6.8,
+        "coordinates": "21.1983° N, 78.1822° E"
+      },
+      "methodology": "Verra VM0042 (Regenerative Agriculture)",
+      "creditingPeriod": "2024 - 2039 (15 Years)",
+      "submittedDate": "2026-09-14",
+      "assignedAgent": "Pravin Patil (AGT-MH-05)",
+      "metrics": {
+        "carbonCreditsEstimated": "820 tCO₂e / yr",
+        "carbonBaseline": "0.45% SOC in Degraded Black Soil",
+        "projectedSocGain": "+0.95% SOC via Bio-fertilizer",
+        "treesPlanted": "Cover Crop Interseeding"
+      },
+      "questionnaire": [
+        {
+          "question": "Chemical Fertilizer Baseline Consumption",
+          "answer": "Historic application of 120 kg DAP and 150 kg Urea per hectare.",
+          "category": "Baseline Assessment"
+        }
+      ],
+      "evidenceList": [
+        {
+          "id": "EVD-C05-01",
+          "title": "Preliminary Soil Test Report",
+          "type": "LAB_REPORT",
+          "verified": false,
+          "geoTag": "21.1983° N, 78.1822° E",
+          "date": "2026-09-12",
+          "hash": "sha256:32ff...bb90"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-14 12:10",
+          "action": "PROJECT_SUBMITTED",
+          "performedBy": "Malwa Agro Producer Co.",
+          "note": "Carbon submission created."
+        },
+        {
+          "timestamp": "2026-09-16 16:30",
+          "action": "CLARIFICATION_REQUESTED",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Soil test report lacks ISO 17025 accredited laboratory seal. Please re-upload certified baseline."
+        }
+      ],
+      "clarificationQuestion": "Please provide an accredited soil test report with ISO 17025 certification showing depth increments at 0-15cm and 15-30cm.",
+      "adminDecisionNote": "Clarification required from project developer regarding soil lab accreditation."
+    },
+    {
+      "id": "PRJ-WAT-2024-006",
+      "title": "Thar Desert Subsurface Aquifer Barrier & Rainwater Capture",
+      "type": "WATER",
+      "status": "SUBMITTED",
+      "developerOrg": {
+        "id": "ORG-2024-003",
+        "name": "Punjab Eco Regeneration Trust",
+        "type": "Project Developer"
+      },
+      "leadFarmer": {
+        "id": "FARM-RJ-2024-055",
+        "name": "Mohan Lal Bishnoi",
+        "phone": "+91 94140 55431",
+        "village": "Kalu",
+        "district": "Bikaner",
+        "state": "Rajasthan"
+      },
+      "landParcel": {
+        "id": "PAR-RJ-4401",
+        "surveyNumber": "Khasra 601/7",
+        "acreage": 18.5,
+        "coordinates": "28.2144° N, 73.7821° E"
+      },
+      "methodology": "Alliance for Water Stewardship (AWS v2.0)",
+      "creditingPeriod": "2024 - 2034 (10 Years)",
+      "submittedDate": "2026-09-20",
+      "assignedAgent": "Rakesh Meena (AGT-RJ-01)",
+      "metrics": {
+        "waterRechargedM3": "420,000 m³ / yr",
+        "waterSavedPercentage": "65% Rain Catchment Efficiency",
+        "dripCoverage": "Kunds & Subsurface Checkdams",
+        "piezometerLevel": "48.5m BGL"
+      },
+      "questionnaire": [
+        {
+          "question": "Arid Runoff Harvesting Capacity",
+          "answer": "Constructing traditional paved Kund catchment aprons feeding sealed subsurface reservoir.",
+          "category": "Intervention Design"
+        }
+      ],
+      "evidenceList": [
+        {
+          "id": "EVD-W06-01",
+          "title": "Catchment Hydrology Topographical Survey Map",
+          "type": "DOCUMENT",
+          "verified": false,
+          "geoTag": "28.2144° N, 73.7821° E",
+          "date": "2026-09-19",
+          "hash": "sha256:88ee...33cc"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-20 18:00",
+          "action": "PROJECT_SUBMITTED",
+          "performedBy": "Punjab Eco Regeneration Trust",
+          "note": "Fresh submission awaiting screening."
+        }
+      ],
+      "adminDecisionNote": "New submission received. Awaiting Super Admin screening queue review."
+    },
+    {
+      "id": "PRJ-BIO-2024-007",
+      "title": "Western Ghats Riparian Buffer Exotic Species Eradication",
+      "type": "BIODIVERSITY",
+      "status": "REJECTED",
+      "developerOrg": {
+        "id": "ORG-2024-001",
+        "name": "Narmada Valley Bio-Farmers FPO",
+        "type": "FPO Developer"
+      },
+      "leadFarmer": {
+        "id": "FARM-KA-2024-012",
+        "name": "Subbanna Hegde",
+        "phone": "+91 94481 22904",
+        "village": "Sirsi Rural",
+        "district": "Uttara Kannada",
+        "state": "Karnataka"
+      },
+      "landParcel": {
+        "id": "PAR-KA-9901",
+        "surveyNumber": "Khasra 104/1",
+        "acreage": 5.0,
+        "coordinates": "14.6195° N, 74.8354° E"
+      },
+      "methodology": "Plan Vivo Biodiversity Standard",
+      "creditingPeriod": "2024 - 2034 (10 Years)",
+      "submittedDate": "2026-09-02",
+      "assignedAgent": "Karthik Bhat (AGT-KA-03)",
+      "metrics": {
+        "biodiversityHectares": "2.0 ha (5.0 Acres)",
+        "canopyIndexGain": "Failed Threshold",
+        "nativeSpeciesCount": 4,
+        "iucnRedListSpecies": "None Specified"
+      },
+      "questionnaire": [
+        {
+          "question": "Alien Invasive Species Removal Protocol",
+          "answer": "Manual uprooting of Lantana camara and planting commercial arecanut palms.",
+          "category": "Intervention Design"
+        }
+      ],
+      "evidenceList": [
+        {
+          "id": "EVD-B07-01",
+          "title": "Site Photo showing commercial monoculture arecanut planting",
+          "type": "PHOTO",
+          "verified": false,
+          "geoTag": "14.6195° N, 74.8354° E",
+          "date": "2026-09-01",
+          "hash": "sha256:ff01...12aa"
+        }
+      ],
+      "auditTrail": [
+        {
+          "timestamp": "2026-09-02 14:10",
+          "action": "PROJECT_SUBMITTED",
+          "performedBy": "Narmada Valley Bio-Farmers FPO",
+          "note": "Filing submitted."
+        },
+        {
+          "timestamp": "2026-09-04 11:30",
+          "action": "PROJECT_REJECTED",
+          "performedBy": "Super Admin (admin@naturex.io)",
+          "note": "Rejected: Commercial monoculture cash crops (arecanut) do not qualify for Biodiversity Impact Credits under PRD Section 8."
+        }
+      ],
+      "rejectionReason": "Commercial monoculture cash crops (arecanut) do not qualify for Biodiversity Impact Credits under PRD Section 8. Interventions must restore native multi-tier wild biodiversity.",
+      "adminDecisionNote": "Rejected. Developer may revise species matrix and resubmit under regenerative agroforestry."
+    }
+  ]
+}

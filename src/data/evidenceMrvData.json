@@ -1,0 +1,391 @@
+{
+  "summaryStats": {
+    "totalEvidence": {
+      "count": 1482,
+      "verifiedCount": 1340,
+      "pendingReview": 94,
+      "flagged": 48
+    },
+    "geofenceAccuracy": {
+      "percentage": "98.8%",
+      "insideParcel": 1464,
+      "marginal": 14,
+      "outsideParcel": 4
+    },
+    "hashIntegrity": {
+      "matchedRate": "100%",
+      "algorithm": "SHA-256 / SHA-3",
+      "tamperedAlerts": 0
+    },
+    "mrvCompliance": {
+      "activeCycles": 18,
+      "overallCompleteness": "95.4%",
+      "openFindings": 12,
+      "approvedCreditingCycles": 14
+    }
+  },
+  "evidenceItems": [
+    {
+      "id": "EVD-2026-98101",
+      "projectId": "PRJ-CAR-2026-001",
+      "projectName": "Indore-Dewas Agroforestry Carbon Sequestration",
+      "farmerId": "USR-FARM-5262",
+      "farmerName": "Rahul Sharma",
+      "parcelId": "PARCEL-MP-0891",
+      "visitId": "VISIT-2026-441",
+      "fieldAgent": "Sanjay Mandloi (FA-0041)",
+      "captureType": "Photo",
+      "category": "Tree DBH & Height Caliper",
+      "caption": "Teak (Tectona grandis) DBH 18.4 cm and canopy height 6.2m measurement",
+      "timestamp": "22 Sept 2026, 09:42:15 IST",
+      "deviceModel": "Samsung Galaxy M34 5G (Android 14, NatureX App v2.4.1)",
+      "gps": {
+        "lat": 22.9824,
+        "lng": 76.5421,
+        "altitude": "492.4 m",
+        "accuracy": "±1.8 m (RTK Augmented)",
+        "bearing": "142° SE"
+      },
+      "geofenceStatus": "INSIDE_PARCEL",
+      "sha256Hash": "8f3b6c2d4a1e905f7788bcde123456789abcdef0123456789abcdef012345678",
+      "tamperStatus": "VALID_INTEGRITY",
+      "fileSize": "4.2 MB RAW JPEG",
+      "status": "PENDING_REVIEW",
+      "reviewerNotes": "Clear sightline on diameter tape. GPS centroid verified within parcel boundary.",
+      "evidenceScore": 98,
+      "location": "Bhonrasa, Ashta, Sehore (MP)"
+    },
+    {
+      "id": "EVD-2026-98102",
+      "projectId": "PRJ-CAR-2026-001",
+      "projectName": "Indore-Dewas Agroforestry Carbon Sequestration",
+      "farmerId": "USR-FARM-1104",
+      "farmerName": "Rameshwar Patel",
+      "parcelId": "PARCEL-MP-0914",
+      "visitId": "VISIT-2026-442",
+      "fieldAgent": "Sanjay Mandloi (FA-0041)",
+      "captureType": "Photo",
+      "category": "Soil Core Sample 0-30cm",
+      "caption": "Soil auger core extraction for organic carbon lab spectrophotometry assay",
+      "timestamp": "21 Sept 2026, 14:18:30 IST",
+      "deviceModel": "Samsung Galaxy M34 5G (Android 14, NatureX App v2.4.1)",
+      "gps": {
+        "lat": 22.9515,
+        "lng": 76.3822,
+        "altitude": "510.1 m",
+        "accuracy": "±2.1 m",
+        "bearing": "018° NNE"
+      },
+      "geofenceStatus": "INSIDE_PARCEL",
+      "sha256Hash": "1a7c4e8b3f20918273645abcd9876543210fedcba9876543210fedcba9876543",
+      "tamperStatus": "VALID_INTEGRITY",
+      "fileSize": "3.8 MB RAW JPEG",
+      "status": "VERIFIED",
+      "reviewerNotes": "Soil sample tag #SOC-210-4 matches chain of custody manifest. Verified by Dr. Sunita Rao.",
+      "evidenceScore": 99,
+      "location": "Pipalrawan, Sonkatch, Dewas (MP)"
+    },
+    {
+      "id": "EVD-2026-98103",
+      "projectId": "PRJ-WAT-2026-002",
+      "projectName": "Mirzapur Bundelkhand Checkdam Groundwater Recharge",
+      "farmerId": "USR-FARM-0822",
+      "farmerName": "Savitri Devi Kurmi",
+      "parcelId": "PARCEL-UP-0412",
+      "visitId": "VISIT-2026-448",
+      "fieldAgent": "Pankaj Tiwari (FA-0062)",
+      "captureType": "Video",
+      "category": "Checkdam Overflow & Flow Meter",
+      "caption": "Ultrasonic digital flow meter reading at masonry spillway after monsoon shower",
+      "timestamp": "20 Sept 2026, 11:05:44 IST",
+      "deviceModel": "Redmi Note 13 Pro (Android 14, NatureX App v2.4.1)",
+      "gps": {
+        "lat": 25.1251,
+        "lng": 82.8924,
+        "altitude": "188.0 m",
+        "accuracy": "±1.5 m",
+        "bearing": "270° W"
+      },
+      "geofenceStatus": "INSIDE_PARCEL",
+      "sha256Hash": "44a98f12cb34e90871239847abcdef99887766554433221100ffeeddccbbaa99",
+      "tamperStatus": "VALID_INTEGRITY",
+      "fileSize": "18.4 MB MP4 (30s)",
+      "status": "VERIFIED",
+      "reviewerNotes": "Continuous video shows clear gauge level at 1.42m and telemetry meter serial #FM-8821.",
+      "evidenceScore": 96,
+      "location": "Adalhat Dehat, Chunar, Mirzapur (UP)"
+    },
+    {
+      "id": "EVD-2026-98104",
+      "projectId": "PRJ-CAR-2026-003",
+      "projectName": "Vidarbha Regenerative Cotton & Biochar Initiative",
+      "farmerId": "USR-FARM-9012",
+      "farmerName": "Balasaheb Jadhav",
+      "parcelId": "PARCEL-MH-0288",
+      "visitId": "VISIT-2026-455",
+      "fieldAgent": "Vilasrao Deshmukh (FA-0019)",
+      "captureType": "Photo",
+      "category": "Biochar In-Furrow Application",
+      "caption": "Pyrolyzed cotton stalk biochar incorporation at 2.5 t/ha rate with rotary tiller",
+      "timestamp": "19 Sept 2026, 16:30:10 IST",
+      "deviceModel": "OnePlus Nord CE 3 (Android 14, NatureX App v2.4.1)",
+      "gps": {
+        "lat": 20.4135,
+        "lng": 78.4528,
+        "altitude": "244.2 m",
+        "accuracy": "±3.4 m",
+        "bearing": "195° SSW"
+      },
+      "geofenceStatus": "MARGINAL_5M",
+      "sha256Hash": "99bb11aa22cc33dd44ee55ff6600112233445566778899aabbccddeeff001122",
+      "tamperStatus": "VALID_INTEGRITY",
+      "fileSize": "5.1 MB RAW JPEG",
+      "status": "FLAGGED",
+      "reviewerNotes": "GPS location is 4.8 meters outside mapped parcel boundary. Flagged for surveyor explanation.",
+      "evidenceScore": 82,
+      "location": "Wadki, Ralegaon, Yavatmal (MH)"
+    },
+    {
+      "id": "EVD-2026-98105",
+      "projectId": "PRJ-BIO-2026-001",
+      "projectName": "Western Ghats Corridor Native Shola-Grassland Restoration",
+      "farmerId": "USR-FARM-6140",
+      "farmerName": "K. Venkateswarlu",
+      "parcelId": "PARCEL-AP-0331",
+      "visitId": "VISIT-2026-460",
+      "fieldAgent": "B. Ramanjaneyulu (FA-0084)",
+      "captureType": "Photo",
+      "category": "Native Sapling Survival Tagging",
+      "caption": "RFID tagged Syzygium cumini (Jamun) sapling health and shoot height inspection",
+      "timestamp": "18 Sept 2026, 08:22:19 IST",
+      "deviceModel": "Samsung Galaxy M34 5G (Android 14, NatureX App v2.4.1)",
+      "gps": {
+        "lat": 14.5132,
+        "lng": 77.1258,
+        "altitude": "612.8 m",
+        "accuracy": "±1.9 m",
+        "bearing": "090° E"
+      },
+      "geofenceStatus": "INSIDE_PARCEL",
+      "sha256Hash": "ff00eeddccbbaa99887766554433221100aabbccddeeff998877665544332211",
+      "tamperStatus": "VALID_INTEGRITY",
+      "fileSize": "4.6 MB RAW JPEG",
+      "status": "VERIFIED",
+      "reviewerNotes": "RFID tag #BIO-AP-0982 verified with healthy leaf collar and fresh vegetative buds.",
+      "evidenceScore": 97,
+      "location": "Garudapuram, Kalyandurg, Anantapur (AP)"
+    },
+    {
+      "id": "EVD-2026-98106",
+      "projectId": "PRJ-WAT-2026-004",
+      "projectName": "Punjab Drip Fertigation & Paddy Straw Bio-Enzyme",
+      "farmerId": "USR-FARM-3310",
+      "farmerName": "Baldev Singh",
+      "parcelId": "PARCEL-PB-9104",
+      "visitId": "VISIT-2026-466",
+      "fieldAgent": "Harpreet Singh (FA-0072)",
+      "captureType": "Document",
+      "category": "Soil Moisture Sensor Telemetry Log",
+      "caption": "Capacitive frequency domain sensor depth profile data sheet (15cm, 30cm, 60cm)",
+      "timestamp": "17 Sept 2026, 12:45:00 IST",
+      "deviceModel": "Dell Latitude / Field Sync Hub v1.8",
+      "gps": {
+        "lat": 30.3421,
+        "lng": 75.5218,
+        "altitude": "231.5 m",
+        "accuracy": "±0.8 m",
+        "bearing": "000° N"
+      },
+      "geofenceStatus": "INSIDE_PARCEL",
+      "sha256Hash": "778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566",
+      "tamperStatus": "VALID_INTEGRITY",
+      "fileSize": "1.2 MB PDF",
+      "status": "VERIFIED",
+      "reviewerNotes": "Data logger calibration certificate attached. Water volumetric content values consistent with Drip schedule.",
+      "evidenceScore": 99,
+      "location": "Tapa, Barnala (Punjab)"
+    },
+    {
+      "id": "EVD-2026-98107",
+      "projectId": "PRJ-CAR-2026-004",
+      "projectName": "Thar Desert Silvopasture & Khejri Afforestation",
+      "farmerId": "USR-FARM-7721",
+      "farmerName": "Hanuman Singh Shekhawat",
+      "parcelId": "PARCEL-RJ-0518",
+      "visitId": "VISIT-2026-471",
+      "fieldAgent": "Kishore Bishnoi (FA-0091)",
+      "captureType": "Photo",
+      "category": "Drone Orthomosaic Ground Control Point",
+      "caption": "Survey target GCP-04 RTK ground marker calibration before DJI Matrice 350 RTK flight",
+      "timestamp": "16 Sept 2026, 07:15:33 IST",
+      "deviceModel": "DJI Pilot 2 / Matrice 350 RTK (Firmware v07.01.01)",
+      "gps": {
+        "lat": 27.4228,
+        "lng": 75.3139,
+        "altitude": "418.0 m",
+        "accuracy": "±0.02 m (RTK Fixed)",
+        "bearing": "045° NE"
+      },
+      "geofenceStatus": "INSIDE_PARCEL",
+      "sha256Hash": "2233445566778899aabbccddeeff00112233445566778899aabbccddeeff0011",
+      "tamperStatus": "VALID_INTEGRITY",
+      "fileSize": "6.4 MB RAW JPEG",
+      "status": "PENDING_REVIEW",
+      "reviewerNotes": "Sub-centimeter RTK fixed solution. Awaiting photogrammetry stitch report.",
+      "evidenceScore": 95,
+      "location": "Khatushyamji Rural, Sikar (Rajasthan)"
+    },
+    {
+      "id": "EVD-2026-98108",
+      "projectId": "PRJ-CAR-2026-001",
+      "projectName": "Indore-Dewas Agroforestry Carbon Sequestration",
+      "farmerId": "USR-FARM-5262",
+      "farmerName": "Rahul Sharma",
+      "parcelId": "PARCEL-MP-0891",
+      "visitId": "VISIT-2026-441",
+      "fieldAgent": "Sanjay Mandloi (FA-0041)",
+      "captureType": "Photo",
+      "category": "Canopy Densiometer Hemispherical Photo",
+      "caption": "Spherical crown densiometer reading 74% foliage cover under mature intercropped canopy",
+      "timestamp": "22 Sept 2026, 10:10:04 IST",
+      "deviceModel": "Samsung Galaxy M34 5G (Android 14, NatureX App v2.4.1)",
+      "gps": {
+        "lat": 22.9831,
+        "lng": 76.5445,
+        "altitude": "495.1 m",
+        "accuracy": "±1.7 m",
+        "bearing": "180° S"
+      },
+      "geofenceStatus": "INSIDE_PARCEL",
+      "sha256Hash": "33445566778899aabbccddeeff00112233445566778899aabbccddeeff001122",
+      "tamperStatus": "VALID_INTEGRITY",
+      "fileSize": "4.9 MB RAW JPEG",
+      "status": "PENDING_REVIEW",
+      "reviewerNotes": "Clear grid intersection count. Matches Sentinel-2 NDVI 0.72 baseline.",
+      "evidenceScore": 97,
+      "location": "Bhonrasa, Ashta, Sehore (MP)"
+    }
+  ],
+  "mrvMonitoringTasks": [
+    {
+      "id": "MRV-CYC-2026-01",
+      "projectId": "PRJ-CAR-2026-001",
+      "projectName": "Indore-Dewas Agroforestry Carbon Sequestration",
+      "monitoringPeriod": "Q3 2026 (July - September)",
+      "methodology": "VM0042 / NatureX Soil Carbon Protocol v1.4",
+      "leadReviewer": "Dr. Sunita Rao (MRV Specialist)",
+      "reviewerEmail": "sunita.rao@naturex.io",
+      "status": "UNDER_REVIEW",
+      "dueDate": "30 Sept 2026",
+      "completenessScore": "95.8%",
+      "accreditedBody": "BEE India / CCTS Verification Board",
+      "checklist": [
+        { "item": "Drone Orthomosaic Photogrammetry (0.05m GSD)", "required": 1, "submitted": 1, "status": "VERIFIED" },
+        { "item": "Soil Organic Carbon (SOC) Lab Assays (0-30cm)", "required": 24, "submitted": 24, "status": "IN_PROGRESS" },
+        { "item": "Tree Caliper (DBH & Height) Field Photos", "required": 140, "submitted": 138, "status": "IN_PROGRESS" },
+        { "item": "Farmer Benefit & Direct Ingestion Logs", "required": 18, "submitted": 18, "status": "VERIFIED" },
+        { "item": "Cadastral Boundary Reconciliation", "required": 12, "submitted": 12, "status": "VERIFIED" }
+      ],
+      "findings": [
+        {
+          "id": "FND-01",
+          "severity": "MEDIUM",
+          "description": "Lab assay #14 bulk density value (1.48 g/cm³) exceeds expected Vertisol range (1.20-1.35). Requested lab re-run.",
+          "status": "CLARIFICATION_REQUESTED",
+          "createdAt": "20 Sept 2026"
+        },
+        {
+          "id": "FND-02",
+          "severity": "LOW",
+          "description": "Two tree caliper photos had sun glare on baseline reference tag. Re-photographed during follow-up visit.",
+          "status": "RESOLVED",
+          "createdAt": "18 Sept 2026"
+        }
+      ],
+      "totalHectares": 248.5,
+      "estimatedCredits": "3,410 tCO2e"
+    },
+    {
+      "id": "MRV-CYC-2026-02",
+      "projectId": "PRJ-WAT-2026-002",
+      "projectName": "Mirzapur Bundelkhand Checkdam Groundwater Recharge",
+      "monitoringPeriod": "Monsoon 2026 Cycle",
+      "methodology": "Gold Standard Water Benefit Certificate Protocol v2.1",
+      "leadReviewer": "Amit Vikram (Hydrologist / MRV-02)",
+      "reviewerEmail": "amit.vikram@naturex.io",
+      "status": "APPROVED",
+      "dueDate": "25 Sept 2026",
+      "completenessScore": "100.0%",
+      "accreditedBody": "TUV SUD South Asia Accredited",
+      "checklist": [
+        { "item": "Ultrasonic Flow Meter Continuous Telemetry", "required": 12, "submitted": 12, "status": "VERIFIED" },
+        { "item": "Piezometer Water Table Depth Logs", "required": 8, "submitted": 8, "status": "VERIFIED" },
+        { "item": "Masonry Spillway Structural Inspection Videos", "required": 6, "submitted": 6, "status": "VERIFIED" },
+        { "item": "Village Water User Association Resolutions", "required": 4, "submitted": 4, "status": "VERIFIED" }
+      ],
+      "findings": [],
+      "totalHectares": 380.0,
+      "estimatedCredits": "14,200 m³ Recharged"
+    },
+    {
+      "id": "MRV-CYC-2026-03",
+      "projectId": "PRJ-CAR-2026-003",
+      "projectName": "Vidarbha Regenerative Cotton & Biochar Initiative",
+      "monitoringPeriod": "Kharif 2026 Application Cycle",
+      "methodology": "Verra VM0044 Biochar Utilization in Soils",
+      "leadReviewer": "Dr. Sunita Rao (MRV Specialist)",
+      "reviewerEmail": "sunita.rao@naturex.io",
+      "status": "CAR_ISSUED",
+      "dueDate": "05 Oct 2026",
+      "completenessScore": "86.2%",
+      "accreditedBody": "Epic Sustainability Services (ACVA)",
+      "checklist": [
+        { "item": "Biochar Pyrolysis Kiln Temperature Loggers (>550°C)", "required": 4, "submitted": 4, "status": "VERIFIED" },
+        { "item": "H:Corg Molar Ratio Laboratory Elemental Analysis", "required": 6, "submitted": 6, "status": "VERIFIED" },
+        { "item": "Field Application Weight Slips & GPS Inset Photos", "required": 32, "submitted": 28, "status": "IN_PROGRESS" },
+        { "item": "Land Parcel Geofence Non-Overlap Audit", "required": 10, "submitted": 9, "status": "IN_PROGRESS" }
+      ],
+      "findings": [
+        {
+          "id": "FND-03",
+          "severity": "HIGH",
+          "description": "Evidence EVD-2026-98104 GPS location 4.8m outside mapped boundary. Corrective Action Request (CAR-01) issued for re-demarcation.",
+          "status": "CAR_PENDING",
+          "createdAt": "19 Sept 2026"
+        }
+      ],
+      "totalHectares": 180.0,
+      "estimatedCredits": "2,150 tCO2e"
+    },
+    {
+      "id": "MRV-CYC-2026-04",
+      "projectId": "PRJ-BIO-2026-001",
+      "projectName": "Western Ghats Corridor Native Shola-Grassland Restoration",
+      "monitoringPeriod": "Annual Survival Audit 2026",
+      "methodology": "Plan Vivo Biodiversity Standard v5.0",
+      "leadReviewer": "Dr. P. Madhavan (Ecology Specialist)",
+      "reviewerEmail": "p.madhavan@naturex.io",
+      "status": "UNDER_REVIEW",
+      "dueDate": "10 Oct 2026",
+      "completenessScore": "92.0%",
+      "accreditedBody": "KPMG India ESG Advisory",
+      "checklist": [
+        { "item": "RFID Tagged Native Sapling Geo-census", "required": 500, "submitted": 482, "status": "IN_PROGRESS" },
+        { "item": "Camera Trap Wildlife Crossing Photographic Logs", "required": 16, "submitted": 16, "status": "VERIFIED" },
+        { "item": "Invasive Wattle / Lantana Eradication Transects", "required": 8, "submitted": 8, "status": "VERIFIED" },
+        { "item": "Tribal Forest Rights Committee Signoffs", "required": 3, "submitted": 3, "status": "VERIFIED" }
+      ],
+      "findings": [
+        {
+          "id": "FND-04",
+          "severity": "LOW",
+          "description": "18 sapling tags obscured by high monsoon grass. Re-tagged with high-visibility ribbons.",
+          "status": "RESOLVED",
+          "createdAt": "15 Sept 2026"
+        }
+      ],
+      "totalHectares": 110.0,
+      "estimatedCredits": "110 Hectare-Years Restored"
+    }
+  ]
+}

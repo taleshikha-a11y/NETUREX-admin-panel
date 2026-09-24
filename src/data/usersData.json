@@ -823,63 +823,63 @@
   ],
   "rbacMatrix": [
     {
-      "module": "Dashboard & Platform KPIs (A01)",
+      "module": "Dashboard & Platform KPIs",
       "superAdmin": "Full View & Export",
       "orgAdmin": "Tenant Scoped",
       "mrvSpecialist": "Project Scoped",
       "acvaVerifier": "Audit Scoped"
     },
     {
-      "module": "Users & Scoped Directory (A02)",
+      "module": "Users & Scoped Directory",
       "superAdmin": "Create / Edit / Suspend",
       "orgAdmin": "Add / Manage Org Users",
       "mrvSpecialist": "Read Only",
       "acvaVerifier": "Read Sample Records"
     },
     {
-      "module": "Roles & Permission Policies (A03)",
+      "module": "Roles & Permission Policies",
       "superAdmin": "Manage All RBAC Policies",
       "orgAdmin": "Assign Org Member Roles",
       "mrvSpecialist": "No Access",
       "acvaVerifier": "No Access"
     },
     {
-      "module": "Organizations Verification (A04)",
+      "module": "Organizations Verification",
       "superAdmin": "Approve / Reject Legal Entity",
       "orgAdmin": "Update Org Profile & Staff",
       "mrvSpecialist": "No Access",
       "acvaVerifier": "View Org Metadata"
     },
     {
-      "module": "KYC Review & Gate Decisions (A05)",
+      "module": "KYC Review & Gate Decisions",
       "superAdmin": "Approve / Reject / Clarify",
       "orgAdmin": "View Status & Assisted Resubmit",
       "mrvSpecialist": "View Identity Proofs",
       "acvaVerifier": "Audit Verification Trail"
     },
     {
-      "module": "Land Registry & PostGIS Geometry (A06/A07)",
+      "module": "Land Registry & PostGIS Geometry",
       "superAdmin": "Adjudicate Overlaps & Approve",
       "orgAdmin": "Upload KML / Polygon Mapping",
       "mrvSpecialist": "Validate Polygon Baselines",
       "acvaVerifier": "Cross-check Satellite Bounds"
     },
     {
-      "module": "Project State Machine (A08/A09)",
+      "module": "Project State Machine",
       "superAdmin": "Screening & Final Eligibility",
       "orgAdmin": "Draft to Submitted",
       "mrvSpecialist": "Technical Signoff / Findings",
       "acvaVerifier": "Accredited Verification Stamp"
     },
     {
-      "module": "Field Ops & Visit Dispatch (A14/A15)",
+      "module": "Field Ops & Visit Dispatch",
       "superAdmin": "Global Dispatch & Re-route",
       "orgAdmin": "Assign Org Field Agents",
       "mrvSpecialist": "Request Ground Re-visit",
       "acvaVerifier": "No Access"
     },
     {
-      "module": "Benefits & Finance Ledger (A18)",
+      "module": "Benefits & Finance Ledger",
       "superAdmin": "Disbursement & Bank Reconcile",
       "orgAdmin": "View Farmer Entitlements",
       "mrvSpecialist": "No Access",

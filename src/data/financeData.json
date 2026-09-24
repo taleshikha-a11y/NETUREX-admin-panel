@@ -1,0 +1,290 @@
+{
+  "summaryStats": {
+    "totalObligations": {
+      "value": "₹8.42 Cr",
+      "farmerCount": 3840,
+      "growth": "+₹1.2 Cr this month"
+    },
+    "totalDisbursed": {
+      "value": "₹6.15 Cr",
+      "payoutCount": 2980,
+      "successRate": "99.2%"
+    },
+    "pendingApproval": {
+      "value": "₹1.45 Cr",
+      "count": 182,
+      "slaAdherence": "48h Approval Gate"
+    },
+    "escrowBalance": {
+      "value": "₹13.70 Cr",
+      "account": "HDFC Bank NatureX Escrow",
+      "interestEarned": "₹14.2 Lakhs"
+    }
+  },
+  "benefitObligations": [
+    {
+      "id": "BEN-2026-7701",
+      "farmerId": "USR-FARM-5262",
+      "farmerName": "Rahul Sharma",
+      "farmerPhone": "+91 98261 78900",
+      "parcelId": "PARCEL-MP-0891",
+      "khasra": "Khasra 142/2",
+      "acreage": 12.38,
+      "projectId": "PRJ-CAR-2026-001",
+      "projectName": "Indore-Dewas Agroforestry Carbon Sequestration",
+      "benefitType": "Carbon Sequestration Insetting (Tranche 1)",
+      "entitlementAmount": 86660,
+      "calculationBasis": "12.38 Acres × ₹7,000 / Acre Verified Biomass",
+      "mrvMilestoneId": "MRV-CYC-2026-01",
+      "bankDetails": {
+        "accountMasked": "•••• 4821",
+        "ifsc": "SBIN0001245",
+        "bankName": "State Bank of India",
+        "beneficiaryName": "Rahul Sharma",
+        "payoutMethod": "DBT / Direct Bank Transfer"
+      },
+      "status": "DISBURSED",
+      "accruedDate": "16 Sept 2026",
+      "approvalDate": "20 Sept 2026",
+      "approvedBy": "Super Admin (admin@naturex.io)",
+      "location": "Ashta, Sehore (MP)"
+    },
+    {
+      "id": "BEN-2026-7702",
+      "farmerId": "USR-FARM-0822",
+      "farmerName": "Savitri Devi Kurmi",
+      "farmerPhone": "+91 94152 77812",
+      "parcelId": "PARCEL-UP-0412",
+      "khasra": "Khasra 89/1",
+      "acreage": 7.92,
+      "projectId": "PRJ-WAT-2026-002",
+      "projectName": "Mirzapur Bundelkhand Checkdam Groundwater Recharge",
+      "benefitType": "Water Recharge Infrastructure Incentive",
+      "entitlementAmount": 63360,
+      "calculationBasis": "7.92 Acres × ₹8,000 / Acre Water Recharge Incentive",
+      "mrvMilestoneId": "MRV-CYC-2026-02",
+      "bankDetails": {
+        "accountMasked": "•••• 9104",
+        "ifsc": "PUNB0241100",
+        "bankName": "Punjab National Bank",
+        "beneficiaryName": "Savitri Devi Kurmi",
+        "payoutMethod": "DBT / Direct Bank Transfer"
+      },
+      "status": "DISBURSED",
+      "accruedDate": "14 Sept 2026",
+      "approvalDate": "18 Sept 2026",
+      "approvedBy": "Super Admin (admin@naturex.io)",
+      "location": "Chunar, Mirzapur (UP)"
+    },
+    {
+      "id": "BEN-2026-7703",
+      "farmerId": "USR-FARM-1104",
+      "farmerName": "Rameshwar Patel",
+      "farmerPhone": "+91 97520 11984",
+      "parcelId": "PARCEL-MP-0914",
+      "khasra": "Khasra 210/4",
+      "acreage": 15.82,
+      "projectId": "PRJ-CAR-2026-001",
+      "projectName": "Indore-Dewas Agroforestry Carbon Sequestration",
+      "benefitType": "Soil Carbon Baseline Ingestion Bonus",
+      "entitlementAmount": 79100,
+      "calculationBasis": "15.82 Acres × ₹5,000 / Acre Soil Carbon Bonus",
+      "mrvMilestoneId": "MRV-CYC-2026-01",
+      "bankDetails": {
+        "accountMasked": "•••• 3319",
+        "ifsc": "BARB0SONKAT",
+        "bankName": "Bank of Baroda",
+        "beneficiaryName": "Rameshwar Patel",
+        "payoutMethod": "DBT / Direct Bank Transfer"
+      },
+      "status": "APPROVED",
+      "accruedDate": "19 Sept 2026",
+      "approvalDate": "21 Sept 2026",
+      "approvedBy": "Super Admin (admin@naturex.io)",
+      "location": "Sonkatch, Dewas (MP)"
+    },
+    {
+      "id": "BEN-2026-7704",
+      "farmerId": "USR-FARM-9012",
+      "farmerName": "Balasaheb Jadhav",
+      "farmerPhone": "+91 98220 54129",
+      "parcelId": "PARCEL-MH-0288",
+      "khasra": "Gat No. 344/2",
+      "acreage": 24.18,
+      "projectId": "PRJ-CAR-2026-003",
+      "projectName": "Vidarbha Regenerative Cotton & Biochar Initiative",
+      "benefitType": "Biochar Soil Application Stipend",
+      "entitlementAmount": 145080,
+      "calculationBasis": "24.18 Acres × ₹6,000 / Acre Biochar Application",
+      "mrvMilestoneId": "MRV-CYC-2026-03",
+      "bankDetails": {
+        "accountMasked": "•••• 7720",
+        "ifsc": "MAHB0000412",
+        "bankName": "Bank of Maharashtra",
+        "beneficiaryName": "Balasaheb Jadhav",
+        "payoutMethod": "DBT / Direct Bank Transfer"
+      },
+      "status": "PENDING_APPROVAL",
+      "accruedDate": "20 Sept 2026",
+      "approvalDate": "-",
+      "approvedBy": "Pending Super Admin Gate",
+      "location": "Ralegaon, Yavatmal (MH)"
+    },
+    {
+      "id": "BEN-2026-7705",
+      "farmerId": "USR-FARM-6140",
+      "farmerName": "K. Venkateswarlu",
+      "farmerPhone": "+91 98480 22190",
+      "parcelId": "PARCEL-AP-0331",
+      "surveyNumber": "Sy No. 518/A",
+      "acreage": 13.95,
+      "projectId": "PRJ-BIO-2026-001",
+      "projectName": "Western Ghats Corridor Native Shola-Grassland Restoration",
+      "benefitType": "Native Habitat Riparian Lease Stipend",
+      "entitlementAmount": 97650,
+      "calculationBasis": "13.95 Acres × ₹7,000 / Acre Biodiversity Stewardship",
+      "mrvMilestoneId": "MRV-CYC-2026-04",
+      "bankDetails": {
+        "accountMasked": "•••• 5521",
+        "ifsc": "APGB0002104",
+        "bankName": "Andhra Pragathi Grameena Bank",
+        "beneficiaryName": "K. Venkateswarlu",
+        "payoutMethod": "DBT / Direct Bank Transfer"
+      },
+      "status": "APPROVED",
+      "accruedDate": "18 Sept 2026",
+      "approvalDate": "21 Sept 2026",
+      "approvedBy": "Super Admin (admin@naturex.io)",
+      "location": "Kalyandurg, Anantapur (AP)"
+    },
+    {
+      "id": "BEN-2026-7706",
+      "farmerId": "USR-FARM-3310",
+      "farmerName": "Baldev Singh",
+      "farmerPhone": "+91 98760 12345",
+      "parcelId": "PARCEL-PB-9104",
+      "khasra": "Killa 14//2",
+      "acreage": 15.0,
+      "projectId": "PRJ-WAT-2026-004",
+      "projectName": "Punjab Drip Fertigation & Paddy Straw Bio-Enzyme",
+      "benefitType": "Paddy Straw Decomposition Incentive",
+      "entitlementAmount": 75000,
+      "calculationBasis": "15.0 Acres × ₹5,000 / Acre Zero-Stubble Bonus",
+      "mrvMilestoneId": "MRV-CYC-2026-02",
+      "bankDetails": {
+        "accountMasked": "•••• 6601",
+        "ifsc": "PSIB0000109",
+        "bankName": "Punjab & Sind Bank",
+        "beneficiaryName": "Baldev Singh",
+        "payoutMethod": "DBT / Direct Bank Transfer"
+      },
+      "status": "DISBURSED",
+      "accruedDate": "15 Sept 2026",
+      "approvalDate": "17 Sept 2026",
+      "approvedBy": "Super Admin (admin@naturex.io)",
+      "location": "Tapa, Barnala (Punjab)"
+    }
+  ],
+  "payoutBatches": [
+    {
+      "id": "BATCH-2026-09A",
+      "title": "Indore-Dewas & Mirzapur Kharif 2026 Carbon Payouts",
+      "totalBeneficiaries": 142,
+      "totalAmount": 9840000,
+      "sponsorFund": "Tata Motors Green Horizon Fund",
+      "executionDate": "21 Sept 2026",
+      "channel": "PFMS / Direct Benefit Transfer (DBT)",
+      "escrowAccount": "HDFC Bank Escrow AC #99210084",
+      "status": "SETTLED",
+      "successfulCount": 142,
+      "failedCount": 0,
+      "utrRange": "HDFCR520260921001 to 0142"
+    },
+    {
+      "id": "BATCH-2026-09B",
+      "title": "Bundelkhand Water Checkdam Infrastructure Compensation",
+      "totalBeneficiaries": 86,
+      "totalAmount": 6450000,
+      "sponsorFund": "Infosys Eco-Stewardship Climate Facility",
+      "executionDate": "18 Sept 2026",
+      "channel": "NPCI / NACH Direct Transfer",
+      "escrowAccount": "HDFC Bank Escrow AC #99210084",
+      "status": "SETTLED",
+      "successfulCount": 86,
+      "failedCount": 0,
+      "utrRange": "HDFCR520260918001 to 0086"
+    },
+    {
+      "id": "BATCH-2026-09C",
+      "title": "Western Ghats Riparian Biodiversity Stewardship Stipend",
+      "totalBeneficiaries": 64,
+      "totalAmount": 4480000,
+      "sponsorFund": "Godrej Agrovet Biodiversity Endowment",
+      "executionDate": "22 Sept 2026",
+      "channel": "PFMS / Direct Benefit Transfer (DBT)",
+      "escrowAccount": "HDFC Bank Escrow AC #99210084",
+      "status": "PROCESSING",
+      "successfulCount": 58,
+      "failedCount": 0,
+      "utrRange": "HDFCR520260922001 to 0064"
+    }
+  ],
+  "settlementTransactions": [
+    {
+      "id": "TXN-DBT-9901",
+      "batchId": "BATCH-2026-09A",
+      "farmerName": "Rahul Sharma",
+      "farmerPhone": "+91 98261 78900",
+      "amount": 86660,
+      "bank": "State Bank of India",
+      "ifsc": "SBIN0001245",
+      "accountMasked": "•••• 4821",
+      "utr": "HDFCR5202609210084",
+      "status": "SETTLED",
+      "settledAt": "21 Sept 2026 14:32 IST",
+      "ackNumber": "PFMS-ACK-88129"
+    },
+    {
+      "id": "TXN-DBT-9902",
+      "batchId": "BATCH-2026-09A",
+      "farmerName": "Savitri Devi Kurmi",
+      "farmerPhone": "+91 94152 77812",
+      "amount": 63360,
+      "bank": "Punjab National Bank",
+      "ifsc": "PUNB0241100",
+      "accountMasked": "•••• 9104",
+      "utr": "HDFCR5202609180042",
+      "status": "SETTLED",
+      "settledAt": "18 Sept 2026 11:15 IST",
+      "ackNumber": "PFMS-ACK-88130"
+    },
+    {
+      "id": "TXN-DBT-9903",
+      "batchId": "BATCH-2026-09A",
+      "farmerName": "Baldev Singh",
+      "farmerPhone": "+91 98760 12345",
+      "amount": 75000,
+      "bank": "Punjab & Sind Bank",
+      "ifsc": "PSIB0000109",
+      "accountMasked": "•••• 6601",
+      "utr": "HDFCR5202609170019",
+      "status": "SETTLED",
+      "settledAt": "17 Sept 2026 16:04 IST",
+      "ackNumber": "PFMS-ACK-88131"
+    },
+    {
+      "id": "TXN-DBT-9904",
+      "batchId": "BATCH-2026-09C",
+      "farmerName": "K. Venkateswarlu",
+      "farmerPhone": "+91 98480 22190",
+      "amount": 97650,
+      "bank": "Andhra Pragathi Grameena Bank",
+      "ifsc": "APGB0002104",
+      "accountMasked": "•••• 5521",
+      "utr": "HDFCR5202609220014",
+      "status": "PROCESSING",
+      "settledAt": "In Clearing",
+      "ackNumber": "PFMS-ACK-88132"
+    }
+  ]
+}

@@ -2,27 +2,40 @@
 
 @layer base {
   :root {
-    /* Exact "Soft Harmony" Palette with High Contrast & Clarity */
-    --color-mint-green: #EAF4F2;
-    --color-sky-blue: #CFE7F1;
-    --color-soft-blue: #D0EFE8;
-    --color-cream: #F8F3EC;
-    --color-blush-pink: #F7E6E6;
-    --color-sand: #EADDD1;
-    --color-sage-green: #A7C9B8;
-    --color-warm-grey: #D6D0C8;
+    /* User-Provided NatureX Terracotta Teak Wood & Lush Forest Moss Green Palette */
+    --color-primary: #8D4E22;
+    --color-primary: #8D4E22;
+    --color-primary-dark: #6E3812;
+    --color-primary-surface: #DFCEB9;
+    --color-primary-border: #8D4E22;
 
-    /* High Visibility Primary Text & Accents */
-    --color-primary-cta: #2D6A4F;
-    --color-primary-hover: #20503B;
-    --text-primary: #0F172A;
-    --text-secondary: #334155;
-    --text-muted: #64748B;
+    --color-secondary: #5E8256;
+    --color-secondary-dark: #3E5F36;
+    --color-secondary-surface: #E6EFE4;
+    --color-secondary-border: #C1D6BD;
 
-    /* Base Surfaces */
-    --bg-page: #F8F3EC;
+    --color-accent: #DEAB7C;
+    --color-accent-light: #B6814C;
+    --color-accent-dark: #8D4E22;
+    --color-accent-border: #8D4E22;
+
+    --color-wood-primary: #8D4E22;
+    --color-slate: #526658;
+    --color-slate-light: #DEE6DC;
+    --color-slate-border: #BFCFBD;
+
+    --bg-page: #F8F9F5;
     --surface-card: #FFFFFF;
-    --border-soft: #DDD4C7;
+    --border-soft: #B8C7B5;
+    --border-subtle: #DEE6DC;
+    --border-light: #CBD8C7;
+
+    --text-primary: #18221B;
+    --text-secondary: #4A5B50;
+    --text-muted: #738679;
+    --text-light: #99ABA0;
+    --text-on-primary: #FFFFFF;
+    --text-on-peach: #452A18;
   }
 
   html, body, #root {
@@ -38,59 +51,25 @@
   }
 }
 
-/* Soft Harmony High-Contrast Card & Surface Styling */
+/* Tactile Clay & Soft Nature Card Styling */
 .harmony-card {
   background-color: #FFFFFF;
-  border: 1px solid #DDD4C7;
-  box-shadow: 0 4px 20px -2px rgba(185, 175, 160, 0.28), 0 2px 6px -1px rgba(185, 175, 160, 0.16);
+  border: 1px solid #CBD3C8;
+  box-shadow: 0 4px 20px -2px rgba(54, 71, 56, 0.08), 0 2px 6px -1px rgba(54, 71, 56, 0.04);
   border-radius: 1.5rem;
 }
 
 .harmony-card-subtle {
-  background-color: #FAF7F2;
-  border: 1px solid #DDD4C7;
+  background-color: #F8F9F5;
+  border: 1px solid #CBD8C7;
   border-radius: 1.25rem;
 }
 
-/* Soft Radiant Sea Green Boundary Flash around entire viewport (Requested by User) */
-@keyframes seaGreenBoundaryFlash {
-  0% {
-    border-color: rgba(58, 168, 142, 0.25);
-    box-shadow: 
-      inset 0 0 25px 2px rgba(58, 168, 142, 0.18),
-      inset 0 0 12px 1px rgba(45, 212, 191, 0.20);
-  }
-  50% {
-    border-color: rgba(58, 168, 142, 0.65);
-    box-shadow: 
-      inset 0 0 45px 4px rgba(58, 168, 142, 0.35),
-      inset 0 0 22px 2px rgba(45, 212, 191, 0.40);
-  }
-  100% {
-    border-color: rgba(58, 168, 142, 0.25);
-    box-shadow: 
-      inset 0 0 25px 2px rgba(58, 168, 142, 0.18),
-      inset 0 0 12px 1px rgba(45, 212, 191, 0.20);
-  }
-}
-
-.page-boundary-flash {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 30;
-  border: 2px solid rgba(58, 168, 142, 0.45);
-  box-shadow: 
-    inset 0 0 35px 2px rgba(58, 168, 142, 0.22),
-    inset 0 0 16px 1px rgba(45, 212, 191, 0.25);
-  border-radius: 0;
-  animation: seaGreenBoundaryFlash 3.5s ease-in-out infinite;
-}
 
 /* Sidebar clean smooth scrollbar */
 .sidebar-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: #DDD4C7 transparent;
+  scrollbar-color: #CBD3C8 transparent;
 }
 .sidebar-scrollbar::-webkit-scrollbar {
   width: 4px;
@@ -99,95 +78,112 @@
   background: transparent;
 }
 .sidebar-scrollbar::-webkit-scrollbar-thumb {
-  background: #DDD4C7;
+  background: #CBD3C8;
   border-radius: 9999px;
 }
 .sidebar-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #B8ADA0;
+  background: #A7B6A4;
 }
 
-/* Sea Green Tinted KPI Card requested by user */
+/* Deep Coffee / Mocha Brown Tinted KPI Card */
 .harmony-kpi-card {
-  background: linear-gradient(140deg, #FFFFFF 40%, #EAF4F2 100%);
-  border: 1px solid #C0DFD3;
-  box-shadow: 0 4px 18px -2px rgba(167, 201, 184, 0.35), 0 2px 6px -1px rgba(167, 201, 184, 0.15);
+  background: linear-gradient(145deg, #EFE6DA 0%, #DCC5AA 50%, #C4A989 100%);
+  border: 1.5px solid #8A663F;
+  box-shadow: 0 4px 20px -2px rgba(74, 52, 28, 0.18), 0 2px 8px -1px rgba(74, 52, 28, 0.10);
   border-radius: 1.5rem;
   transition: all 0.2s ease-in-out;
 }
 .harmony-kpi-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px -2px rgba(167, 201, 184, 0.45);
-  border-color: #7EC8B5;
+  background: linear-gradient(145deg, #F5EDE2 0%, #D5BC9F 50%, #BA9C7A 100%);
+  box-shadow: 0 8px 26px -2px rgba(74, 52, 28, 0.28);
+  border-color: #6B4A26;
+}
+.harmony-kpi-card .border-t {
+  border-color: rgba(90, 62, 33, 0.25) !important;
 }
 
-/* Ultra-light, clean soft pastel badges (No dark or heavy colors) */
+/* Darker, Richer Nature Badges with High Contrast (Zero Pink, Pure Wood) */
 .badge-mint-tint {
-  background-color: #F0FDF4 !important;
-  border: 1px solid #DCFCE7 !important;
-  color: #15803D !important;
-  font-weight: 700 !important;
+  background-color: #E6EFE4 !important;
+  border: 1px solid #C1D6BD !important;
+  color: #3E5F36 !important;
+  font-weight: 800 !important;
 }
 
 .badge-sky-tint {
-  background-color: #F0F9FF !important;
-  border: 1px solid #E0F2FE !important;
-  color: #0369A1 !important;
-  font-weight: 700 !important;
+  background-color: #B6814C !important;
+  border: 1px solid #8D4E22 !important;
+  color: #2B1405 !important;
+  font-weight: 800 !important;
 }
 
 .badge-alert-tint {
-  background-color: #FEF2F2 !important;
-  border: 1px solid #FEE2E2 !important;
-  color: #B91C1C !important;
-  font-weight: 700 !important;
+  background-color: #C49563 !important;
+  border: 1px solid #8D4E22 !important;
+  color: #2B1405 !important;
+  font-weight: 800 !important;
 }
 
 .badge-warning-tint {
-  background-color: #FFFBEB !important;
-  border: 1px solid #FEF3C7 !important;
-  color: #B45309 !important;
-  font-weight: 700 !important;
+  background-color: #D4AB7D !important;
+  border: 1px solid #8D4E22 !important;
+  color: #3D1E08 !important;
+  font-weight: 800 !important;
 }
 
-/* Active Nav Pill: Light Sky White */
+/* Active Nav Pill: Solid Terracotta Teak Wood */
 .harmony-pill-active {
-  background-color: #F0F9FF !important;
-  border: 1px solid #BAE6FD !important;
-  color: #0369A1 !important;
-  font-weight: 700 !important;
+  background-color: #8D4E22 !important;
+  border: 1px solid #6E3812 !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  box-shadow: 0 2px 8px rgba(141, 78, 34, 0.30);
   border-radius: 0.75rem;
 }
 
-/* Active Sub-item: Light Mint White */
+/* Active Sub-item: Solid Terracotta Teak Wood */
 .harmony-subitem-active {
-  background-color: #F0FDF4 !important;
-  border: 1px solid #BBF7D0 !important;
-  color: #15803D !important;
-  font-weight: 700 !important;
+  background-color: #8D4E22 !important;
+  border: 1px solid #6E3812 !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  box-shadow: 0 2px 8px rgba(141, 78, 34, 0.30);
   border-radius: 0.75rem;
 }
 
-/* Primary CTA Button */
+/* Primary Terracotta CTA Button */
 .harmony-btn-primary {
-  background-color: #2D6A4F;
+  background-color: #8D4E22;
   color: #FFFFFF;
   transition: all 0.2s ease-in-out;
 }
 .harmony-btn-primary:hover {
-  background-color: #1F4F39;
-  box-shadow: 0 4px 14px rgba(45, 106, 79, 0.35);
+  background-color: #6E3812;
+  box-shadow: 0 4px 14px rgba(141, 78, 34, 0.35);
 }
 
-/* Search input with crisp border and clear contrast */
+/* Secondary Lush Moss Button */
+.harmony-btn-secondary {
+  background-color: #5E8256;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+.harmony-btn-secondary:hover {
+  background-color: #3E5F36;
+  box-shadow: 0 4px 14px rgba(94, 130, 86, 0.35);
+}
+
+/* Search Input with Warm Dark Wooden Tan Background and Terracotta Focus */
 .harmony-input {
-  background-color: #F8F5F0;
-  border: 1px solid #DDD4C7;
-  color: #0F172A;
+  background-color: #C49563;
+  border: 1px solid #8D4E22;
+  color: #18221B;
 }
 .harmony-input:focus-within {
-  border-color: #2D6A4F;
+  border-color: #8D4E22;
   background-color: #FFFFFF;
-  box-shadow: 0 0 0 2px rgba(45, 106, 79, 0.15);
+  box-shadow: 0 0 0 2px rgba(141, 78, 34, 0.25);
 }
 
 /* Custom Scrollbar */
@@ -199,9 +195,25 @@
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #D2C7B8;
+  background: #CBD3C8;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #B4A795;
+  background: #A7B6A4;
+}
+
+/* Side drawer slide in from right */
+@keyframes slideDrawerIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-drawer {
+  animation: slideDrawerIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

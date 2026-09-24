@@ -1,0 +1,528 @@
+{
+  "notifications": {
+    "kpis": {
+      "totalDispatched": "14,820",
+      "whatsappDeliveryRate": "99.4%",
+      "smsDeliveryRate": "98.7%",
+      "pushClickRate": "42.5%"
+    },
+    "templates": [
+      {
+        "id": "TMPL-01",
+        "name": "KYC Approved Notification",
+        "triggerEvent": "KYC_APPROVED",
+        "recipientRole": "Farmer / Beneficiary",
+        "channel": "WhatsApp + SMS",
+        "body": "Namaste {{farmer_name}}, your NATUREX identity verification (KYC) has been successfully verified! You can now register land parcels and join carbon programs. Log in: https://naturex.io/app",
+        "cta": "Continue to Land Registration",
+        "active": true,
+        "dispatchedCount": 4210,
+        "deliveryRate": "99.8%"
+      },
+      {
+        "id": "TMPL-02",
+        "name": "KYC Clarification / Rejection Alert",
+        "triggerEvent": "KYC_REJECTED",
+        "recipientRole": "Farmer / Beneficiary",
+        "channel": "WhatsApp + SMS",
+        "body": "Attention {{farmer_name}}: Your KYC document requires clarification. Reason: {{rejection_reason}}. Please re-upload clear Aadhaar/Land document at https://naturex.io/kyc-fix",
+        "cta": "Fix KYC Documents",
+        "active": true,
+        "dispatchedCount": 384,
+        "deliveryRate": "99.1%"
+      },
+      {
+        "id": "TMPL-03",
+        "name": "Land Registry Approved",
+        "triggerEvent": "LAND_APPROVED",
+        "recipientRole": "Landowner / FPO Org",
+        "channel": "WhatsApp + In-App Push",
+        "body": "Good news! Parcel {{parcel_id}} (Khasra: {{khasra}}, {{acreage}} acres) in {{location}} has been approved. You can now enroll this plot into carbon & agroforestry projects.",
+        "cta": "Create New Project",
+        "active": true,
+        "dispatchedCount": 2190,
+        "deliveryRate": "99.5%"
+      },
+      {
+        "id": "TMPL-04",
+        "name": "Field Visit Assigned",
+        "triggerEvent": "VISIT_ASSIGNED",
+        "recipientRole": "Field Agent",
+        "channel": "In-App Push + SMS",
+        "body": "New field task assigned: Visit {{visit_id}} for project {{project_name}} at Khasra {{khasra}}. Scheduled date: {{scheduled_date}}. Ensure GPS is enabled.",
+        "cta": "Open Visit Task",
+        "active": true,
+        "dispatchedCount": 1820,
+        "deliveryRate": "98.9%"
+      },
+      {
+        "id": "TMPL-05",
+        "name": "Benefit Payout Disbursed",
+        "triggerEvent": "BENEFIT_APPROVED",
+        "recipientRole": "Farmer / Beneficiary",
+        "channel": "SMS + WhatsApp",
+        "body": "Payment credit alert: ₹{{amount}} has been credited to your bank account ({{bank_name}} A/C ending {{account_masked}}) via PFMS DBT. UTR: {{utr}}. Ref: NATUREX Climate Benefit.",
+        "cta": "View Transaction Receipt",
+        "active": true,
+        "dispatchedCount": 4185,
+        "deliveryRate": "99.9%"
+      },
+      {
+        "id": "TMPL-06",
+        "name": "MRV Technical Finding Created",
+        "triggerEvent": "FINDING_CREATED",
+        "recipientRole": "Project Developer / FPO Org",
+        "channel": "In-App Push + Email",
+        "body": "A technical finding has been logged on Project {{project_id}} regarding {{finding_title}}. Immediate photographic response requested within 7 days.",
+        "cta": "Resolve Finding",
+        "active": true,
+        "dispatchedCount": 312,
+        "deliveryRate": "97.8%"
+      }
+    ],
+    "recentDispatches": [
+      {
+        "id": "DSP-9982",
+        "templateId": "TMPL-05",
+        "recipient": "Ramesh Chandra Patel (+91 98930 12345)",
+        "channel": "SMS",
+        "status": "DELIVERED",
+        "sentAt": "10 mins ago",
+        "ackId": "SMS-AIRTEL-98210"
+      },
+      {
+        "id": "DSP-9981",
+        "templateId": "TMPL-01",
+        "recipient": "Kamla Bai (+91 94250 88712)",
+        "channel": "WhatsApp",
+        "status": "READ",
+        "sentAt": "25 mins ago",
+        "ackId": "WA-META-33821"
+      },
+      {
+        "id": "DSP-9980",
+        "templateId": "TMPL-04",
+        "recipient": "Vikram Solanki (+91 98261 44556)",
+        "channel": "Push",
+        "status": "DELIVERED",
+        "sentAt": "42 mins ago",
+        "ackId": "FCM-77182"
+      },
+      {
+        "id": "DSP-9979",
+        "templateId": "TMPL-03",
+        "recipient": "Narmada Valley Agro FPO (+91 98765 43210)",
+        "channel": "WhatsApp",
+        "status": "READ",
+        "sentAt": "1 hour ago",
+        "ackId": "WA-META-33819"
+      }
+    ]
+  },
+  "support": {
+    "kpis": {
+      "openTickets": 14,
+      "slaBreaches": 0,
+      "avgResolutionTime": "4.2 Hours",
+      "satisfactionIndex": "98.2%"
+    },
+    "tickets": [
+      {
+        "id": "TCK-8821",
+        "ticketNumber": "SUP-2026-08821",
+        "farmerName": "Suresh Singhal",
+        "userPhone": "+91 98931 99882",
+        "category": "LAND_DISPUTE",
+        "subject": "Overlapping boundary conflict with neighbor Khasra 88/1",
+        "description": "Neighbor plot survey overlaps 0.4 hectares with my certified survey. Kindly re-verify GIS polygon or dispatch field agent.",
+        "priority": "HIGH",
+        "status": "OPEN",
+        "createdAt": "2 hours ago",
+        "slaHoursRemaining": 18,
+        "assignedTo": "Admin GIS Support Lead",
+        "parcelId": "PARCEL-MP-0892"
+      },
+      {
+        "id": "TCK-8820",
+        "ticketNumber": "SUP-2026-08820",
+        "farmerName": "Bhagwandas Meena",
+        "userPhone": "+91 94250 11994",
+        "category": "PAYOUT_QUERY",
+        "subject": "Benefit disbursement not reflected in SBI account",
+        "description": "My dashboard shows benefit marked as Approved for Q2 Carbon insetting, but transaction SMS not received. Account IFSC SBIN0001245.",
+        "priority": "URGENT",
+        "status": "IN_REVIEW",
+        "createdAt": "4 hours ago",
+        "slaHoursRemaining": 8,
+        "assignedTo": "Finance Escrow Desk",
+        "parcelId": "PARCEL-MP-0891"
+      },
+      {
+        "id": "TCK-8819",
+        "ticketNumber": "SUP-2026-08819",
+        "farmerName": "Kishore Kumar Verma",
+        "userPhone": "+91 98260 77412",
+        "category": "KYC_ASSISTANCE",
+        "subject": "Aadhaar OCR scan blur issue during camera upload",
+        "description": "Camera scan repeatedly shows blur warning on Aadhaar backside address section. Need manual review approval.",
+        "priority": "MEDIUM",
+        "status": "OPEN",
+        "createdAt": "6 hours ago",
+        "slaHoursRemaining": 26,
+        "assignedTo": "Compliance KYC Desk",
+        "parcelId": "-"
+      },
+      {
+        "id": "TCK-8818",
+        "ticketNumber": "SUP-2026-08818",
+        "farmerName": "Narmada Valley Agro FPO (Deepak Sharma)",
+        "userPhone": "+91 98765 43210",
+        "category": "PROJECT_MRV",
+        "subject": "Request date extension for drone imagery submission",
+        "description": "Heavy monsoon rains in Sehore district delayed scheduled drone canopy survey. Request 10-day extension on MRV milestone deadline.",
+        "priority": "LOW",
+        "status": "RESOLVED",
+        "createdAt": "1 day ago",
+        "slaHoursRemaining": 0,
+        "assignedTo": "MRV Technical Reviewer",
+        "parcelId": "PRJ-CAR-2026-001"
+      },
+      {
+        "id": "TCK-8817",
+        "ticketNumber": "SUP-2026-08817",
+        "farmerName": "Geeta Rajput",
+        "userPhone": "+91 98262 55678",
+        "category": "PAYOUT_QUERY",
+        "subject": "Correction of bank IFSC code for DBT mandate",
+        "description": "Bank merged with Union Bank of India and new IFSC has been issued. Need updating in mandate ledger before next batch.",
+        "priority": "HIGH",
+        "status": "RESOLVED",
+        "createdAt": "2 days ago",
+        "slaHoursRemaining": 0,
+        "assignedTo": "Finance Escrow Desk",
+        "parcelId": "PARCEL-MP-0893"
+      }
+    ]
+  },
+  "reports": {
+    "kpis": {
+      "reportsGenerated": 128,
+      "scheduledAutoExports": 6,
+      "verifiedImpactSummaries": "3.8 MtCO2e",
+      "storageUsed": "1.42 GB"
+    },
+    "catalog": [
+      {
+        "id": "REP-2026-01",
+        "title": "Quarterly Carbon Insetting & Sequestration Dossier",
+        "category": "IMPACT_CARBON",
+        "period": "Q2 2026 (Apr - Jun)",
+        "format": "PDF / Encrypted Dossier",
+        "generatedAt": "Yesterday, 18:30",
+        "fileSize": "14.2 MB",
+        "status": "READY",
+        "verifiedBy": "BEE Accredited ACVA Verifier",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "REP-2026-02",
+        "title": "PFMS & Escrow DBT Payout Reconciliation Master CSV",
+        "category": "FINANCE_PAYOUTS",
+        "period": "Fiscal Year 2026-27 (YTD)",
+        "format": "CSV / Bank Format",
+        "generatedAt": "2 days ago",
+        "fileSize": "2.8 MB",
+        "status": "READY",
+        "verifiedBy": "NATUREX Finance Controller",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "REP-2026-03",
+        "title": "Field Agent Offline Sync & Visit Compliance Scorecard",
+        "category": "OPERATIONAL_FIELD",
+        "period": "Current Month (Sep 2026)",
+        "format": "XLSX / Executive Sheet",
+        "generatedAt": "3 days ago",
+        "fileSize": "4.1 MB",
+        "status": "READY",
+        "verifiedBy": "Field Operations Lead",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "REP-2026-04",
+        "title": "Land GIS PostGIS Polygon Conflict Resolution Audit",
+        "category": "GIS_COMPLIANCE",
+        "period": "Full Registry (Historical)",
+        "format": "PDF / GeoJSON Package",
+        "generatedAt": "5 days ago",
+        "fileSize": "28.5 MB",
+        "status": "READY",
+        "verifiedBy": "Chief Spatial Analyst",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "REP-2026-05",
+        "title": "Water Stewardship & Groundwater Recharge Ledger",
+        "category": "IMPACT_WATER",
+        "period": "Monsoon Baseline 2026",
+        "format": "PDF / Technical Report",
+        "generatedAt": "1 week ago",
+        "fileSize": "8.7 MB",
+        "status": "READY",
+        "verifiedBy": "Water Hydrology Reviewer",
+        "downloadUrl": "#"
+      }
+    ]
+  },
+  "auditLogs": {
+    "kpis": {
+      "totalAuditEvents": "52,490",
+      "verifiedCryptoTrails": "100%",
+      "adminStateChanges": "1,420",
+      "tamperProofRatio": "100.0%"
+    },
+    "entries": [
+      {
+        "id": "AUD-2026-0922-01",
+        "timestamp": "2026-09-22 10:42:15",
+        "actor": "Super Admin (admin@naturex.io)",
+        "ip": "103.21.144.92",
+        "category": "FINANCE",
+        "action": "EXECUTE_DBT_BATCH",
+        "entityId": "BATCH-2026-89X",
+        "details": "Triggered direct benefit transfer batch ₹31,50,000 to 45 beneficiaries via PFMS gateway",
+        "hash": "8f4a28b7e29c1184a44f80164c852ef7190d6b412fae2e5c9413200a7b11a91e"
+      },
+      {
+        "id": "AUD-2026-0922-02",
+        "timestamp": "2026-09-22 09:15:30",
+        "actor": "Super Admin (admin@naturex.io)",
+        "ip": "103.21.144.92",
+        "category": "KYC",
+        "action": "APPROVE_KYC",
+        "entityId": "KYC-REC-9012",
+        "details": "Passed identity gate for Ramesh Chandra Patel (Aadhaar UIDAI token verified)",
+        "hash": "3d91ca8e54719b04f128bc999120de8402ff71bc20146e492ca849921c810fb4"
+      },
+      {
+        "id": "AUD-2026-0921-03",
+        "timestamp": "2026-09-21 16:48:12",
+        "actor": "ACVA Verifier Lead (dr.verma@ccts-audit.org)",
+        "ip": "115.112.98.14",
+        "category": "VERIFICATION",
+        "action": "ISSUE_POSITIVE_ACVA",
+        "entityId": "VER-2026-01",
+        "details": "Affixed digital signature on BEE-CCTS verification certificate for Project PRJ-CAR-2026-001",
+        "hash": "b203c94178da8192a014bb9910cf9042b10cae785539201fba4190820bbca109"
+      },
+      {
+        "id": "AUD-2026-0921-04",
+        "timestamp": "2026-09-21 14:20:05",
+        "actor": "Super Admin (admin@naturex.io)",
+        "ip": "103.21.144.92",
+        "category": "RBAC",
+        "action": "PROVISION_USER",
+        "entityId": "USR-FA-1099",
+        "details": "Created new Field Agent role for Vikram Solanki (assigned to Sehore district cluster)",
+        "hash": "7719ab001e48cb1209ff8264ad80219ca7b901a884efca817290ccb81048e911"
+      },
+      {
+        "id": "AUD-2026-0920-05",
+        "timestamp": "2026-09-20 11:32:44",
+        "actor": "Field Agent (vikram.s@naturex.io)",
+        "ip": "49.36.192.81",
+        "category": "FIELD_OPS",
+        "action": "SUBMIT_VISIT",
+        "entityId": "VST-2026-081",
+        "details": "Submitted field polygon ground-truth verification with 4 geotagged photos and tree measurements",
+        "hash": "1198fba44c910283fa712019ee810ca429b801726aef1920acbb109284fa9081"
+      },
+      {
+        "id": "AUD-2026-0920-06",
+        "timestamp": "2026-09-20 09:05:10",
+        "actor": "Super Admin (admin@naturex.io)",
+        "ip": "103.21.144.92",
+        "category": "LAND_GIS",
+        "action": "RESOLVE_CONFLICT",
+        "entityId": "CONF-2026-04",
+        "details": "Resolved boundary overlap between PARCEL-MP-0891 and 0892 via updated Khasra 142/2 geometry",
+        "hash": "55a10984cfb72183ac102948bbca91020084fca81920ef182740acbc1098ef01"
+      }
+    ]
+  },
+  "questionnaires": {
+    "kpis": {
+      "activeQuestionnaires": 3,
+      "totalFieldQuestions": 38,
+      "conditionalRules": 14,
+      "activeSchemaVersion": "v3.2 (2026 Standard)"
+    },
+    "schemas": [
+      {
+        "id": "SCH-CAR-01",
+        "projectType": "Carbon Sequestration & Agroforestry",
+        "code": "CARBON",
+        "version": "v3.2",
+        "status": "ACTIVE",
+        "updatedAt": "2026-08-15",
+        "sections": [
+          {
+            "id": "SEC-01",
+            "title": "Baseline Land Use & Soil Type",
+            "questions": [
+              {
+                "id": "Q-01",
+                "label": "Historical Land Use in Previous 5 Years",
+                "type": "SELECT",
+                "options": ["Degraded Fallow", "Single-Crop Agriculture", "Intensive Cropping", "Silvopasture"],
+                "required": true
+              },
+              {
+                "id": "Q-02",
+                "label": "Soil Texture & Organic Matter Level",
+                "type": "SELECT",
+                "options": ["Black Cotton Soil (High Clay)", "Alluvial Loam", "Sandy Loam", "Laterite"],
+                "required": true
+              }
+            ]
+          },
+          {
+            "id": "SEC-02",
+            "title": "Tree Plantation & Insetting Specifications",
+            "questions": [
+              {
+                "id": "Q-03",
+                "label": "Native Tree Species Selected for Plantation",
+                "type": "MULTI_SELECT",
+                "options": ["Teak (Tectona grandis)", "Neem (Azadirachta indica)", "Shisham (Dalbergia sissoo)", "Mahua (Madhuca longifolia)", "Amla (Phyllanthus emblica)"],
+                "required": true
+              },
+              {
+                "id": "Q-04",
+                "label": "Target Sapling Density (Trees / Hectare)",
+                "type": "NUMBER",
+                "min": 100,
+                "max": 1200,
+                "required": true
+              },
+              {
+                "id": "Q-05",
+                "label": "GPS Coordinates of Plantation Nursery",
+                "type": "GEOTAG",
+                "required": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SCH-WAT-02",
+        "projectType": "Water Stewardship & Aquifer Recharge",
+        "code": "WATER",
+        "version": "v2.8",
+        "status": "ACTIVE",
+        "updatedAt": "2026-07-20",
+        "sections": [
+          {
+            "id": "SEC-WAT-01",
+            "title": "Hydrological Catchment & Recharge Interventions",
+            "questions": [
+              {
+                "id": "Q-WAT-01",
+                "label": "Type of Water Recharge Structure Implemented",
+                "type": "SELECT",
+                "options": ["Check Dam / Earthen Bund", "Farm Pond (Khet Talab)", "Recharge Shaft in Well", "Sub-surface Dyke"],
+                "required": true
+              },
+              {
+                "id": "Q-WAT-02",
+                "label": "Estimated Annual Water Retention Capacity (m³)",
+                "type": "NUMBER",
+                "required": true
+              },
+              {
+                "id": "Q-WAT-03",
+                "label": "Baseline Pre-Monsoon Water Table Depth (meters)",
+                "type": "NUMBER",
+                "required": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SCH-BIO-03",
+        "projectType": "Native Habitat & Biodiversity Corridor",
+        "code": "BIODIVERSITY",
+        "version": "v2.1",
+        "status": "ACTIVE",
+        "updatedAt": "2026-06-10",
+        "sections": [
+          {
+            "id": "SEC-BIO-01",
+            "title": "Ecological Corridor & Flora Survey",
+            "questions": [
+              {
+                "id": "Q-BIO-01",
+                "label": "Proximity to Protected Forest / Wildlife Corridor (km)",
+                "type": "NUMBER",
+                "required": true
+              },
+              {
+                "id": "Q-BIO-02",
+                "label": "Observed Native Pollinator Species Count",
+                "type": "SELECT",
+                "options": ["Low (< 5 species)", "Moderate (5 - 15 species)", "High (> 15 species)"],
+                "required": true
+              },
+              {
+                "id": "Q-BIO-03",
+                "label": "Invasive Weed Clearance Protocol Implemented",
+                "type": "SELECT",
+                "options": ["Yes - Manual Eradication", "Yes - Biological Control", "No / Not Applicable"],
+                "required": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "kpis": {
+      "platformStatus": "Operational (99.98% Uptime)",
+      "activeApiKeys": 8,
+      "dpdpCompliance": "Strict Active",
+      "s3VaultHealth": "Encrypted AES-256"
+    },
+    "infrastructure": {
+      "gisProvider": {
+        "name": "Mapbox GL / ISRO Bhuvan Dual Core",
+        "apiKeyMasked": "pk.eyJ1IjoibmF0dXJleC1hZG1pbiIsImEiOiJjbHNj••••••••••••",
+        "defaultProjection": "EPSG:4326 (WGS 84)",
+        "polygonValidationTolerance": "0.00001 Degrees",
+        "status": "CONNECTED"
+      },
+      "storageVault": {
+        "provider": "AWS S3 / GovCloud Mumbai Region (ap-south-1)",
+        "bucketName": "naturex-mrv-evidence-vault-prod",
+        "encryption": "AES-256 KMS Managed Key",
+        "immutableRetention": "7 Years (BEE CCTS Rule 12)",
+        "status": "ACTIVE"
+      },
+      "gateways": {
+        "smsGateway": "Airtel DLT Enterprise (Entity ID #14015528900)",
+        "whatsappApi": "Meta Cloud API v19.0 (Verified Green Badge)",
+        "payoutGateway": "PFMS / DBT Direct Gateway (HDFC Escrow Node)",
+        "status": "HEALTHY"
+      },
+      "securityCompliance": {
+        "dpdpConsentEnforced": true,
+        "superAdminMfaRequired": true,
+        "immutableAuditLogging": true,
+        "maintenanceMode": false,
+        "sessionInactivityTimeoutMinutes": 30
+      }
+    }
+  }
+}
